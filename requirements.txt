@@ -1,0 +1,39 @@
+# Core ML / Deep Learning
+torch
+transformers
+datasets
+accelerate
+peft
+trl
+
+# RAG components
+langchain
+langchain-community
+weaviate-client
+sentence-transformers
+
+# Document processing
+pypdf
+beautifulsoup4
+lxml
+
+# API and deployment
+fastapi
+uvicorn
+gradio
+
+# Data handling
+pandas
+numpy
+scikit-learn
+
+# Visualization & metrics
+matplotlib
+seaborn
+
+# Experiment tracking (optional but good)
+mlflow
+
+# Utilities
+tqdm
+python-dotenv
