@@ -49,6 +49,8 @@ This project builds a complete AI application pipeline:
 
 ## System Architecture
 
+![System architecture](assets/<img width="482" height="541" alt="system_architechture" src="https://github.com/user-attachments/assets/74e8d1cd-0ed2-465e-a370-7b806fd251d4" />
+)
 
 ---
 
@@ -62,6 +64,7 @@ This project builds a complete AI application pipeline:
 ### Step 2 — Create Environment
 
 Using uv:
+
 
 
 Install dependencies:
