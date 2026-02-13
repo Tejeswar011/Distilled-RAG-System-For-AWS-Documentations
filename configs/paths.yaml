@@ -1,0 +1,8 @@
+#Central place for paths
+#Helpful when deploying or changing directories
+
+paths:
+  model_dir: models/aws_student_model
+  data_dir: data/
+  vector_db: weaviate
+  logs_dir: logs/
