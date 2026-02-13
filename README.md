@@ -44,64 +44,110 @@ This project builds a complete AI application pipeline:
 
 ## Project Structure
 
+## Project Structure
+
+```bash
+model_distillation/
+│
+├── backend/        # FastAPI backend and inference
+├── frontend/       # Gradio UI
+├── config/         # YAML configuration files
+├── ingestion/      # Data ingestion pipeline
+├── evaluation/     # Benchmark scripts
+├── rag_teacher/    # Dataset generation and distillation
+├── models/         # Saved student model
+├── data/           # Raw and processed documents
+```
+
 
 ---
 
 ## System Architecture
 
-![System architecture](assets/<img width="482" height="541" alt="system_architechture" src="https://github.com/user-attachments/assets/74e8d1cd-0ed2-465e-a370-7b806fd251d4" />
-)
+<img width="482" height="541" alt="system_architechture" src="https://github.com/user-attachments/assets/74e8d1cd-0ed2-465e-a370-7b806fd251d4" />
+
 
 ---
 
 ## How to Run the Project
 
 ### Step 1 — Clone Repository
-
-
+```bash
+git clone <your-repo-url>
+cd model_distillation
+```
 ---
 
 ### Step 2 — Create Environment
 
 Using uv:
-
-
+```bash
+uv venv
+.venv\Scripts\activate
+```
 
 Install dependencies:
+```bash
+uv pip install -r requirements.txt
+```
+---
 
+### Step 3- Start Teacher Model (ollama)
+```bash
+ollama run mistral
+```
 
 ---
 
-### Step 3 — Start Vector Database (Weaviate)
+### Step 4 — Start Vector Database (Weaviate)
 
 Run Docker container:
+```bash
+docker run -d -p 8080:8080 semitechnologies/weaviate:latest
+```
 
+verify:
+```bash
+http://localhost:8080/v1/meta
+```
 
 ---
 
-### Step 4 — Start MLflow
-
+### Step 5 — Start MLflow
+```bash
+mlflow ui
+```
 
 Open:
-
+```bash
+http://127.0.0.1:5000
+```
 
 ---
 
-### Step 5 — Start Backend
-
+### Step 6 — Start Backend
+```bash
+uvicorn backend.app:app --reload
+```
 
 Backend will run at:
-
+```bash
+http://127.0.0.1:8000/docs
+```
 
 ---
 
-### Step 6 — Start Frontend
+### Step 7 — Start Frontend
 
 Open a new terminal:
-
+```bash
+python frontend/app.py
+```
 
 Frontend will run at:
-
+```bash
+http://127.0.0.1:7860
+```
 
 ---
 
@@ -152,7 +198,8 @@ without modifying code.
 
 ## Author
 
-Your Name  
+N Tejeswar Reddy 
+
 B.Tech Final Year  
 AI/ML Enthusiast  
 
