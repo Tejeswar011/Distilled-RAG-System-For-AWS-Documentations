@@ -1,0 +1,15 @@
+monthly pricing.
+AWS Elastic Beanstalk
+â a
+service that makes it easy to deploy, manage, and scale web
+applications and services. It supports several programming
+languages such as Python, Java, PHP, Node.js, Ruby, .NET, and
+Go. With Elastic Beanstalk, you simply upload your application
+code, and AWS handles the underlying infrastructure, including
+provisioning resources like Amazon EC2 instances, load balancers, and
+databases, as well as auto-scaling and monitoring. It provides
+built-in integration with AWS services like RDS, Amazon S3, and
+CloudWatch. Elastic Beanstalk offers a balance between control
+and automation, giving developers the ability to customize
+infrastructure while offloading operational overhead. There is
+no additional charge for Elastic Beanstalk. You pay for AWS

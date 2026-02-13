@@ -1,0 +1,22 @@
+Required permissions
+Object Lock operations require specific permissions. Depending on the exact operation
+that you're attempting, you might need any of the following permissions:
+s3:BypassGovernanceRetention
+s3:GetBucketObjectLockConfiguration
+s3:GetObjectLegalHold
+s3:GetObjectRetention
+s3:PutBucketObjectLockConfiguration
+s3:PutObjectLegalHold
+s3:PutObjectRetention
+For a complete list of Amazon S3 permissions with descriptions, see
+Actions, resources, and condition keys for Amazon S3
+in the
+Service Authorization
+Reference
+.
+For more information about the permissions to S3 API operations by S3 resource types, see
+Required permissions for Amazon S3 API operations
+.
+For information about using conditions with permissions, see
+Bucket policy examples using condition keys
+.

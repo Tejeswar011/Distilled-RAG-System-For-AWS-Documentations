@@ -1,0 +1,12 @@
+bucket policy denies all actions for all principals, your S3 Lifecycle configuration
+still functions as normal.
+Existing and new objects
+When you add a Lifecycle configuration to a bucket, the configuration rules apply to
+both existing objects and objects that you add later. For example, if you add a
+Lifecycle configuration rule today with an expiration action that causes objects to
+expire 30 days after creation, Amazon S3 will queue for removal any existing objects that are
+more than 30 days old.
+Changes in billing
+If there is any delay between when an object becomes eligible for a lifecycle action
+and when Amazon S3 transfers or expires your object, billing changes are applied as soon as
+the object becomes eligible for the lifecycle action. For example, if an object is

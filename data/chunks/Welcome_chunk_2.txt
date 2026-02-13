@@ -1,0 +1,13 @@
+PCI DSS compliance
+Features of Amazon S3
+Storage classes
+Amazon S3 offers a range of storage classes designed for different use cases. For
+example, you can store mission-critical production data in S3 Standard or S3 Express One Zone for frequent
+access, save costs by storing infrequently accessed data in S3 Standard-IA or
+S3 One Zone-IA, and archive data at the lowest costs in S3 Glacier Instant Retrieval,
+S3 Glacier Flexible Retrieval, and S3 Glacier Deep Archive.
+Amazon S3 Express One Zone is a high-performance, single-zone Amazon S3 storage class that is purpose-built
+to deliver consistent, single-digit millisecond data access for your most
+latency-sensitive applications. S3 Express One Zone is the lowest latency cloud object
+storage class available today, with data access
+speeds

@@ -1,0 +1,22 @@
+PutAccessPointPolicy
+for all of the bucket's
+same-account access points if the specified policy allows public access.
+Setting this option to
+TRUE
+for an access point causes Amazon S3 to reject calls to
+PutAccessPointPolicy
+and
+PutBucketPolicy
+that are made through the access point if
+the specified policy (for either the access point or the underlying bucket)
+allows public access.
+You can use this setting to allow users to manage access point and bucket
+policies without allowing them to publicly share the bucket or the
+objects it contains. Enabling this setting doesn't affect existing
+access point or bucket policies.
+Important
+To use this setting effectively, we recommend that you apply
+it at the
+account
+level. A bucket policy
+can allow users to alter a bucket's block public access

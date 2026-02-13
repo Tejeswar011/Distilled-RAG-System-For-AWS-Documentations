@@ -1,0 +1,24 @@
+Explore Lightsail tutorials, videos, and links to core concept
+documentation.
+Visit the resource
+center
+AWS Batch
+What is AWS Batch?
+Learn how to use AWS Batch to run batch computing workloads in the
+AWS Cloud.
+Explore the guide
+Best practices for AWS Batch
+Consider this guidance on how to run and optimize your workloads when using
+AWS Batch.
+Explore the guide
+AWS Batch workshops center
+Use these workshops, organized in a progressive manner from beginner to
+advanced, to explore and learn AWS Batch.
+Explore the workshops
+Tools and services with container support
+Amazon ECR
+Amazon ECR documentation
+Use the Amazon ECR documentation to explore the best ways to use this fully managed
+container registry.
+Explore the guides
+What is Amazon Elastic Container Registry (Amazon ECR)?

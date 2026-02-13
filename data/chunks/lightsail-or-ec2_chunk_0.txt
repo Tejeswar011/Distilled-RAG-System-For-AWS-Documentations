@@ -1,0 +1,20 @@
+Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2? - Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?
+Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2? - Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?
+Documentation
+AWS Decision Guides
+AWS Decision guide
+Introduction
+Details on the differences
+Use
+Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?
+Understand the differences and pick the one that's right for you
+Purpose
+To explore whether Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2 meets
+your needs for a cloud platform or compute web service.
+Last updated
+February 17, 2025
+Covered services
+Amazon Lightsail
+AWS Elastic Beanstalk
+Amazon EC2
+Introduction

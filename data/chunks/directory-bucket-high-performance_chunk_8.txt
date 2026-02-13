@@ -1,0 +1,11 @@
+failure, S3 Express One Zone automatically shifts requests to new devices within an Availability Zone.
+This redundancy helps ensure uninterrupted access to your data within an Availability
+Zone.
+An Availability Zone is one or more discrete data centers with redundant power,
+networking, and connectivity in an AWS Region. When you create a directory bucket,
+you choose the Availability Zone and AWS Region where your bucket will be located.
+Single Availability Zone
+When you create a directory bucket, you choose the Availability Zone and
+AWS Region.
+Directory buckets use the S3 Express One Zone storage class, which is built to be used by
+performance-sensitive applications. S3 Express One Zone is the first S3 storage class where you can select a single Availability Zone with

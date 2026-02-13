@@ -1,0 +1,20 @@
+. Unlike object-management
+actions, bucket management actions cannot be cross-account. Only the bucket
+owner can perform those actions.
+Bucket
+policies
+â Use IAM-based policy language to configure
+resource-based permissions for your directory buckets. You can also use
+IAM to control access to the
+CreateSession
+API operation,
+which allows you to use the Zonal, or object management, API operations. You
+can grant same-account or cross-account access to Zonal API operations. For
+more information about S3 Express One Zone permissions and policies, see
+Authorizing Regional endpoint API operations with IAM
+.
+IAM Access Analyzer for S3
+â Evaluate and monitor your access policies to make sure that the
+policies provide only the intended access to your S3 resources.
+Logging and
+monitoring

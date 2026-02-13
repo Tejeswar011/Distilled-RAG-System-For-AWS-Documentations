@@ -1,0 +1,9 @@
+SSD storage. Lightsail compute instances also include a generous free data transfer
+allocation, and are billed with fixed, predictable pricing.
+Elastic Beanstalk and Amazon EC2 support hundreds of instance types supporting any workload, with 1 to 100s of vCPUs, and 1000s of
+GiB RAM. Multiple individually sized storage volumes can be attached to Elastic Beanstalk and Amazon EC2 instances with various
+performance tiers. Elastic Beanstalk and Amazon EC2 also both support Spot Instances and Graviton-based instances, allowing cost-efficient scaling and high-performance computing.
+Container deployments
+Container deployments
+Lightsail containers provide a straightforward way to get started deploying public
+container images on AWS compute instances, with 0.25 vCPUs and 512 MiB RAM, to 4 vCPUs

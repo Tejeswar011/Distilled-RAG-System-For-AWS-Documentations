@@ -1,0 +1,15 @@
+latency-sensitive applications. S3 Express One Zone is the lowest latency cloud object
+storage class available today, with data access
+speeds
+up to 10x faster and with request costs
+50
+percent lower than S3 Standard. S3 Express One Zone is the first S3 storage class where you can select a single Availability Zone with
+the option to co-locate your object storage with your compute resources, which provides the highest possible access speed.
+Additionally, to further increase access speed and support hundreds of thousands of
+requests per second, data is stored in a new bucket type: an
+Amazon S3 directory bucket. For more information, see
+S3 Express One Zone
+and
+Working with directory buckets
+.
+You can store data with changing or unknown access patterns in

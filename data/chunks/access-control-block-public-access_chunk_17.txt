@@ -1,0 +1,19 @@
+and authorized users within the bucket owner's account and access point
+owner's account. This setting blocks all cross-account access to the
+access point or bucket (except by AWS service principals), while still
+allowing users within the account to manage the access point or
+bucket.
+Enabling this setting doesn't affect existing access point or bucket
+policies, except that Amazon S3 blocks public and cross-account access
+derived from any public access point or bucket policy, including non-public
+delegation to specific accounts.
+Important
+Calls to
+GetBucketAcl
+and
+GetObjectAcl
+always return the
+effective permissions in place for the specified bucket or object. For
+example, suppose that a bucket has an ACL that grants public access, but the
+bucket also has the
+IgnorePublicAcls

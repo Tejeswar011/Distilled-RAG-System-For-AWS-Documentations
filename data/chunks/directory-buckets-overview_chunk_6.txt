@@ -1,0 +1,6 @@
+bucket level. S3 Object Ownership is set to bucket owner enforced and access control
+lists (ACLs) are disabled. These settings can't be modified.
+By default, users don't have permissions for directory buckets. To grant access permissions for directory buckets, you can use IAM to create users, groups, or roles and attach permissions to those identities. For more information, see
+Authorizing Regional endpoint API operations with IAM
+.
+You can also control access to directory buckets through access points. Access points simplify managing data access at scale for shared datasets in Amazon S3. Access points are unique hostnames you create to enforce distinct permissions and network controls for all requests made through an access point. For more information, see

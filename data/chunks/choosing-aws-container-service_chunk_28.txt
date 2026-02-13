@@ -1,0 +1,22 @@
+Explore the guide
+Amazon ECS Anywhere pricing
+Use this pricing guide to understand Amazon ECS Anywhere pricing, which is based on a
+model in which you are charged based on the amount of time the instances you have
+registered to an Amazon ECS cluster are connected to the ECS control plane, rounded up to
+the nearest second.
+Explore the pricing
+guide
+Amazon ECS Anywhere FAQs
+Get answers to frequently asked questions about Amazon ECS Anywhere.
+Explore the FAQs
+Amazon EKS Anywhere
+Amazon EKS Anywhere documentation
+Use the documentation to understand the use of and best practices for Amazon EKS
+Anywhere.
+Read the
+documentation
+Amazon EKS Anywhere pricing
+Use this pricing guide to understand Amazon EKS Anywhere pricing.
+Explore the pricing
+guide
+Amazon EKS Anywhere FAQs

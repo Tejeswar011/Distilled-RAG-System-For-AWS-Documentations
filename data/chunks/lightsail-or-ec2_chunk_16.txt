@@ -1,0 +1,12 @@
+Alternatively, you can choose to share a load balancer across
+several Elastic Beanstalk environments. With a shared load
+balancer, you save on operational cost by avoiding a dedicated
+load balancer for each environment. Elastic Beanstalk supports
+the Classic Load Balancer, the Application Load Balancer, and
+the Network Application Load Balancer types.
+Amazon EC2 Elastic Load Balancing (ELB) offers a broader and more scalable range of load balancer options using more flexible
+on demand or commit pricing. Amazon EC2 load balancers support both application (HTTP, HTTPS, WebSockets) and
+network (TCP, UDP) traffic.
+Content delivery network
+Content delivery network
+To improve web content load time, Lightsail lets you add a content delivery network

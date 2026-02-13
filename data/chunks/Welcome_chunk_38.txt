@@ -1,0 +1,12 @@
+strongly consistent.
+Updates to a single key are atomic. For example, if you make a PUT request to an
+existing key from one thread and perform a GET request on the same key from a second
+thread concurrently, you will get either the old data or the new data, but never partial
+or corrupt data.
+Amazon S3 achieves high availability by replicating data across multiple servers within
+AWS data centers. If a PUT request is successful, your data is safely stored. Any read
+(GET or LIST request) that is initiated following the receipt of a successful PUT
+response will return the data written by the PUT request. Here are examples of this
+behavior:
+A process writes a new object to Amazon S3 and immediately lists keys within its
+bucket. The new object appears in the list.

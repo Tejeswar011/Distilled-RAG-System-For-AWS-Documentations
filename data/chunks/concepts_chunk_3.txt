@@ -1,0 +1,18 @@
+ranges to which your instances can connect.
+Amazon EC2 supports the processing, storage, and transmission
+of credit card data by a merchant or service provider, and has been
+validated as being compliant with Payment Card Industry (PCI) Data Security Standard (DSS).
+For more information about PCI DSS, including how to request a copy of the AWS PCI Compliance Package,
+see
+PCI DSS Level 1
+.
+Related services
+Services to use with Amazon EC2
+You can use other AWS services with the instances that you deploy using Amazon EC2.
+Amazon EC2 Auto Scaling
+Helps ensure you have the correct number of Amazon EC2 instances available to
+handle the load for your application.
+AWS Backup
+Automate backing up your Amazon EC2 instances and the Amazon EBS volumes attached to
+them.
+Amazon CloudWatch

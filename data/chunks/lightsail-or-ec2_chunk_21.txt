@@ -1,0 +1,24 @@
+Supports auto-scaling, but not as granular as EC2
+Fully customizable auto-scaling
+Customization
+Limited configuration options
+Moderate customization with platform choices
+Full control over OS, networking, and resources
+Pricing
+Fixed pricing, budget-friendly
+Pay for underlying EC2, but with some automation
+Pay-as-you-go, can be expensive if mismanaged
+Performance
+Best for low to medium workloads
+Good for web applications with auto-scaling
+Best for high-performance and compute-intensive workloads
+Management
+Fully managed, minimal maintenance
+Managed deployment, but needs monitoring
+Fully self-managed, requires expertise
+Supported Languages
+Limited, works best with common stacks (LAMP, Node.js,
+etc.)
+Supports multiple runtimes (Node.js, Python, Java, .NET,
+etc.)
+Any OS and runtime supported

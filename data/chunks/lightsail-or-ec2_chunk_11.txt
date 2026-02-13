@@ -1,0 +1,11 @@
+application. Lightsail is a good fit for organizations with simple website and
+application requirements, and those who prefer fixed, predictable monthly pricing.
+Elastic Beanstalk, on the other hand, is a more flexible service
+for deploying and scaling web applications. It supports multiple
+programming languages and web servers, automatically handles
+capacity provisioning, load balancing, auto-scaling, and
+application health monitoring. Elastic Beanstalk integrates
+seamlessly with other AWS services like RDS and CloudWatch,
+allowing for more complex architectures and fine-grained control
+over the underlying resources.
+With Amazon EC2, you have greater flexibility to configure workloads over a broader set of compute

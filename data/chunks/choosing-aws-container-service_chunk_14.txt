@@ -1,0 +1,17 @@
+hundreds of workloads in production at once.
+Ease of deployment
+Different AWS container services meet unique needs in terms of deployment complexity.
+Here's how each service is optimized for its own role:
+AWS App Runner
+offers the most straightforward path for
+you to deploy your application on the internet without managing or customizing the
+underlying infrastructure.
+Amazon ECS
+is a good choice if you need more control
+over the network and security configurations without sacrificing scale or
+features.
+Amazon EKS
+provides flexibility and control over
+application deployment and orchestration provided by Kubernetes technology.
+Choose
+Now that you know the criteria by which you are evaluating your container options, you are

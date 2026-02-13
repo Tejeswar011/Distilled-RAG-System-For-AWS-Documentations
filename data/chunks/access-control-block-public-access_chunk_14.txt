@@ -1,0 +1,22 @@
+Note
+Access points don't have ACLs associated with them. If you
+apply this setting to an access point, it acts as a passthrough to the
+underlying bucket. If an access point has this setting enabled, requests
+made through the access point behave as though the underlying bucket has
+this setting enabled, regardless of whether the bucket actually
+has this setting enabled.
+BlockPublicPolicy
+Setting this option to
+TRUE
+for a bucket causes Amazon S3 to reject calls to
+PutBucketPolicy
+if the specified bucket policy
+allows public access. Setting this option to
+TRUE
+for a
+bucket also causes Amazon S3 to reject calls to
+PutAccessPointPolicy
+for all of the bucket's
+same-account access points if the specified policy allows public access.
+Setting this option to
+TRUE

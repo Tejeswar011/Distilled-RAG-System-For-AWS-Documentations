@@ -1,0 +1,15 @@
+objects. By default, S3 buckets and the objects in them are private. You have access
+only to the S3 resources that you create. To grant granular resource permissions
+that support your specific use case or to audit the permissions of your Amazon S3
+resources, you can use the following features.
+S3 Block Public Access
+â Block public access to S3
+buckets and objects. By default, Block Public Access settings are turned on
+at the bucket level. We recommend that you keep all Block Public Access
+settings enabled unless you know that you need to turn off one or more of
+them for your specific use case. For more information, see
+Configuring block public access
+settings for your S3 buckets
+.
+AWS Identity and Access Management (IAM)
+â IAM is a web service that helps

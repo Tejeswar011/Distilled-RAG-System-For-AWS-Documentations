@@ -1,0 +1,11 @@
+to verify that the changes have been propagated before production workflows depend on
+them. For more information, see
+Changes that I make are not always
+immediately visible
+.
+Service cost information
+AWS Identity and Access Management (IAM), AWS IAM Identity Center and AWS Security Token Service (AWS STS) are features of your AWS account offered at no additional charge. You are
+charged only when you access other AWS services using your IAM users or AWS STS temporary security credentials.
+IAM Access Analyzer external access analysis is offered at no additional charge. However, you will incur charges for unused access analysis and customer policy checks. For a complete list of charges and prices for IAM Access Analyzer, see
+IAM Access Analyzer pricing
+.

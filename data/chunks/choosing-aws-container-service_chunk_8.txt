@@ -1,0 +1,13 @@
+provisioning compute instances, databases, storage, and networking resources.
+Lightsail supports running containerized applications by provisioning instances with
+Docker pre-installed, aimed at easing the deployment and management of your
+containers.
+AWS Batch:
+AWS Batch is a fully managed service
+with which you can run batch computing workloads on AWS. It dynamically provisions the
+optimal compute resources based on the volume and specific resource requirements of the
+batch jobs that you submit. It automatically handles job scheduling, resource
+provisioning, and scaling based on the workload requirements.
+Amazon Elastic Container Registry (Amazon ECR):
+Amazon ECR is a fully managed
+container registry with which you can store, manage, and deploy container images.

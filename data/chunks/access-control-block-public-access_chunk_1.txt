@@ -1,0 +1,9 @@
+AWS Organizations to help you manage public access to Amazon S3 resources. By default, new buckets, access points,
+and objects don't allow public access. However, users can modify bucket policies, access point
+policies, or object permissions to allow public access. S3 Block Public Access settings
+override these policies and permissions so that you can limit public access to these
+resources.
+With S3 Block Public Access, organization administrators, account administrators, and bucket
+owners can easily set up centralized controls to limit public access to their Amazon S3 resources
+that are enforced regardless of how the resources are created.
+You can manage Block Public Access settings at multiple levels: organization level (using

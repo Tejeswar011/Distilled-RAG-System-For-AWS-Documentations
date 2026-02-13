@@ -1,0 +1,17 @@
+High performance workloads - Amazon Simple Storage Service
+High performance workloads - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+S3 Express One Zone
+High performance workloads
+S3 Express One Zone
+You can use Amazon S3 Express One Zone for high-performance workloads. S3 Express One Zone is the first S3
+storage class where you can select a single Availability Zone with the option to co-locate
+your object storage with your compute resources which provides the highest possible access
+speed. Objects in S3 Express One Zone are stored in directory buckets located in Availability Zones.
+For more information on directory buckets, see
+Directory
+buckets
+.
+Amazon S3 Express One Zone is a high-performance, single-zone Amazon S3 storage class that is

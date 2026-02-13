@@ -1,0 +1,16 @@
+are being enforced to control the level of access granted, and any other policies that might be
+in effect. Authorization requests can be made by principals within your AWS account or from
+another AWS account that you trust.
+Once authorized, the principal can take action or perform operations on resources in your
+AWS account. For example, the principal could launch a new Amazon Elastic Compute Cloud instance, modify
+IAM group membership, or delete Amazon Simple Storage Service buckets.
+Tip
+AWS Training and Certification provides a 10-minute video introduction to IAM:
+Introduction to
+AWS Identity and Access Management
+.
+Service availability
+IAM, like many other AWS services, is
+eventually consistent
+.
+IAM achieves high availability by replicating data across multiple servers within

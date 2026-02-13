@@ -1,0 +1,21 @@
+For more information, see
+Controlling ownership of objects and disabling ACLs
+for your bucket
+.
+Regions
+You can choose the geographical AWS Region where Amazon S3 stores the buckets that
+you create. You might choose a Region to optimize latency, minimize costs, or
+address regulatory requirements. Objects stored in an AWS Region never leave the
+Region unless you explicitly transfer or replicate them to another Region.
+For example, objects stored in the Europe (Ireland) Region
+never leave it.
+Note
+You can access Amazon S3 and its features only in the AWS Regions that are
+enabled for your account. For more information about enabling a Region to create
+and manage AWS resources, see
+Managing AWS Regions
+in
+the
+AWS General Reference
+.
+For a list of Amazon S3 Regions and endpoints, see

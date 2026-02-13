@@ -1,0 +1,23 @@
+High-performance computing:
+Hpc6a | Hpc6id | Hpc7a | Hpc7g
+Previous generation instances
+Amazon Web Services offers previous generation instance types for users who have optimized their
+applications around them and have yet to upgrade. We encourage you to use current generation
+instance types to get the best performance, but we continue to support the following previous
+generation instance types.
+For more information about which current
+generation instance type would be a suitable upgrade, see
+Previous Generation Instances
+.
+General purpose
+: A1 | M1 | M2 | M3 | M4 | T1
+Compute optimized
+: C1 | C3 | C4
+Memory optimized
+: R3 | R4
+Storage optimized
+: I2
+Accelerated computing
+: G3 | P3 | P3dn
+Instance performance
+Fixed performance instances

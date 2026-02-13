@@ -1,0 +1,17 @@
+regulatory requirements, reduce latency, and save multiple distinct copies of your
+data for compliance requirements.
+S3 Lifecycle
+â Configure a lifecycle configuration to manage
+your objects and store them cost effectively throughout their lifecycle. You
+can transition objects to other S3 storage classes or expire objects that
+reach the end of their lifetimes.
+S3 Object Lock
+â Prevent Amazon S3 objects from being
+deleted or overwritten for a fixed amount of time or indefinitely. You can
+use Object Lock to help meet regulatory requirements that require
+write-once-read-many
+(WORM)
+storage or to simply add another
+layer of protection against object changes and deletions.
+S3 Replication
+â Replicate objects and their respective metadata and object tags to

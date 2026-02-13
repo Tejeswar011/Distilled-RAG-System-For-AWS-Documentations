@@ -1,0 +1,21 @@
+general containerized application.
+Explore the guide
+Amazon EKS workshop
+Explore practical exercises to learn about Amazon EKS.
+Visit the workshop
+Red Hat OpenShift Service on AWS
+What is Red Hat OpenShift Service on AWS?
+Learn how to use this managed service to build, scale, and deploy containerized
+applications with the Red Hat OpenShift enterprise Kubernetes platform on AWS.
+Explore the guide
+Getting started with Red Hat OpenShift Service on AWS
+Learn how to get started using Red Hat OpenShift Service on AWS (ROSA).
+Explore the guide
+Why would you use ROSA?
+Watch a video to learn when to use Red Hat OpenShift over standard Kubernetes
+and explore ROSA in depth.
+Watch the
+video
+Vertical solutions
+AWS App Runner
+What is AWS App Runner?

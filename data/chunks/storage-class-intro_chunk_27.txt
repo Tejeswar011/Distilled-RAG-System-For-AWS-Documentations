@@ -1,0 +1,19 @@
+.
+Be aware that all of the storage classes except for S3 One Zone-IA (
+ONEZONE_IA
+) and S3 Express One Zone (
+EXPRESS_ONEZONE
+) are designed to be
+resilient to the physical loss of an Availability Zone resulting from disasters. Also,
+consider costs, in addition to the performance requirements of your application scenario. For
+storage class pricing, see
+Amazon S3
+pricing
+.
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+Billing for Amazon S3 error responses
+Setting the storage class of an object
+Did this page help you? - Yes
+Thanks for letting us know we're doing a good job!

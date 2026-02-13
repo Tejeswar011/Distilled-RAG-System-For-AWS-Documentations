@@ -1,0 +1,9 @@
+AWS accounts outside of your organization. For each public or shared bucket, you
+receive findings that report the source and level of public or shared access.
+In IAM Access Analyzer for S3, you can block all public access to a bucket with a
+single click. You can also drill down into bucket-level permission settings to configure
+granular levels of access. For specific and verified use cases that require public or
+shared access, you can acknowledge and record your intent for the bucket to remain
+public or shared by archiving the findings for the bucket.
+In rare cases, IAM Access Analyzer for S3 and Amazon S3 block public access evaluation might differ on whether a
+bucket is public. This behavior occurs because Amazon S3 block public access performs

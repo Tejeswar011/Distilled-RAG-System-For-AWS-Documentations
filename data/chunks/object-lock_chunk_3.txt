@@ -1,0 +1,11 @@
+versions.
+Object Lock works only in buckets that have S3 Versioning enabled. When you lock an object
+version, Amazon S3 stores the lock information in the metadata for that object version. Placing a
+retention period or a legal hold on an object protects only the version that's specified in
+the request. Retention periods and legal holds don't prevent new versions of the object from
+being created, or delete markers to be added on top of the object. For information about
+S3 Versioning, see
+Retaining multiple versions of objects with S3 Versioning
+.
+If you put an object into a bucket that already contains an existing protected object with
+the same object key name, Amazon S3 creates a new version of that object. The existing protected

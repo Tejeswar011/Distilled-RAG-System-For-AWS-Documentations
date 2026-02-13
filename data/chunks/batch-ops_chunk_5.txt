@@ -1,0 +1,15 @@
+performs the operation for each object in the manifest.
+Operation
+The operation is the type of API
+action
+, such as copying objects, that you want the Batch Operations job to run. Each
+job performs a single type of operation across all objects that are specified in the
+manifest.
+Task
+A task is the unit of execution for a job. A task represents a single call to an
+Amazon S3 or AWS Lambda API operation to perform the job's operation on a single object. Over
+the course of a job's lifetime, S3 Batch Operations create one task for each object specified
+in the manifest.
+How an S3 Batch Operations job works
+A job is the basic unit of work for S3 Batch Operations. A job contains all of the information
+necessary to run the specified operation on a list of objects. To create a job, you give

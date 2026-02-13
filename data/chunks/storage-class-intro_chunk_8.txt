@@ -1,0 +1,12 @@
+accessed asynchronously. After activation, the Archive Access tier automatically
+archives objects that have not been accessed for a minimum of 90 consecutive days.
+Deep Archive Access
+â S3 Intelligent-Tiering
+provides you with the option to activate the Deep Archive Access tier for data that can be
+accessed asynchronously. After activation, the Deep Archive Access tier automatically
+archives objects that have not been accessed for a minimum of 180 consecutive days.
+Note
+Only activate the Archive Access tier for 90 days if you want to bypass the
+Archive Instant Access tier. The Archive Access tier delivers slightly lower-cost
+storage with minute-to-hour retrieval times. The Archive Instant Access tier delivers millisecond
+access and high-throughput performance.

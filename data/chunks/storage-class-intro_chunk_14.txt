@@ -1,0 +1,14 @@
+Availability Zone. This storage class offers greater availability and resiliency than the
+S3 One Zone-IA class. To help you optimize costs between S3 Standard and S3 Standard-IA you can use
+Amazon S3 analytics â Storage Class Analysis
+S3 One Zone-IA
+(
+ONEZONE_IA
+) â Amazon S3 stores the object data in
+only one Availability Zone, which makes it less expensive than S3 Standard-IA. However, the
+data is not resilient to the physical loss of the Availability Zone resulting from
+disasters, such as earthquakes and floods. The S3 One Zone-IA storage class is as durable as
+S3 Standard-IA, but it is less available and less resilient. For a comparison of storage
+class durability and availability, see
+Comparing the Amazon S3 storage classes
+at the end of this section. For pricing information, see

@@ -1,0 +1,3780 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Actions - Amazon Elastic Compute Cloud</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="API_Operations" /><meta name="default_state" content="API_Operations" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html" /><meta name="description" content="The following actions are supported:" /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon Elastic Compute Cloud" /><meta name="guide" content="API Reference" /><meta name="abstract" content="You can access the features of Amazon Elastic Compute Cloud (Amazon EC2) programmatically. For more information, see the Amazon EC2 Developer Guide." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/AWSEC2/latest/APIReference/API_Operations.html" hreflang="id-id" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/AWSEC2/latest/APIReference/API_Operations.html" hreflang="id" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/AWSEC2/latest/APIReference/API_Operations.html" hreflang="de-de" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/AWSEC2/latest/APIReference/API_Operations.html" hreflang="de" /><link rel="alternative" href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html" hreflang="en-us" /><link rel="alternative" href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html" hreflang="en" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/AWSEC2/latest/APIReference/API_Operations.html" hreflang="es-es" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/AWSEC2/latest/APIReference/API_Operations.html" hreflang="es" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/APIReference/API_Operations.html" hreflang="fr-fr" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/APIReference/API_Operations.html" hreflang="fr" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/AWSEC2/latest/APIReference/API_Operations.html" hreflang="it-it" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/AWSEC2/latest/APIReference/API_Operations.html" hreflang="it" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/APIReference/API_Operations.html" hreflang="ja-jp" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/APIReference/API_Operations.html" hreflang="ja" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/APIReference/API_Operations.html" hreflang="ko-kr" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/APIReference/API_Operations.html" hreflang="ko" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/APIReference/API_Operations.html" hreflang="pt-br" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/APIReference/API_Operations.html" hreflang="pt" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/APIReference/API_Operations.html" hreflang="zh-cn" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/APIReference/API_Operations.html" hreflang="zh-tw" /><link rel="alternative" href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html" hreflang="x-default" /><meta name="feedback-item" content="EC2 API" /><meta name="this_doc_product" content="Amazon Elastic Compute Cloud" /><meta name="this_doc_guide" content="API Reference" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'ec2'}"></script><meta id="panorama-serviceSubSection" value="API Reference" /><meta id="panorama-serviceConsolePage" value="Actions" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>Actions - Amazon Elastic Compute Cloud</title><meta name="pdf" content="/pdfs/AWSEC2/latest/APIReference/ec2-api.pdf#API_Operations" /><meta name="forums" content="https://repost.aws/tags/TAO-wqN9fYRoyrpdULLa5y7g" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=EC2%20API&amp;topic_url=https://docs.aws.amazon.com/en_us/AWSEC2/latest/APIReference/API_Operations.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/AWSEC2/latest/APIReference/API_Operations.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/AWSEC2/latest/APIReference/API_Operations.html" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon EC2",
+        "item" : "https://docs.aws.amazon.com/ec2/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "API Reference",
+        "item" : "https://docs.aws.amazon.com/AWSEC2/latest/APIReference"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "Actions",
+        "item" : "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/AWSEC2/latest/APIReference/ec2-api.pdf#API_Operations" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/ec2/index.html">Amazon EC2</a><a href="Welcome.html">API Reference</a></div><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="API_Operations">Actions</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>The following actions are supported:</p><div class="itemizedlist">
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   <ul class="itemizedlist"><li class="listitem">
+         <p>
+            <a href="./API_AcceptAddressTransfer.html">AcceptAddressTransfer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptCapacityReservationBillingOwnership.html">AcceptCapacityReservationBillingOwnership</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptReservedInstancesExchangeQuote.html">AcceptReservedInstancesExchangeQuote</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptTransitGatewayMulticastDomainAssociations.html">AcceptTransitGatewayMulticastDomainAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptTransitGatewayPeeringAttachment.html">AcceptTransitGatewayPeeringAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptTransitGatewayVpcAttachment.html">AcceptTransitGatewayVpcAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptVpcEndpointConnections.html">AcceptVpcEndpointConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AcceptVpcPeeringConnection.html">AcceptVpcPeeringConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AdvertiseByoipCidr.html">AdvertiseByoipCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AllocateAddress.html">AllocateAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AllocateHosts.html">AllocateHosts</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AllocateIpamPoolCidr.html">AllocateIpamPoolCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ApplySecurityGroupsToClientVpnTargetNetwork.html">ApplySecurityGroupsToClientVpnTargetNetwork</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssignIpv6Addresses.html">AssignIpv6Addresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssignPrivateIpAddresses.html">AssignPrivateIpAddresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssignPrivateNatGatewayAddress.html">AssignPrivateNatGatewayAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateAddress.html">AssociateAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateCapacityReservationBillingOwner.html">AssociateCapacityReservationBillingOwner</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateClientVpnTargetNetwork.html">AssociateClientVpnTargetNetwork</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateDhcpOptions.html">AssociateDhcpOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateEnclaveCertificateIamRole.html">AssociateEnclaveCertificateIamRole</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateIamInstanceProfile.html">AssociateIamInstanceProfile</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateInstanceEventWindow.html">AssociateInstanceEventWindow</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateIpamByoasn.html">AssociateIpamByoasn</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateIpamResourceDiscovery.html">AssociateIpamResourceDiscovery</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateNatGatewayAddress.html">AssociateNatGatewayAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateRouteServer.html">AssociateRouteServer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateRouteTable.html">AssociateRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateSecurityGroupVpc.html">AssociateSecurityGroupVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateSubnetCidrBlock.html">AssociateSubnetCidrBlock</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateTransitGatewayMulticastDomain.html">AssociateTransitGatewayMulticastDomain</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateTransitGatewayPolicyTable.html">AssociateTransitGatewayPolicyTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateTransitGatewayRouteTable.html">AssociateTransitGatewayRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateTrunkInterface.html">AssociateTrunkInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AssociateVpcCidrBlock.html">AssociateVpcCidrBlock</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AttachClassicLinkVpc.html">AttachClassicLinkVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AttachInternetGateway.html">AttachInternetGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AttachNetworkInterface.html">AttachNetworkInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AttachVerifiedAccessTrustProvider.html">AttachVerifiedAccessTrustProvider</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AttachVolume.html">AttachVolume</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AttachVpnGateway.html">AttachVpnGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AuthorizeClientVpnIngress.html">AuthorizeClientVpnIngress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AuthorizeSecurityGroupEgress.html">AuthorizeSecurityGroupEgress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_AuthorizeSecurityGroupIngress.html">AuthorizeSecurityGroupIngress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_BundleInstance.html">BundleInstance</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelBundleTask.html">CancelBundleTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelCapacityReservation.html">CancelCapacityReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelCapacityReservationFleets.html">CancelCapacityReservationFleets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelConversionTask.html">CancelConversionTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelDeclarativePoliciesReport.html">CancelDeclarativePoliciesReport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelExportTask.html">CancelExportTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelImageLaunchPermission.html">CancelImageLaunchPermission</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelImportTask.html">CancelImportTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelReservedInstancesListing.html">CancelReservedInstancesListing</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelSpotFleetRequests.html">CancelSpotFleetRequests</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CancelSpotInstanceRequests.html">CancelSpotInstanceRequests</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ConfirmProductInstance.html">ConfirmProductInstance</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CopyFpgaImage.html">CopyFpgaImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CopyImage.html">CopyImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CopySnapshot.html">CopySnapshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CopyVolumes.html">CopyVolumes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCapacityManagerDataExport.html">CreateCapacityManagerDataExport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCapacityReservation.html">CreateCapacityReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCapacityReservationBySplitting.html">CreateCapacityReservationBySplitting</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCapacityReservationFleet.html">CreateCapacityReservationFleet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCarrierGateway.html">CreateCarrierGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateClientVpnEndpoint.html">CreateClientVpnEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateClientVpnRoute.html">CreateClientVpnRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCoipCidr.html">CreateCoipCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCoipPool.html">CreateCoipPool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateCustomerGateway.html">CreateCustomerGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateDefaultSubnet.html">CreateDefaultSubnet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateDefaultVpc.html">CreateDefaultVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateDelegateMacVolumeOwnershipTask.html">CreateDelegateMacVolumeOwnershipTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateDhcpOptions.html">CreateDhcpOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateEgressOnlyInternetGateway.html">CreateEgressOnlyInternetGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateFleet.html">CreateFleet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateFlowLogs.html">CreateFlowLogs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateFpgaImage.html">CreateFpgaImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateImage.html">CreateImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateImageUsageReport.html">CreateImageUsageReport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateInstanceConnectEndpoint.html">CreateInstanceConnectEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateInstanceEventWindow.html">CreateInstanceEventWindow</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateInstanceExportTask.html">CreateInstanceExportTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateInternetGateway.html">CreateInternetGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateInterruptibleCapacityReservationAllocation.html">CreateInterruptibleCapacityReservationAllocation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpam.html">CreateIpam</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamExternalResourceVerificationToken.html">CreateIpamExternalResourceVerificationToken</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamPolicy.html">CreateIpamPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamPool.html">CreateIpamPool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamPrefixListResolver.html">CreateIpamPrefixListResolver</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamPrefixListResolverTarget.html">CreateIpamPrefixListResolverTarget</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamResourceDiscovery.html">CreateIpamResourceDiscovery</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateIpamScope.html">CreateIpamScope</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateKeyPair.html">CreateKeyPair</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLaunchTemplate.html">CreateLaunchTemplate</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLaunchTemplateVersion.html">CreateLaunchTemplateVersion</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLocalGatewayRoute.html">CreateLocalGatewayRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLocalGatewayRouteTable.html">CreateLocalGatewayRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation.html">CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLocalGatewayRouteTableVpcAssociation.html">CreateLocalGatewayRouteTableVpcAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLocalGatewayVirtualInterface.html">CreateLocalGatewayVirtualInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateLocalGatewayVirtualInterfaceGroup.html">CreateLocalGatewayVirtualInterfaceGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateMacSystemIntegrityProtectionModificationTask.html">CreateMacSystemIntegrityProtectionModificationTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateManagedPrefixList.html">CreateManagedPrefixList</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNatGateway.html">CreateNatGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNetworkAcl.html">CreateNetworkAcl</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNetworkAclEntry.html">CreateNetworkAclEntry</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNetworkInsightsAccessScope.html">CreateNetworkInsightsAccessScope</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNetworkInsightsPath.html">CreateNetworkInsightsPath</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNetworkInterface.html">CreateNetworkInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateNetworkInterfacePermission.html">CreateNetworkInterfacePermission</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreatePlacementGroup.html">CreatePlacementGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreatePublicIpv4Pool.html">CreatePublicIpv4Pool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateReplaceRootVolumeTask.html">CreateReplaceRootVolumeTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateReservedInstancesListing.html">CreateReservedInstancesListing</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateRestoreImageTask.html">CreateRestoreImageTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateRoute.html">CreateRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateRouteServer.html">CreateRouteServer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateRouteServerEndpoint.html">CreateRouteServerEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateRouteServerPeer.html">CreateRouteServerPeer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateRouteTable.html">CreateRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateSecurityGroup.html">CreateSecurityGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateSnapshot.html">CreateSnapshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateSnapshots.html">CreateSnapshots</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateSpotDatafeedSubscription.html">CreateSpotDatafeedSubscription</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateStoreImageTask.html">CreateStoreImageTask</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateSubnet.html">CreateSubnet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateSubnetCidrReservation.html">CreateSubnetCidrReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTags.html">CreateTags</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTrafficMirrorFilter.html">CreateTrafficMirrorFilter</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTrafficMirrorFilterRule.html">CreateTrafficMirrorFilterRule</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTrafficMirrorSession.html">CreateTrafficMirrorSession</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTrafficMirrorTarget.html">CreateTrafficMirrorTarget</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGateway.html">CreateTransitGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayConnect.html">CreateTransitGatewayConnect</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayConnectPeer.html">CreateTransitGatewayConnectPeer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayMeteringPolicy.html">CreateTransitGatewayMeteringPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayMeteringPolicyEntry.html">CreateTransitGatewayMeteringPolicyEntry</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayMulticastDomain.html">CreateTransitGatewayMulticastDomain</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayPeeringAttachment.html">CreateTransitGatewayPeeringAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayPolicyTable.html">CreateTransitGatewayPolicyTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayPrefixListReference.html">CreateTransitGatewayPrefixListReference</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayRoute.html">CreateTransitGatewayRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayRouteTable.html">CreateTransitGatewayRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayRouteTableAnnouncement.html">CreateTransitGatewayRouteTableAnnouncement</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateTransitGatewayVpcAttachment.html">CreateTransitGatewayVpcAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVerifiedAccessEndpoint.html">CreateVerifiedAccessEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVerifiedAccessGroup.html">CreateVerifiedAccessGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVerifiedAccessInstance.html">CreateVerifiedAccessInstance</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVerifiedAccessTrustProvider.html">CreateVerifiedAccessTrustProvider</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVolume.html">CreateVolume</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpc.html">CreateVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpcBlockPublicAccessExclusion.html">CreateVpcBlockPublicAccessExclusion</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpcEncryptionControl.html">CreateVpcEncryptionControl</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpcEndpoint.html">CreateVpcEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpcEndpointConnectionNotification.html">CreateVpcEndpointConnectionNotification</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpcEndpointServiceConfiguration.html">CreateVpcEndpointServiceConfiguration</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpcPeeringConnection.html">CreateVpcPeeringConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpnConcentrator.html">CreateVpnConcentrator</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpnConnection.html">CreateVpnConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpnConnectionRoute.html">CreateVpnConnectionRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_CreateVpnGateway.html">CreateVpnGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteCapacityManagerDataExport.html">DeleteCapacityManagerDataExport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteCarrierGateway.html">DeleteCarrierGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteClientVpnEndpoint.html">DeleteClientVpnEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteClientVpnRoute.html">DeleteClientVpnRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteCoipCidr.html">DeleteCoipCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteCoipPool.html">DeleteCoipPool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteCustomerGateway.html">DeleteCustomerGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteDhcpOptions.html">DeleteDhcpOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteEgressOnlyInternetGateway.html">DeleteEgressOnlyInternetGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteFleets.html">DeleteFleets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteFlowLogs.html">DeleteFlowLogs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteFpgaImage.html">DeleteFpgaImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteImageUsageReport.html">DeleteImageUsageReport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteInstanceConnectEndpoint.html">DeleteInstanceConnectEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteInstanceEventWindow.html">DeleteInstanceEventWindow</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteInternetGateway.html">DeleteInternetGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpam.html">DeleteIpam</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamExternalResourceVerificationToken.html">DeleteIpamExternalResourceVerificationToken</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamPolicy.html">DeleteIpamPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamPool.html">DeleteIpamPool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamPrefixListResolver.html">DeleteIpamPrefixListResolver</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamPrefixListResolverTarget.html">DeleteIpamPrefixListResolverTarget</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamResourceDiscovery.html">DeleteIpamResourceDiscovery</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteIpamScope.html">DeleteIpamScope</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteKeyPair.html">DeleteKeyPair</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLaunchTemplate.html">DeleteLaunchTemplate</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLaunchTemplateVersions.html">DeleteLaunchTemplateVersions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLocalGatewayRoute.html">DeleteLocalGatewayRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLocalGatewayRouteTable.html">DeleteLocalGatewayRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation.html">DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLocalGatewayRouteTableVpcAssociation.html">DeleteLocalGatewayRouteTableVpcAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLocalGatewayVirtualInterface.html">DeleteLocalGatewayVirtualInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteLocalGatewayVirtualInterfaceGroup.html">DeleteLocalGatewayVirtualInterfaceGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteManagedPrefixList.html">DeleteManagedPrefixList</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNatGateway.html">DeleteNatGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkAcl.html">DeleteNetworkAcl</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkAclEntry.html">DeleteNetworkAclEntry</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkInsightsAccessScope.html">DeleteNetworkInsightsAccessScope</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkInsightsAccessScopeAnalysis.html">DeleteNetworkInsightsAccessScopeAnalysis</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkInsightsAnalysis.html">DeleteNetworkInsightsAnalysis</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkInsightsPath.html">DeleteNetworkInsightsPath</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkInterface.html">DeleteNetworkInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteNetworkInterfacePermission.html">DeleteNetworkInterfacePermission</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeletePlacementGroup.html">DeletePlacementGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeletePublicIpv4Pool.html">DeletePublicIpv4Pool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteQueuedReservedInstances.html">DeleteQueuedReservedInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteRoute.html">DeleteRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteRouteServer.html">DeleteRouteServer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteRouteServerEndpoint.html">DeleteRouteServerEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteRouteServerPeer.html">DeleteRouteServerPeer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteRouteTable.html">DeleteRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteSecurityGroup.html">DeleteSecurityGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteSnapshot.html">DeleteSnapshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteSpotDatafeedSubscription.html">DeleteSpotDatafeedSubscription</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteSubnet.html">DeleteSubnet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteSubnetCidrReservation.html">DeleteSubnetCidrReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTags.html">DeleteTags</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTrafficMirrorFilter.html">DeleteTrafficMirrorFilter</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTrafficMirrorFilterRule.html">DeleteTrafficMirrorFilterRule</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTrafficMirrorSession.html">DeleteTrafficMirrorSession</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTrafficMirrorTarget.html">DeleteTrafficMirrorTarget</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGateway.html">DeleteTransitGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayConnect.html">DeleteTransitGatewayConnect</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayConnectPeer.html">DeleteTransitGatewayConnectPeer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayMeteringPolicy.html">DeleteTransitGatewayMeteringPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayMeteringPolicyEntry.html">DeleteTransitGatewayMeteringPolicyEntry</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayMulticastDomain.html">DeleteTransitGatewayMulticastDomain</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayPeeringAttachment.html">DeleteTransitGatewayPeeringAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayPolicyTable.html">DeleteTransitGatewayPolicyTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayPrefixListReference.html">DeleteTransitGatewayPrefixListReference</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayRoute.html">DeleteTransitGatewayRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayRouteTable.html">DeleteTransitGatewayRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayRouteTableAnnouncement.html">DeleteTransitGatewayRouteTableAnnouncement</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteTransitGatewayVpcAttachment.html">DeleteTransitGatewayVpcAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVerifiedAccessEndpoint.html">DeleteVerifiedAccessEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVerifiedAccessGroup.html">DeleteVerifiedAccessGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVerifiedAccessInstance.html">DeleteVerifiedAccessInstance</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVerifiedAccessTrustProvider.html">DeleteVerifiedAccessTrustProvider</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVolume.html">DeleteVolume</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpc.html">DeleteVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpcBlockPublicAccessExclusion.html">DeleteVpcBlockPublicAccessExclusion</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpcEncryptionControl.html">DeleteVpcEncryptionControl</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpcEndpointConnectionNotifications.html">DeleteVpcEndpointConnectionNotifications</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpcEndpoints.html">DeleteVpcEndpoints</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpcEndpointServiceConfigurations.html">DeleteVpcEndpointServiceConfigurations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpcPeeringConnection.html">DeleteVpcPeeringConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpnConcentrator.html">DeleteVpnConcentrator</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpnConnection.html">DeleteVpnConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpnConnectionRoute.html">DeleteVpnConnectionRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeleteVpnGateway.html">DeleteVpnGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeprovisionByoipCidr.html">DeprovisionByoipCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeprovisionIpamByoasn.html">DeprovisionIpamByoasn</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeprovisionIpamPoolCidr.html">DeprovisionIpamPoolCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeprovisionPublicIpv4PoolCidr.html">DeprovisionPublicIpv4PoolCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeregisterImage.html">DeregisterImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeregisterInstanceEventNotificationAttributes.html">DeregisterInstanceEventNotificationAttributes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeregisterTransitGatewayMulticastGroupMembers.html">DeregisterTransitGatewayMulticastGroupMembers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DeregisterTransitGatewayMulticastGroupSources.html">DeregisterTransitGatewayMulticastGroupSources</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAccountAttributes.html">DescribeAccountAttributes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAddresses.html">DescribeAddresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAddressesAttribute.html">DescribeAddressesAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAddressTransfers.html">DescribeAddressTransfers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAggregateIdFormat.html">DescribeAggregateIdFormat</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAvailabilityZones.html">DescribeAvailabilityZones</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeAwsNetworkPerformanceMetricSubscriptions.html">DescribeAwsNetworkPerformanceMetricSubscriptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeBundleTasks.html">DescribeBundleTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeByoipCidrs.html">DescribeByoipCidrs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityBlockExtensionHistory.html">DescribeCapacityBlockExtensionHistory</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityBlockExtensionOfferings.html">DescribeCapacityBlockExtensionOfferings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityBlockOfferings.html">DescribeCapacityBlockOfferings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityBlocks.html">DescribeCapacityBlocks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityBlockStatus.html">DescribeCapacityBlockStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityManagerDataExports.html">DescribeCapacityManagerDataExports</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityReservationBillingRequests.html">DescribeCapacityReservationBillingRequests</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityReservationFleets.html">DescribeCapacityReservationFleets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityReservations.html">DescribeCapacityReservations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCapacityReservationTopology.html">DescribeCapacityReservationTopology</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCarrierGateways.html">DescribeCarrierGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeClassicLinkInstances.html">DescribeClassicLinkInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeClientVpnAuthorizationRules.html">DescribeClientVpnAuthorizationRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeClientVpnConnections.html">DescribeClientVpnConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeClientVpnEndpoints.html">DescribeClientVpnEndpoints</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeClientVpnRoutes.html">DescribeClientVpnRoutes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeClientVpnTargetNetworks.html">DescribeClientVpnTargetNetworks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCoipPools.html">DescribeCoipPools</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeConversionTasks.html">DescribeConversionTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeCustomerGateways.html">DescribeCustomerGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeDeclarativePoliciesReports.html">DescribeDeclarativePoliciesReports</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeDhcpOptions.html">DescribeDhcpOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeEgressOnlyInternetGateways.html">DescribeEgressOnlyInternetGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeElasticGpus.html">DescribeElasticGpus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeExportImageTasks.html">DescribeExportImageTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeExportTasks.html">DescribeExportTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFastLaunchImages.html">DescribeFastLaunchImages</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFastSnapshotRestores.html">DescribeFastSnapshotRestores</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFleetHistory.html">DescribeFleetHistory</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFleetInstances.html">DescribeFleetInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFleets.html">DescribeFleets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFlowLogs.html">DescribeFlowLogs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFpgaImageAttribute.html">DescribeFpgaImageAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeFpgaImages.html">DescribeFpgaImages</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeHostReservationOfferings.html">DescribeHostReservationOfferings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeHostReservations.html">DescribeHostReservations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeHosts.html">DescribeHosts</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIamInstanceProfileAssociations.html">DescribeIamInstanceProfileAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIdentityIdFormat.html">DescribeIdentityIdFormat</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIdFormat.html">DescribeIdFormat</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImageAttribute.html">DescribeImageAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImageReferences.html">DescribeImageReferences</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImages.html">DescribeImages</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImageUsageReportEntries.html">DescribeImageUsageReportEntries</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImageUsageReports.html">DescribeImageUsageReports</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImportImageTasks.html">DescribeImportImageTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeImportSnapshotTasks.html">DescribeImportSnapshotTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceAttribute.html">DescribeInstanceAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceConnectEndpoints.html">DescribeInstanceConnectEndpoints</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceCreditSpecifications.html">DescribeInstanceCreditSpecifications</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceEventNotificationAttributes.html">DescribeInstanceEventNotificationAttributes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceEventWindows.html">DescribeInstanceEventWindows</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceImageMetadata.html">DescribeInstanceImageMetadata</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstances.html">DescribeInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceSqlHaHistoryStates.html">DescribeInstanceSqlHaHistoryStates</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceSqlHaStates.html">DescribeInstanceSqlHaStates</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceStatus.html">DescribeInstanceStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceTopology.html">DescribeInstanceTopology</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceTypeOfferings.html">DescribeInstanceTypeOfferings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInstanceTypes.html">DescribeInstanceTypes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeInternetGateways.html">DescribeInternetGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamByoasn.html">DescribeIpamByoasn</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamExternalResourceVerificationTokens.html">DescribeIpamExternalResourceVerificationTokens</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamPolicies.html">DescribeIpamPolicies</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamPools.html">DescribeIpamPools</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamPrefixListResolvers.html">DescribeIpamPrefixListResolvers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamPrefixListResolverTargets.html">DescribeIpamPrefixListResolverTargets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamResourceDiscoveries.html">DescribeIpamResourceDiscoveries</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamResourceDiscoveryAssociations.html">DescribeIpamResourceDiscoveryAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpams.html">DescribeIpams</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpamScopes.html">DescribeIpamScopes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeIpv6Pools.html">DescribeIpv6Pools</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeKeyPairs.html">DescribeKeyPairs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLaunchTemplates.html">DescribeLaunchTemplates</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLaunchTemplateVersions.html">DescribeLaunchTemplateVersions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLocalGatewayRouteTables.html">DescribeLocalGatewayRouteTables</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations.html">DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLocalGatewayRouteTableVpcAssociations.html">DescribeLocalGatewayRouteTableVpcAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLocalGateways.html">DescribeLocalGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLocalGatewayVirtualInterfaceGroups.html">DescribeLocalGatewayVirtualInterfaceGroups</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLocalGatewayVirtualInterfaces.html">DescribeLocalGatewayVirtualInterfaces</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeLockedSnapshots.html">DescribeLockedSnapshots</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeMacHosts.html">DescribeMacHosts</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeMacModificationTasks.html">DescribeMacModificationTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeManagedPrefixLists.html">DescribeManagedPrefixLists</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeMovingAddresses.html">DescribeMovingAddresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNatGateways.html">DescribeNatGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkAcls.html">DescribeNetworkAcls</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInsightsAccessScopeAnalyses.html">DescribeNetworkInsightsAccessScopeAnalyses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInsightsAccessScopes.html">DescribeNetworkInsightsAccessScopes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInsightsAnalyses.html">DescribeNetworkInsightsAnalyses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInsightsPaths.html">DescribeNetworkInsightsPaths</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInterfaceAttribute.html">DescribeNetworkInterfaceAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInterfacePermissions.html">DescribeNetworkInterfacePermissions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeNetworkInterfaces.html">DescribeNetworkInterfaces</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeOutpostLags.html">DescribeOutpostLags</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribePlacementGroups.html">DescribePlacementGroups</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribePrefixLists.html">DescribePrefixLists</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribePrincipalIdFormat.html">DescribePrincipalIdFormat</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribePublicIpv4Pools.html">DescribePublicIpv4Pools</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeRegions.html">DescribeRegions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeReplaceRootVolumeTasks.html">DescribeReplaceRootVolumeTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeReservedInstances.html">DescribeReservedInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeReservedInstancesListings.html">DescribeReservedInstancesListings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeReservedInstancesModifications.html">DescribeReservedInstancesModifications</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeReservedInstancesOfferings.html">DescribeReservedInstancesOfferings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeRouteServerEndpoints.html">DescribeRouteServerEndpoints</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeRouteServerPeers.html">DescribeRouteServerPeers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeRouteServers.html">DescribeRouteServers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeRouteTables.html">DescribeRouteTables</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeScheduledInstanceAvailability.html">DescribeScheduledInstanceAvailability</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeScheduledInstances.html">DescribeScheduledInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSecurityGroupReferences.html">DescribeSecurityGroupReferences</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSecurityGroupRules.html">DescribeSecurityGroupRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSecurityGroups.html">DescribeSecurityGroups</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSecurityGroupVpcAssociations.html">DescribeSecurityGroupVpcAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeServiceLinkVirtualInterfaces.html">DescribeServiceLinkVirtualInterfaces</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSnapshotAttribute.html">DescribeSnapshotAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSnapshots.html">DescribeSnapshots</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSnapshotTierStatus.html">DescribeSnapshotTierStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSpotDatafeedSubscription.html">DescribeSpotDatafeedSubscription</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSpotFleetInstances.html">DescribeSpotFleetInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSpotFleetRequestHistory.html">DescribeSpotFleetRequestHistory</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSpotFleetRequests.html">DescribeSpotFleetRequests</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSpotInstanceRequests.html">DescribeSpotInstanceRequests</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSpotPriceHistory.html">DescribeSpotPriceHistory</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeStaleSecurityGroups.html">DescribeStaleSecurityGroups</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeStoreImageTasks.html">DescribeStoreImageTasks</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeSubnets.html">DescribeSubnets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTags.html">DescribeTags</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTrafficMirrorFilterRules.html">DescribeTrafficMirrorFilterRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTrafficMirrorFilters.html">DescribeTrafficMirrorFilters</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTrafficMirrorSessions.html">DescribeTrafficMirrorSessions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTrafficMirrorTargets.html">DescribeTrafficMirrorTargets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayAttachments.html">DescribeTransitGatewayAttachments</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayConnectPeers.html">DescribeTransitGatewayConnectPeers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayConnects.html">DescribeTransitGatewayConnects</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayMeteringPolicies.html">DescribeTransitGatewayMeteringPolicies</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayMulticastDomains.html">DescribeTransitGatewayMulticastDomains</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayPeeringAttachments.html">DescribeTransitGatewayPeeringAttachments</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayPolicyTables.html">DescribeTransitGatewayPolicyTables</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayRouteTableAnnouncements.html">DescribeTransitGatewayRouteTableAnnouncements</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayRouteTables.html">DescribeTransitGatewayRouteTables</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGateways.html">DescribeTransitGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTransitGatewayVpcAttachments.html">DescribeTransitGatewayVpcAttachments</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeTrunkInterfaceAssociations.html">DescribeTrunkInterfaceAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVerifiedAccessEndpoints.html">DescribeVerifiedAccessEndpoints</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVerifiedAccessGroups.html">DescribeVerifiedAccessGroups</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVerifiedAccessInstanceLoggingConfigurations.html">DescribeVerifiedAccessInstanceLoggingConfigurations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVerifiedAccessInstances.html">DescribeVerifiedAccessInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVerifiedAccessTrustProviders.html">DescribeVerifiedAccessTrustProviders</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVolumeAttribute.html">DescribeVolumeAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVolumes.html">DescribeVolumes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVolumesModifications.html">DescribeVolumesModifications</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVolumeStatus.html">DescribeVolumeStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcAttribute.html">DescribeVpcAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcBlockPublicAccessExclusions.html">DescribeVpcBlockPublicAccessExclusions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcBlockPublicAccessOptions.html">DescribeVpcBlockPublicAccessOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcClassicLink.html">DescribeVpcClassicLink</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcClassicLinkDnsSupport.html">DescribeVpcClassicLinkDnsSupport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEncryptionControls.html">DescribeVpcEncryptionControls</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpointAssociations.html">DescribeVpcEndpointAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpointConnectionNotifications.html">DescribeVpcEndpointConnectionNotifications</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpointConnections.html">DescribeVpcEndpointConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpoints.html">DescribeVpcEndpoints</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpointServiceConfigurations.html">DescribeVpcEndpointServiceConfigurations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpointServicePermissions.html">DescribeVpcEndpointServicePermissions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcEndpointServices.html">DescribeVpcEndpointServices</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcPeeringConnections.html">DescribeVpcPeeringConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpcs.html">DescribeVpcs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpnConcentrators.html">DescribeVpnConcentrators</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpnConnections.html">DescribeVpnConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DescribeVpnGateways.html">DescribeVpnGateways</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DetachClassicLinkVpc.html">DetachClassicLinkVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DetachInternetGateway.html">DetachInternetGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DetachNetworkInterface.html">DetachNetworkInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DetachVerifiedAccessTrustProvider.html">DetachVerifiedAccessTrustProvider</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DetachVolume.html">DetachVolume</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DetachVpnGateway.html">DetachVpnGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableAddressTransfer.html">DisableAddressTransfer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableAllowedImagesSettings.html">DisableAllowedImagesSettings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableAwsNetworkPerformanceMetricSubscription.html">DisableAwsNetworkPerformanceMetricSubscription</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableCapacityManager.html">DisableCapacityManager</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableEbsEncryptionByDefault.html">DisableEbsEncryptionByDefault</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableFastLaunch.html">DisableFastLaunch</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableFastSnapshotRestores.html">DisableFastSnapshotRestores</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableImage.html">DisableImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableImageBlockPublicAccess.html">DisableImageBlockPublicAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableImageDeprecation.html">DisableImageDeprecation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableImageDeregistrationProtection.html">DisableImageDeregistrationProtection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableInstanceSqlHaStandbyDetections.html">DisableInstanceSqlHaStandbyDetections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableIpamOrganizationAdminAccount.html">DisableIpamOrganizationAdminAccount</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableIpamPolicy.html">DisableIpamPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableRouteServerPropagation.html">DisableRouteServerPropagation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableSerialConsoleAccess.html">DisableSerialConsoleAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableSnapshotBlockPublicAccess.html">DisableSnapshotBlockPublicAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableTransitGatewayRouteTablePropagation.html">DisableTransitGatewayRouteTablePropagation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableVgwRoutePropagation.html">DisableVgwRoutePropagation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableVpcClassicLink.html">DisableVpcClassicLink</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisableVpcClassicLinkDnsSupport.html">DisableVpcClassicLinkDnsSupport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateAddress.html">DisassociateAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateCapacityReservationBillingOwner.html">DisassociateCapacityReservationBillingOwner</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateClientVpnTargetNetwork.html">DisassociateClientVpnTargetNetwork</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateEnclaveCertificateIamRole.html">DisassociateEnclaveCertificateIamRole</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateIamInstanceProfile.html">DisassociateIamInstanceProfile</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateInstanceEventWindow.html">DisassociateInstanceEventWindow</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateIpamByoasn.html">DisassociateIpamByoasn</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateIpamResourceDiscovery.html">DisassociateIpamResourceDiscovery</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateNatGatewayAddress.html">DisassociateNatGatewayAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateRouteServer.html">DisassociateRouteServer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateRouteTable.html">DisassociateRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateSecurityGroupVpc.html">DisassociateSecurityGroupVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateSubnetCidrBlock.html">DisassociateSubnetCidrBlock</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateTransitGatewayMulticastDomain.html">DisassociateTransitGatewayMulticastDomain</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateTransitGatewayPolicyTable.html">DisassociateTransitGatewayPolicyTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateTransitGatewayRouteTable.html">DisassociateTransitGatewayRouteTable</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateTrunkInterface.html">DisassociateTrunkInterface</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_DisassociateVpcCidrBlock.html">DisassociateVpcCidrBlock</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableAddressTransfer.html">EnableAddressTransfer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableAllowedImagesSettings.html">EnableAllowedImagesSettings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableAwsNetworkPerformanceMetricSubscription.html">EnableAwsNetworkPerformanceMetricSubscription</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableCapacityManager.html">EnableCapacityManager</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableEbsEncryptionByDefault.html">EnableEbsEncryptionByDefault</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableFastLaunch.html">EnableFastLaunch</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableFastSnapshotRestores.html">EnableFastSnapshotRestores</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableImage.html">EnableImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableImageBlockPublicAccess.html">EnableImageBlockPublicAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableImageDeprecation.html">EnableImageDeprecation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableImageDeregistrationProtection.html">EnableImageDeregistrationProtection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableInstanceSqlHaStandbyDetections.html">EnableInstanceSqlHaStandbyDetections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableIpamOrganizationAdminAccount.html">EnableIpamOrganizationAdminAccount</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableIpamPolicy.html">EnableIpamPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableReachabilityAnalyzerOrganizationSharing.html">EnableReachabilityAnalyzerOrganizationSharing</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableRouteServerPropagation.html">EnableRouteServerPropagation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableSerialConsoleAccess.html">EnableSerialConsoleAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableSnapshotBlockPublicAccess.html">EnableSnapshotBlockPublicAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableTransitGatewayRouteTablePropagation.html">EnableTransitGatewayRouteTablePropagation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableVgwRoutePropagation.html">EnableVgwRoutePropagation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableVolumeIO.html">EnableVolumeIO</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableVpcClassicLink.html">EnableVpcClassicLink</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_EnableVpcClassicLinkDnsSupport.html">EnableVpcClassicLinkDnsSupport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ExportClientVpnClientCertificateRevocationList.html">ExportClientVpnClientCertificateRevocationList</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ExportClientVpnClientConfiguration.html">ExportClientVpnClientConfiguration</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ExportImage.html">ExportImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ExportTransitGatewayRoutes.html">ExportTransitGatewayRoutes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ExportVerifiedAccessInstanceClientConfiguration.html">ExportVerifiedAccessInstanceClientConfiguration</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetActiveVpnTunnelStatus.html">GetActiveVpnTunnelStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetAllowedImagesSettings.html">GetAllowedImagesSettings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetAssociatedEnclaveCertificateIamRoles.html">GetAssociatedEnclaveCertificateIamRoles</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetAssociatedIpv6PoolCidrs.html">GetAssociatedIpv6PoolCidrs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetAwsNetworkPerformanceData.html">GetAwsNetworkPerformanceData</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetCapacityManagerAttributes.html">GetCapacityManagerAttributes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetCapacityManagerMetricData.html">GetCapacityManagerMetricData</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetCapacityManagerMetricDimensions.html">GetCapacityManagerMetricDimensions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetCapacityReservationUsage.html">GetCapacityReservationUsage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetCoipPoolUsage.html">GetCoipPoolUsage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetConsoleOutput.html">GetConsoleOutput</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetConsoleScreenshot.html">GetConsoleScreenshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetDeclarativePoliciesReportSummary.html">GetDeclarativePoliciesReportSummary</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetDefaultCreditSpecification.html">GetDefaultCreditSpecification</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetEbsDefaultKmsKeyId.html">GetEbsDefaultKmsKeyId</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetEbsEncryptionByDefault.html">GetEbsEncryptionByDefault</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetEnabledIpamPolicy.html">GetEnabledIpamPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetFlowLogsIntegrationTemplate.html">GetFlowLogsIntegrationTemplate</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetGroupsForCapacityReservation.html">GetGroupsForCapacityReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetHostReservationPurchasePreview.html">GetHostReservationPurchasePreview</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetImageAncestry.html">GetImageAncestry</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetImageBlockPublicAccessState.html">GetImageBlockPublicAccessState</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetInstanceMetadataDefaults.html">GetInstanceMetadataDefaults</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetInstanceTpmEkPub.html">GetInstanceTpmEkPub</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetInstanceTypesFromInstanceRequirements.html">GetInstanceTypesFromInstanceRequirements</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetInstanceUefiData.html">GetInstanceUefiData</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamAddressHistory.html">GetIpamAddressHistory</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamDiscoveredAccounts.html">GetIpamDiscoveredAccounts</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamDiscoveredPublicAddresses.html">GetIpamDiscoveredPublicAddresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamDiscoveredResourceCidrs.html">GetIpamDiscoveredResourceCidrs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPolicyAllocationRules.html">GetIpamPolicyAllocationRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPolicyOrganizationTargets.html">GetIpamPolicyOrganizationTargets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPoolAllocations.html">GetIpamPoolAllocations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPoolCidrs.html">GetIpamPoolCidrs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPrefixListResolverRules.html">GetIpamPrefixListResolverRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPrefixListResolverVersionEntries.html">GetIpamPrefixListResolverVersionEntries</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamPrefixListResolverVersions.html">GetIpamPrefixListResolverVersions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetIpamResourceCidrs.html">GetIpamResourceCidrs</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetLaunchTemplateData.html">GetLaunchTemplateData</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetManagedPrefixListAssociations.html">GetManagedPrefixListAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetManagedPrefixListEntries.html">GetManagedPrefixListEntries</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetNetworkInsightsAccessScopeAnalysisFindings.html">GetNetworkInsightsAccessScopeAnalysisFindings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetNetworkInsightsAccessScopeContent.html">GetNetworkInsightsAccessScopeContent</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetPasswordData.html">GetPasswordData</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetReservedInstancesExchangeQuote.html">GetReservedInstancesExchangeQuote</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetRouteServerAssociations.html">GetRouteServerAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetRouteServerPropagations.html">GetRouteServerPropagations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetRouteServerRoutingDatabase.html">GetRouteServerRoutingDatabase</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetSecurityGroupsForVpc.html">GetSecurityGroupsForVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetSerialConsoleAccessStatus.html">GetSerialConsoleAccessStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetSnapshotBlockPublicAccessState.html">GetSnapshotBlockPublicAccessState</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetSpotPlacementScores.html">GetSpotPlacementScores</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetSubnetCidrReservations.html">GetSubnetCidrReservations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayAttachmentPropagations.html">GetTransitGatewayAttachmentPropagations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayMeteringPolicyEntries.html">GetTransitGatewayMeteringPolicyEntries</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayMulticastDomainAssociations.html">GetTransitGatewayMulticastDomainAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayPolicyTableAssociations.html">GetTransitGatewayPolicyTableAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayPolicyTableEntries.html">GetTransitGatewayPolicyTableEntries</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayPrefixListReferences.html">GetTransitGatewayPrefixListReferences</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayRouteTableAssociations.html">GetTransitGatewayRouteTableAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetTransitGatewayRouteTablePropagations.html">GetTransitGatewayRouteTablePropagations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVerifiedAccessEndpointPolicy.html">GetVerifiedAccessEndpointPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVerifiedAccessEndpointTargets.html">GetVerifiedAccessEndpointTargets</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVerifiedAccessGroupPolicy.html">GetVerifiedAccessGroupPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVpcResourcesBlockingEncryptionEnforcement.html">GetVpcResourcesBlockingEncryptionEnforcement</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVpnConnectionDeviceSampleConfiguration.html">GetVpnConnectionDeviceSampleConfiguration</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVpnConnectionDeviceTypes.html">GetVpnConnectionDeviceTypes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_GetVpnTunnelReplacementStatus.html">GetVpnTunnelReplacementStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ImportClientVpnClientCertificateRevocationList.html">ImportClientVpnClientCertificateRevocationList</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ImportImage.html">ImportImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ImportInstance.html">ImportInstance</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ImportKeyPair.html">ImportKeyPair</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ImportSnapshot.html">ImportSnapshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ImportVolume.html">ImportVolume</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ListImagesInRecycleBin.html">ListImagesInRecycleBin</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ListSnapshotsInRecycleBin.html">ListSnapshotsInRecycleBin</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ListVolumesInRecycleBin.html">ListVolumesInRecycleBin</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_LockSnapshot.html">LockSnapshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyAddressAttribute.html">ModifyAddressAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyAvailabilityZoneGroup.html">ModifyAvailabilityZoneGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyCapacityReservation.html">ModifyCapacityReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyCapacityReservationFleet.html">ModifyCapacityReservationFleet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyClientVpnEndpoint.html">ModifyClientVpnEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyDefaultCreditSpecification.html">ModifyDefaultCreditSpecification</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyEbsDefaultKmsKeyId.html">ModifyEbsDefaultKmsKeyId</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyFleet.html">ModifyFleet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyFpgaImageAttribute.html">ModifyFpgaImageAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyHosts.html">ModifyHosts</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIdentityIdFormat.html">ModifyIdentityIdFormat</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIdFormat.html">ModifyIdFormat</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyImageAttribute.html">ModifyImageAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceAttribute.html">ModifyInstanceAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceCapacityReservationAttributes.html">ModifyInstanceCapacityReservationAttributes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceConnectEndpoint.html">ModifyInstanceConnectEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceCpuOptions.html">ModifyInstanceCpuOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceCreditSpecification.html">ModifyInstanceCreditSpecification</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceEventStartTime.html">ModifyInstanceEventStartTime</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceEventWindow.html">ModifyInstanceEventWindow</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceMaintenanceOptions.html">ModifyInstanceMaintenanceOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceMetadataDefaults.html">ModifyInstanceMetadataDefaults</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceMetadataOptions.html">ModifyInstanceMetadataOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstanceNetworkPerformanceOptions.html">ModifyInstanceNetworkPerformanceOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyInstancePlacement.html">ModifyInstancePlacement</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpam.html">ModifyIpam</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamPolicyAllocationRules.html">ModifyIpamPolicyAllocationRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamPool.html">ModifyIpamPool</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamPrefixListResolver.html">ModifyIpamPrefixListResolver</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamPrefixListResolverTarget.html">ModifyIpamPrefixListResolverTarget</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamResourceCidr.html">ModifyIpamResourceCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamResourceDiscovery.html">ModifyIpamResourceDiscovery</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyIpamScope.html">ModifyIpamScope</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyLaunchTemplate.html">ModifyLaunchTemplate</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyLocalGatewayRoute.html">ModifyLocalGatewayRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyManagedPrefixList.html">ModifyManagedPrefixList</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyNetworkInterfaceAttribute.html">ModifyNetworkInterfaceAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyPrivateDnsNameOptions.html">ModifyPrivateDnsNameOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyPublicIpDnsNameOptions.html">ModifyPublicIpDnsNameOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyReservedInstances.html">ModifyReservedInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyRouteServer.html">ModifyRouteServer</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifySecurityGroupRules.html">ModifySecurityGroupRules</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifySnapshotAttribute.html">ModifySnapshotAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifySnapshotTier.html">ModifySnapshotTier</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifySpotFleetRequest.html">ModifySpotFleetRequest</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifySubnetAttribute.html">ModifySubnetAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTrafficMirrorFilterNetworkServices.html">ModifyTrafficMirrorFilterNetworkServices</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTrafficMirrorFilterRule.html">ModifyTrafficMirrorFilterRule</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTrafficMirrorSession.html">ModifyTrafficMirrorSession</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTransitGateway.html">ModifyTransitGateway</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTransitGatewayMeteringPolicy.html">ModifyTransitGatewayMeteringPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTransitGatewayPrefixListReference.html">ModifyTransitGatewayPrefixListReference</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyTransitGatewayVpcAttachment.html">ModifyTransitGatewayVpcAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessEndpoint.html">ModifyVerifiedAccessEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessEndpointPolicy.html">ModifyVerifiedAccessEndpointPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessGroup.html">ModifyVerifiedAccessGroup</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessGroupPolicy.html">ModifyVerifiedAccessGroupPolicy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessInstance.html">ModifyVerifiedAccessInstance</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessInstanceLoggingConfiguration.html">ModifyVerifiedAccessInstanceLoggingConfiguration</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVerifiedAccessTrustProvider.html">ModifyVerifiedAccessTrustProvider</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVolume.html">ModifyVolume</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVolumeAttribute.html">ModifyVolumeAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcAttribute.html">ModifyVpcAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcBlockPublicAccessExclusion.html">ModifyVpcBlockPublicAccessExclusion</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcBlockPublicAccessOptions.html">ModifyVpcBlockPublicAccessOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcEncryptionControl.html">ModifyVpcEncryptionControl</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcEndpoint.html">ModifyVpcEndpoint</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcEndpointConnectionNotification.html">ModifyVpcEndpointConnectionNotification</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcEndpointServiceConfiguration.html">ModifyVpcEndpointServiceConfiguration</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcEndpointServicePayerResponsibility.html">ModifyVpcEndpointServicePayerResponsibility</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcEndpointServicePermissions.html">ModifyVpcEndpointServicePermissions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcPeeringConnectionOptions.html">ModifyVpcPeeringConnectionOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpcTenancy.html">ModifyVpcTenancy</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpnConnection.html">ModifyVpnConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpnConnectionOptions.html">ModifyVpnConnectionOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpnTunnelCertificate.html">ModifyVpnTunnelCertificate</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ModifyVpnTunnelOptions.html">ModifyVpnTunnelOptions</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_MonitorInstances.html">MonitorInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_MoveAddressToVpc.html">MoveAddressToVpc</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_MoveByoipCidrToIpam.html">MoveByoipCidrToIpam</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_MoveCapacityReservationInstances.html">MoveCapacityReservationInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ProvisionByoipCidr.html">ProvisionByoipCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ProvisionIpamByoasn.html">ProvisionIpamByoasn</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ProvisionIpamPoolCidr.html">ProvisionIpamPoolCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ProvisionPublicIpv4PoolCidr.html">ProvisionPublicIpv4PoolCidr</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_PurchaseCapacityBlock.html">PurchaseCapacityBlock</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_PurchaseCapacityBlockExtension.html">PurchaseCapacityBlockExtension</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_PurchaseHostReservation.html">PurchaseHostReservation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_PurchaseReservedInstancesOffering.html">PurchaseReservedInstancesOffering</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_PurchaseScheduledInstances.html">PurchaseScheduledInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RebootInstances.html">RebootInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RegisterImage.html">RegisterImage</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RegisterInstanceEventNotificationAttributes.html">RegisterInstanceEventNotificationAttributes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RegisterTransitGatewayMulticastGroupMembers.html">RegisterTransitGatewayMulticastGroupMembers</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RegisterTransitGatewayMulticastGroupSources.html">RegisterTransitGatewayMulticastGroupSources</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RejectCapacityReservationBillingOwnership.html">RejectCapacityReservationBillingOwnership</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RejectTransitGatewayMulticastDomainAssociations.html">RejectTransitGatewayMulticastDomainAssociations</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RejectTransitGatewayPeeringAttachment.html">RejectTransitGatewayPeeringAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RejectTransitGatewayVpcAttachment.html">RejectTransitGatewayVpcAttachment</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RejectVpcEndpointConnections.html">RejectVpcEndpointConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RejectVpcPeeringConnection.html">RejectVpcPeeringConnection</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReleaseAddress.html">ReleaseAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReleaseHosts.html">ReleaseHosts</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReleaseIpamPoolAllocation.html">ReleaseIpamPoolAllocation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceIamInstanceProfileAssociation.html">ReplaceIamInstanceProfileAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceImageCriteriaInAllowedImagesSettings.html">ReplaceImageCriteriaInAllowedImagesSettings</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceNetworkAclAssociation.html">ReplaceNetworkAclAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceNetworkAclEntry.html">ReplaceNetworkAclEntry</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceRoute.html">ReplaceRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceRouteTableAssociation.html">ReplaceRouteTableAssociation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceTransitGatewayRoute.html">ReplaceTransitGatewayRoute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReplaceVpnTunnel.html">ReplaceVpnTunnel</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ReportInstanceStatus.html">ReportInstanceStatus</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RequestSpotFleet.html">RequestSpotFleet</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RequestSpotInstances.html">RequestSpotInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetAddressAttribute.html">ResetAddressAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetEbsDefaultKmsKeyId.html">ResetEbsDefaultKmsKeyId</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetFpgaImageAttribute.html">ResetFpgaImageAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetImageAttribute.html">ResetImageAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetInstanceAttribute.html">ResetInstanceAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetNetworkInterfaceAttribute.html">ResetNetworkInterfaceAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_ResetSnapshotAttribute.html">ResetSnapshotAttribute</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RestoreAddressToClassic.html">RestoreAddressToClassic</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RestoreImageFromRecycleBin.html">RestoreImageFromRecycleBin</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RestoreManagedPrefixListVersion.html">RestoreManagedPrefixListVersion</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RestoreSnapshotFromRecycleBin.html">RestoreSnapshotFromRecycleBin</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RestoreSnapshotTier.html">RestoreSnapshotTier</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RestoreVolumeFromRecycleBin.html">RestoreVolumeFromRecycleBin</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RevokeClientVpnIngress.html">RevokeClientVpnIngress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RevokeSecurityGroupEgress.html">RevokeSecurityGroupEgress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RevokeSecurityGroupIngress.html">RevokeSecurityGroupIngress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RunInstances.html">RunInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_RunScheduledInstances.html">RunScheduledInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_SearchLocalGatewayRoutes.html">SearchLocalGatewayRoutes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_SearchTransitGatewayMulticastGroups.html">SearchTransitGatewayMulticastGroups</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_SearchTransitGatewayRoutes.html">SearchTransitGatewayRoutes</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_SendDiagnosticInterrupt.html">SendDiagnosticInterrupt</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_StartDeclarativePoliciesReport.html">StartDeclarativePoliciesReport</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_StartInstances.html">StartInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_StartNetworkInsightsAccessScopeAnalysis.html">StartNetworkInsightsAccessScopeAnalysis</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_StartNetworkInsightsAnalysis.html">StartNetworkInsightsAnalysis</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_StartVpcEndpointServicePrivateDnsVerification.html">StartVpcEndpointServicePrivateDnsVerification</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_StopInstances.html">StopInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_TerminateClientVpnConnections.html">TerminateClientVpnConnections</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_TerminateInstances.html">TerminateInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UnassignIpv6Addresses.html">UnassignIpv6Addresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UnassignPrivateIpAddresses.html">UnassignPrivateIpAddresses</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UnassignPrivateNatGatewayAddress.html">UnassignPrivateNatGatewayAddress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UnlockSnapshot.html">UnlockSnapshot</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UnmonitorInstances.html">UnmonitorInstances</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UpdateCapacityManagerOrganizationsAccess.html">UpdateCapacityManagerOrganizationsAccess</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UpdateInterruptibleCapacityReservationAllocation.html">UpdateInterruptibleCapacityReservationAllocation</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UpdateSecurityGroupRuleDescriptionsEgress.html">UpdateSecurityGroupRuleDescriptionsEgress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_UpdateSecurityGroupRuleDescriptionsIngress.html">UpdateSecurityGroupRuleDescriptionsIngress</a>
+         </p>
+      </li><li class="listitem">
+         <p>
+            <a href="./API_WithdrawByoipCidr.html">WithdrawByoipCidr</a>
+         </p>
+      </li></ul></div><awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./operation-list-wavelength.html">AWS Wavelength actions</div><div id="next" class="next-link" accesskey="n" href="./API_AcceptAddressTransfer.html">AcceptAddressTransfer</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=EC2 API&amp;topic_url=https://docs.aws.amazon.com/en_us/AWSEC2/latest/APIReference/API_Operations.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=EC2 API&amp;topic_url=https://docs.aws.amazon.com/en_us/AWSEC2/latest/APIReference/API_Operations.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

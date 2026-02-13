@@ -1,0 +1,17 @@
+PUT Bucket
+calls fail if
+the request includes a public ACL.
+When this setting is set to
+TRUE
+, the specified operations fail (whether
+made through the REST API, AWS CLI, or AWS SDKs). However, existing
+policies and ACLs for buckets and objects aren't modified. This
+setting enables you to protect against public access while allowing
+you to audit, refine, or otherwise alter the existing policies and
+ACLs for your buckets and objects.
+Note
+Access points don't have ACLs associated with them. If you
+apply this setting to an access point, it acts as a passthrough to the
+underlying bucket. If an access point has this setting enabled, requests
+made through the access point behave as though the underlying bucket has
+this setting enabled, regardless of whether the bucket actually

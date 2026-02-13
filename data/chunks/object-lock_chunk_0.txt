@@ -1,0 +1,16 @@
+Locking objects with Object Lock - Amazon Simple Storage Service
+Locking objects with Object Lock - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+How S3 Object Lock works
+Locking objects with Object Lock
+S3 Object Lock can help prevent Amazon S3 objects from being deleted or overwritten for a
+fixed amount of time or indefinitely. Object Lock uses a
+write-once-read-many
+(WORM) model to store objects. You can use
+Object Lock to help meet regulatory requirements that require WORM storage, or to add
+another layer of protection against object changes or deletion.
+Note
+S3 Object Lock has been assessed by Cohasset Associates for use in
+environments that are subject to SEC 17a-4, CFTC, and FINRA regulations. For more

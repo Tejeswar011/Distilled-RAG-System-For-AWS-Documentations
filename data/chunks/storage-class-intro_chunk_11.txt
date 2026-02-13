@@ -1,0 +1,24 @@
+S3 Intelligent-Tiering access
+tiers
+.
+Storage classes for infrequently accessed
+objects
+The
+S3 Standard-IA
+and
+S3 One
+Zone-IA
+storage classes are designed for long-lived and infrequently accessed
+data. (IA stands for
+infrequent access
+.) S3 Standard-IA and S3 One Zone-IA
+objects are available for millisecond access (similar to the S3 Standard storage class). Amazon S3
+charges a retrieval fee for these objects, so they are most suitable for infrequently accessed
+data. For pricing information, see
+Amazon S3
+pricing
+.
+For example, you might choose the S3 Standard-IA and S3 One Zone-IA storage classes to do the
+following:
+For storing backups.
+For older data that is accessed infrequently, but that still requires millisecond

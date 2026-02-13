@@ -1,0 +1,16 @@
+These instances
+provide the underlying compute capacity for running containers. You can choose from a
+wide range of instance types and sizes to match your application requirements. EC2
+instances can be used as the compute layer for both Amazon ECS and Amazon EKS.
+AWS Fargate:
+Fargate is a serverless compute
+engine for containers with which you can run containers without managing the underlying
+infrastructure. It removes the need to provision and manage EC2 instances. You can use
+Fargate with both Amazon ECS and Amazon EKS.
+AWS Outposts:
+AWS Outposts is a fully managed service that
+extends AWS infrastructure and services to your on-premises or hybrid environment.
+With AWS Outposts, you can run containers on AWS infrastructure deployed in your own data
+center.
+The
+orchestration layer

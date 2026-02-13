@@ -1,0 +1,16 @@
+example, suppose that a bucket has an ACL that grants public access, but the
+bucket also has the
+IgnorePublicAcls
+setting enabled. In this
+case,
+GetBucketAcl
+returns an ACL that reflects the access
+permissions that Amazon S3 is enforcing, rather than the actual ACL that is
+associated with the bucket.
+Block public access settings don't alter existing policies or ACLs.
+Therefore, removing a block public access setting causes a bucket or object
+with a public policy or ACL to again be publicly accessible.
+Managing block public
+access at organization level
+Organization-level block public access uses AWS Organizations policies to centrally manage S3 public
+access controls across your entire organization. When enabled, these policies

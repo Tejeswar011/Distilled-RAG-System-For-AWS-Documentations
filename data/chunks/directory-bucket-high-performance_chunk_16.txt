@@ -1,0 +1,22 @@
+policies provide only the intended access to your S3 resources.
+Logging and
+monitoring
+S3 Express One Zone uses the following S3 logging and monitoring tools that you can use to
+monitor and control how your resources are being used:
+Amazon CloudWatch metrics
+â
+Monitor your AWS resources and applications by using CloudWatch to collect and
+track metrics. S3 Express One Zone uses the same CloudWatch namespace as other Amazon S3
+storage classes (
+AWS/S3
+) and supports daily storage metrics for
+directory buckets:
+BucketSizeBytes
+and
+NumberOfObjects
+. For more information, see
+Monitoring metrics with Amazon CloudWatch
+.
+AWS CloudTrail logs
+â AWS CloudTrail is an
+AWS service that helps you implement operational and risk auditing,

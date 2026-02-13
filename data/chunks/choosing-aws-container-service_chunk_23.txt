@@ -1,0 +1,21 @@
+and explore ROSA in depth.
+Watch the
+video
+Vertical solutions
+AWS App Runner
+What is AWS App Runner?
+Learn when to use this service to deploy from source code or a container image
+directly to a scalable and secure web application in the AWS Cloud.
+Explore the guide
+Getting started with AWS App Runner
+Use this tutorial to configure the source code and deployment, the service
+build, and the service runtime to deploy your application to AWS App Runner.
+Use
+the tutorial
+Deploy a web app using AWS App Runner
+Follow these step-by-step instructions to deploy a containerized web application
+using AWS App Runner.
+Use the tutorial
+AWS Lambda
+What is AWS Lambda?
+Learn how to use Lambda to run your code on a high-availability compute

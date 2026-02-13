@@ -1,0 +1,22 @@
+within a single Availability Zone. For more information, see
+S3 Express One Zone
+.
+Reduced Redundancy
+Storage
+(
+REDUCED_REDUNDANCY
+) â The Reduced Redundancy
+Storage (RRS) class is designed for noncritical, reproducible data that can be
+stored with less redundancy than the S3 Standard storage class.
+Important
+We recommend not using this storage class. The S3 Standard storage class is more
+cost-effective.
+For durability, RRS objects have an average annual expected loss of 0.01 percent of
+objects. If an RRS object is lost, when requests are made to that object, Amazon S3 returns a
+405 error.
+Storage class for automatically optimizing data with
+changing or unknown access patterns
+S3 Intelligent-Tiering
+(
+INTELLIGENT_TIERING
+) is an Amazon S3 storage class that's

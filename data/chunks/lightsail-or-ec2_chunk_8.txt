@@ -1,0 +1,14 @@
+traffic.
+Load Balancing
+Basic load balancing of HTTP/HTTPS for low volume web traffic (up to 5 GB per
+hour).
+Flexible load balancing for any type of networking use case, including HTTP, HTTPS, TCP, UDP, health checks, auto scaling, and more.
+Flexible load balancing for any type of networking use case, including HTTP,
+HTTPS, TCP, UDP, health checks, auto scaling, and more.
+CDN Support
+Global content delivery from Lightsail sources for a fixed monthly fee (up to 50
+GB per month included for the first year).
+Amazon CloudFront integration provides flexible content delivery from Amazon EC2 or other AWS
+or external sources on a pay per GB basis (1 TB per month included for the first
+year).
+Amazon CloudFront integration provides flexible content delivery from Amazon EC2 or other AWS

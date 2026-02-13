@@ -1,0 +1,19 @@
+Efficiency:
+Use fewer resources than traditional
+virtual machines with lightweight containers.
+Isolation:
+Improve security and reliability with
+containers' process-level isolation, with which applications running in separate containers
+cannot interfere with each other, improving security and reliability.
+Agility:
+Reduce the time that it takes to bring new
+features or applications to market by quickly packaging and deploying applications.
+You can think about the universe of AWS container services in three distinct
+layers:
+The
+Compute capacity layer
+is where your containers
+actually run. This layer consists of:
+Amazon Elastic Compute Cloud (Amazon EC2) instances:
+These instances
+provide the underlying compute capacity for running containers. You can choose from a

@@ -1,0 +1,12 @@
+to all of the objects in the bucket that are owned by the bucket owner. Bucket
+policies are limited to 20 KB in size.
+Bucket policies use JSON-based access policy language that is standard across
+AWS. You can use bucket policies to add or deny permissions for the objects in a
+bucket. Bucket policies allow or deny requests based on the elements in the policy,
+including the requester, S3 actions, resources, and aspects or conditions of the
+request (for example, the IP address used to make the request). For example, you can
+create a bucket policy that grants cross-account permissions to upload objects to an
+S3 bucket while ensuring that the bucket owner has full control of the uploaded
+objects. For more information, see
+Examples of Amazon S3 bucket policies
+.

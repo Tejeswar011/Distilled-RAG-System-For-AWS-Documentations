@@ -1,0 +1,15 @@
+Amazon ECR is a fully managed
+container registry with which you can store, manage, and deploy container images.
+It is designed to provide secure and scalable storage for your container images and
+simplify provisioning containers with the desired images.
+Note
+AWS provides a variety of ways to deploy and run containers. One of the first
+considerations is your preference for either a serverless operational model or a Kubernetes
+operation model. In practice, most customers use both to varying degrees.
+The choice of operating model is explored in-depth in the
+Choosing a
+modern application strategy decision guide
+, which is a useful resource for anyone
+who wants to explore this question further. In addition, the
+Containers and Serverless Recommendation
+Guide

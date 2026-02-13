@@ -1,0 +1,21 @@
+made through the access point behave as though the underlying bucket has
+this setting enabled, regardless of whether the bucket actually
+has this setting enabled.
+IgnorePublicAcls
+Setting this option to
+TRUE
+causes Amazon S3 to ignore all public ACLs on a
+bucket and any objects that it contains. This setting enables you to
+safely block public access granted by ACLs while still allowing
+PutObject
+calls that include a public ACL (as
+opposed to
+BlockPublicAcls
+, which rejects
+PutObject
+calls that include a public ACL).
+Enabling this setting doesn't affect the persistence of any existing
+ACLs and doesn't prevent new public ACLs from being set.
+Note
+Access points don't have ACLs associated with them. If you
+apply this setting to an access point, it acts as a passthrough to the

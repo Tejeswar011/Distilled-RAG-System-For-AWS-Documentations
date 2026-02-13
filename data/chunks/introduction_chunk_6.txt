@@ -1,0 +1,19 @@
+IAM Access Analyzer pricing
+.
+For information about the pricing of other AWS products, see the
+Amazon Web Services pricing
+page
+.
+Integration with other AWS services
+IAM is integrated with many AWS services. For a list of AWS services that work with IAM and the IAM features the services support, see
+AWS services that work with
+IAM
+.
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+Why should I use IAM?
+Did this page help you? - Yes
+Thanks for letting us know we're doing a good job!
+If you've got a moment, please tell us what we did right so we can do more of it.
+Did this page help you? - No

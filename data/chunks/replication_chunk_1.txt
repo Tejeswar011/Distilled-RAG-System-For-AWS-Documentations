@@ -1,0 +1,21 @@
+AWS account or by different accounts. You can replicate objects to a single destination bucket
+or to multiple destination buckets. The destination buckets can be in different AWS Regions or
+within the same Region as the source bucket.
+There are two types of replication:
+live replication
+and
+on-demand replication
+.
+Live replication
+â
+To
+automatically replicate new and updated objects
+as they are written to the
+source bucket, use live replication. Live replication doesn't replicate any objects that
+existed in the bucket before you set up replication. To replicate objects that existed
+before you set up replication, use on-demand replication.
+On-demand replication
+â
+To
+replicate existing objects
+from the source bucket to one or more destination

@@ -1,0 +1,25 @@
+resources from the PowerShell command line. To get started, see the
+AWS Tools for PowerShell User Guide
+. You can find the cmdlets for Amazon EC2, in the
+AWS Tools for PowerShell Cmdlet Reference
+.
+Query API
+Amazon EC2 provides a Query API. These requests are HTTP or HTTPS requests that
+use the HTTP verbs GET or POST and a Query parameter named
+Action
+. For more information about the API actions for
+Amazon EC2, see
+Actions
+in the
+Amazon EC2 API Reference
+.
+Pricing for Amazon EC2
+Amazon EC2 provides the following pricing options:
+Free Tier
+You can get started with Amazon EC2 for free. To explore the Free Tier options,
+see
+AWS Free Tier
+.
+On-Demand Instances
+Pay for the instances that you use by the second, with a minimum of 60
+seconds, with no long-term commitments or upfront payments.

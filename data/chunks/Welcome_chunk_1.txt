@@ -1,0 +1,21 @@
+websites, mobile applications, backup and restore, archive, enterprise applications, IoT
+devices, and big data analytics. Amazon S3 provides management features so that you can optimize,
+organize, and configure access to your data to meet your specific business, organizational,
+and compliance requirements.
+Note
+For more information about using the Amazon S3 Express One Zone storage class with directory buckets, see
+S3 Express One Zone
+and
+Working with directory buckets
+.
+Topics
+Features of Amazon S3
+How Amazon S3 works
+Amazon S3 data consistency model
+Related services
+Accessing Amazon S3
+Paying for Amazon S3
+PCI DSS compliance
+Features of Amazon S3
+Storage classes
+Amazon S3 offers a range of storage classes designed for different use cases. For

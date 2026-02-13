@@ -1,0 +1,17 @@
+AWS Systems Manager
+Perform operations at scale on EC2 instances with this secure end-to-end
+management solution.
+Additional compute services
+You can launch instances using another AWS compute service instead of using Amazon EC2.
+Amazon Lightsail
+Build websites or web applications using Amazon Lightsail, a cloud platform
+that provides the resources that you need to deploy your project quickly, for
+a low, predictable monthly price. To compare Amazon EC2 and Lightsail, see
+Amazon Lightsail or Amazon EC2
+.
+Amazon Elastic Container Service (Amazon ECS)
+Deploy, manage, and scale containerized applications on a cluster of EC2
+instances. For more information, see
+Choosing an AWS container service
+.
+Amazon Elastic Kubernetes Service (Amazon EKS)

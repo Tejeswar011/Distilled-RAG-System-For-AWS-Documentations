@@ -1,0 +1,19 @@
+governance mode, you protect objects against being deleted by most users, but you
+can still grant some users permission to alter the retention settings or delete the
+objects if necessary. You can also use governance mode to test retention-period
+settings before creating a compliance-mode retention period.
+To override or remove governance-mode retention settings, you must have the
+s3:BypassGovernanceRetention
+permission and must explicitly include
+x-amz-bypass-governance-retention:true
+as a request header with any
+request that requires overriding governance mode.
+Note
+By default, the Amazon S3 console includes the
+x-amz-bypass-governance-retention:true
+header. If you try to
+delete objects protected by
+governance
+mode and have the
+s3:BypassGovernanceRetention
+permission, the operation will

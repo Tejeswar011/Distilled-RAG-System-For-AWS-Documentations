@@ -1,0 +1,18 @@
+To transform data and trigger workflows to automate a variety of other processing
+activities at scale, you can use the following features.
+S3 Object Lambda
+â Add your own code to S3 GET, HEAD, and LIST requests to modify and process data as
+it is returned to an application. Filter rows, dynamically resize images,
+redact confidential data, and much more.
+Event
+notifications
+â Trigger workflows that use Amazon Simple Notification Service
+(Amazon SNS), Amazon Simple Queue Service (Amazon SQS), and AWS Lambda when a change is made to your S3
+resources.
+Storage logging and monitoring
+Amazon S3 provides logging and monitoring tools that you can use to monitor and control
+how your Amazon S3 resources are being used. For more information, see
+Monitoring
+tools
+.
+Automated monitoring tools

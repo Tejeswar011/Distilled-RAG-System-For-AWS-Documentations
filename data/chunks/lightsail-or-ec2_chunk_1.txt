@@ -1,0 +1,19 @@
+Last updated
+February 17, 2025
+Covered services
+Amazon Lightsail
+AWS Elastic Beanstalk
+Amazon EC2
+Introduction
+Amazon Web Services (AWS) offers services that can meet your needs for a cloud platform or compute web service.
+Three services that are often considered alongside one another are:
+Amazon Lightsail
+â a set of core services
+designed to help you build websites or web applications. Consider Lightsail if you want a
+simple unified platform with a few foundational services, including virtual servers, HTTP
+load balancing, managed databases, public container deployment, content delivery network
+(CDN), DNS management, and domain registration. Lightsail provides fixed and predictable
+monthly pricing.
+AWS Elastic Beanstalk
+â a
+service that makes it easy to deploy, manage, and scale web

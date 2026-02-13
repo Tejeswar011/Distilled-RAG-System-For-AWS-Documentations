@@ -1,0 +1,20 @@
+Understanding S3 Glacier storage classes for long-term data storage
+.
+Amazon S3 provides the following S3 Glacier storage classes:
+S3 Glacier Instant Retrieval
+(
+GLACIER_IR
+) â Use for long-term data that's rarely
+accessed and requires milliseconds retrieval. Data in this storage class is available for
+real-time access.
+S3 Glacier Flexible Retrieval
+(
+GLACIER
+) â Use for archives
+where portions of the data might need to be retrieved in minutes. Data in this storage class is archived, and not available for real-time access.
+S3 Glacier Deep Archive
+(
+DEEP_ARCHIVE
+) â Use for
+archiving data that rarely needs to be accessed. Data in this storage class is archived, and not available for real-time access.
+Retrieving archived objects

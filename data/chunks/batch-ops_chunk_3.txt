@@ -1,0 +1,19 @@
+S3 Batch Operations can run a single operation or action on lists of Amazon S3 objects that you specify.
+Terminology
+This section uses the terms
+manifests
+,
+jobs
+,
+operations
+, and
+tasks
+,
+which are defined as follows:
+Manifest
+A manifest is an Amazon S3 object that contains the object keys that you want Amazon S3 to act
+upon. If you want to create a Batch Operations job, you must supply a manifest. Your
+user-generated manifest must contain the bucket name, object key, and optionally, the
+object version for each object. If you supply a user-generated manifest, it must be in
+the form of an Amazon S3 Inventory report or a CSV file.
+You can also have Amazon S3 generate a manifest automatically based on object filter

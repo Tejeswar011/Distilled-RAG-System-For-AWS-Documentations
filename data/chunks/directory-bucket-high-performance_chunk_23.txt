@@ -1,0 +1,21 @@
+signs requests by using AWS Sigv4. For more information, see
+Authenticating Requests (AWS Signature Version 4)
+in the
+Amazon Simple Storage Service API Reference
+.
+Strong consistency
+S3 Express One Zone provides strong read-after-write consistency for
+PUT
+and
+DELETE
+requests of objects in your directory buckets in all
+AWS Regions. For more information, see
+Amazon S3 data consistency model
+.
+Related services
+You can use the following AWS services with the S3 Express One Zone storage class to support your
+specific low-latency use case.
+Amazon Elastic Compute Cloud (Amazon EC2)
+â Amazon EC2
+provides secure and scalable computing capacity in the AWS Cloud. Using Amazon EC2
+lessens your need to invest in hardware up front, so you can develop and deploy

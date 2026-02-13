@@ -1,0 +1,15 @@
+Aggregate logs into a single bucket
+â If you
+store logs in multiple buckets or across multiple accounts, you can easily replicate logs
+into a single, in-Region bucket. Doing so allows for simpler processing of logs in a
+single location.
+Configure live replication between production and test
+accounts
+â If you or your customers have production and test accounts
+that use the same data, you can replicate objects between those multiple accounts, while
+maintaining object metadata.
+Abide by data sovereignty laws
+â You might be
+required to store multiple copies of your data in separate AWS accounts within a certain
+Region. Same-Region Replication can help you automatically replicate critical data when
+compliance regulations don't allow the data to leave your country.

@@ -1,0 +1,16 @@
+AWS services or external origins. It also offers more flexible on demand and
+commit-based pricing than Lightsail.
+Managed database support
+Managed database support
+Lightsail offers managed databases in six standard, and six high availability
+configurations, ranging from 1 to 4 processor cores, 1 GiB to 32 GiB RAM, and 40 GB to 960
+GB storage. Lightsail databases are billed using a fixed, predictable monthly price.
+Elastic Beanstalk provides integration
+withÂ
+Amazon
+Relational Database Service (Amazon RDS)
+. You can use
+Elastic Beanstalk to add a MySQL, PostgreSQL, Oracle, or SQL
+Server database to an existing environment or a new one when you
+create it. When you add a database instance, Elastic Beanstalk
+provides the connection information to your application. It does

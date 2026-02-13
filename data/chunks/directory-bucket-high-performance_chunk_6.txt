@@ -1,0 +1,12 @@
+and at no additional cost.
+You can use many of the same Amazon S3 API operations and features with directory buckets
+that you use with general purpose buckets and other storage classes. These include Mountpoint for
+Amazon S3, server-side encryption with Amazon S3 managed keys (SSE-S3), server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), S3 Batch Operations, and S3 Block
+Public Access. You can access S3 Express One Zone by using the Amazon S3 console, AWS Command Line Interface (AWS CLI),
+AWS SDKs, and the Amazon S3 REST API.
+For more information about S3 Express One Zone, see the following topics.
+Overview
+Features of S3 Express One Zone
+Related services
+Next steps
+Overview

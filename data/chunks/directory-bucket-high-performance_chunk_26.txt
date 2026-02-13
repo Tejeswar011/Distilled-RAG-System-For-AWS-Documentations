@@ -1,0 +1,19 @@
+Amazon Athena
+â
+Athena is an interactive query service that makes it easy to analyze data
+directly in Amazon S3 by using standard
+SQL
+. You can also use
+Athena to interactively run data analytics by using Apache Spark
+without having to plan for, configure, or manage resources. When you run
+Apache Spark applications on Athena, you submit
+Spark code for processing and receive the results
+directly.
+Amazon SageMaker
+Training
+â Review the options for training models with Amazon
+SageMaker, including built-in algorithms, custom algorithms, libraries, and
+models from the AWS Marketplace.
+AWS Glue
+â AWS Glue is a serverless data-integration service that makes it easy for
+analytics users to discover, prepare, move, and integrate data from multiple

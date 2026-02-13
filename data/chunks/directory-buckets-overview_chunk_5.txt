@@ -1,0 +1,15 @@
+subsection of your bucket, you can specify a subdirectory path in the
+prefix
+parameter, for example,
+prefix=dir1/
+.
+Key names
+For directory buckets, subdirectories that are common to multiple object keys are
+created with the first object key. Additional object keys for the same subdirectory use
+the previously created subdirectory. This model gives you flexibility in choosing object
+keys that are best suited to the application, with equal support for sparse and dense
+directories.
+Access management
+Directory buckets have all S3 Block Public Access settings enabled by default at the
+bucket level. S3 Object Ownership is set to bucket owner enforced and access control
+lists (ACLs) are disabled. These settings can't be modified.

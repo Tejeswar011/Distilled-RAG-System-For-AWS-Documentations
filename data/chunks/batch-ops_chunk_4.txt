@@ -1,0 +1,13 @@
+the form of an Amazon S3 Inventory report or a CSV file.
+You can also have Amazon S3 generate a manifest automatically based on object filter
+criteria that you specify when you create your job. This option is available for
+Batch Operations jobs that you create by using the Amazon S3 console, or for any job type that you
+create by using the AWS Command Line Interface (AWS CLI), AWS SDKs, or Amazon S3 REST API.
+Job
+A job is the basic unit of work for S3 Batch Operations. A job contains all of the
+information necessary to run the specified operation on the objects listed in the
+manifest. After you provide this information and request that the job begin, the job
+performs the operation for each object in the manifest.
+Operation
+The operation is the type of API
+action

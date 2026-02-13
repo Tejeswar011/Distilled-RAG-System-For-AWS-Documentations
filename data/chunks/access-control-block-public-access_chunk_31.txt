@@ -1,0 +1,31 @@
+policy and removing any unsupported actions.
+For more information about IAM Access Analyzer for S3, see
+Reviewing bucket access using IAM Access Analyzer for S3
+.
+Permissions
+To use Amazon S3 Block Public Access features, you must have the following
+permissions.
+Operation
+Required permissions
+GET
+bucket policy status
+s3:GetBucketPolicyStatus
+GET
+bucket Block Public Access settings
+s3:GetBucketPublicAccessBlock
+PUT
+bucket Block Public Access settings
+s3:PutBucketPublicAccessBlock
+DELETE
+bucket Block Public Access settings
+s3:PutBucketPublicAccessBlock
+GET
+account Block Public Access settings
+s3:GetAccountPublicAccessBlock
+PUT
+account Block Public Access settings
+s3:PutAccountPublicAccessBlock
+DELETE
+account Block Public Access settings
+s3:PutAccountPublicAccessBlock
+PUT

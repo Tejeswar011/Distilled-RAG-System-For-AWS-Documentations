@@ -1,0 +1,27 @@
+Amazon EC2 instance types - Amazon EC2
+Amazon EC2 instance types - Amazon EC2
+Documentation
+Amazon EC2
+Instance Types
+Current generation instances
+Previous generation instances
+Instance performance
+Amazon EC2 instance types
+End of sale notice
+The
+U-9tb1
+,
+U-12tb1
+,
+U-18tb1
+, and
+U-24tb1
+instance
+types are no longer available for new instance launches. If your workload requires a high-memory
+instance, we recommend that you use a U7i instance type instead.
+When you launch an EC2 instance, the
+instance type
+that you specify
+determines the hardware of the host computer used for your instance. Each instance type
+offers different compute, memory, and storage capabilities, and is grouped in an instance
+family based on these capabilities. Select an instance type based on the requirements of the

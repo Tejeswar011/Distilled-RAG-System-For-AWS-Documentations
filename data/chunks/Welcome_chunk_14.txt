@@ -1,0 +1,18 @@
+60+ usage and activity metrics and interactive dashboards to aggregate data
+for your entire organization, specific accounts, AWS Regions, buckets, or
+prefixes.
+Storage
+Class Analysis
+â Analyze storage access patterns to
+decide when it's time to move data to a more cost-effective storage class.
+S3 Inventory with
+Inventory reports
+â Audit and report on objects and their
+corresponding metadata and configure other Amazon S3 features to take action in
+Inventory reports. For example, you can report on the replication and
+encryption status of your objects. For a list of all the metadata available
+for each object in Inventory reports, see
+Amazon S3 Inventory list
+.
+Strong consistency
+Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of

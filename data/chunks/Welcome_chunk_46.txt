@@ -1,0 +1,20 @@
+You can use the AWS command line tools to issue commands or build scripts at
+your system's command line to perform AWS (including S3) tasks.
+The
+AWS Command Line Interface (AWS CLI)
+provides commands
+for a broad set of AWS services. The AWS CLI is supported on Windows, macOS, and
+Linux. To get started, see the
+AWS Command Line Interface User Guide
+. For more information about the commands for
+Amazon S3, see
+s3api
+and
+s3control
+in the
+AWS CLI Command Reference
+.
+AWS SDKs
+AWS provides SDKs (software development kits) that consist of libraries and sample code
+for various programming languages and platforms (Java, Python, Ruby, .NET, iOS,
+Android, and so on). The AWS SDKs provide a convenient way to create programmatic

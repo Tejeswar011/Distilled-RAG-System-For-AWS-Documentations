@@ -1,0 +1,19 @@
+each object added to the bucket. Objects that already existed in the bucket at the
+time that you enable versioning have a version ID of
+null
+. If you
+modify these (or any other) objects with other operations, such as
+CopyObject
+and
+PutObject
+, the new objects
+get a unique version ID.
+For more information, see
+Retaining multiple versions of objects with S3 Versioning
+.
+Bucket policy
+A bucket policy is a resource-based AWS Identity and Access Management (IAM) policy that you can use to
+grant access permissions to your bucket and the objects in it. Only the bucket owner
+can associate a policy with a bucket. The permissions attached to the bucket apply
+to all of the objects in the bucket that are owned by the bucket owner. Bucket
+policies are limited to 20 KB in size.

@@ -1,0 +1,15 @@
+supported for directory buckets. Directory buckets automatically use the
+bucket owner enforced setting for S3 Object Ownership. Bucket owner enforced
+means that ACLs are disabled, and the bucket owner automatically owns and
+has full control over every object in the bucket. This default setting can't
+be modified.
+AWS Identity and Access Management (IAM)
+â
+IAM helps you securely control access to your directory buckets. You can
+use IAM to grant access to bucket management (Regional) API operations and
+object management (Zonal) API operations through the
+s3express:CreateSession
+action. For more information, see
+Authorizing Regional endpoint API operations with IAM
+. Unlike object-management
+actions, bucket management actions cannot be cross-account. Only the bucket

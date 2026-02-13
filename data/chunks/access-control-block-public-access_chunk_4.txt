@@ -1,0 +1,11 @@
+restrictive combination of the access point, bucket, and account settings. Account-level settings automatically inherit
+organization-level policies when present, and S3 takes the most restrictive
+policy between bucket-level and effective account-level settings. For
+example, if your organization has a Block Public Access policy enabled, but
+a specific bucket has Block Public
+Access disabled at the bucket level, the bucket will still be protected
+because S3 applies the more restrictive organization/account-level
+settings. Conversely, if your organization policy is disabled but a
+bucket has Block Public Access enabled, that bucket remains protected by
+its bucket-level settings.
+When Amazon S3 evaluates whether an operation is prohibited by a block public access setting, it

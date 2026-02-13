@@ -1,0 +1,24 @@
+Directory bucket names
+Directories
+Key names
+Access management
+Directory bucket names
+A directory bucket name consists of a base name that you provide and a suffix that
+contains the ID of the Zone (Availability Zone or Local Zone) that your bucket is located in. Directory
+bucket names must use the following format and follow the naming rules for directory
+buckets:
+bucket-base-name
+--
+zone-id
+--x-s3
+For example, the following directory bucket name contains the Availability Zone ID
+usw2-az1
+:
+bucket-base-name
+--usw2-az1--x-s3
+For more information, see
+Directory bucket naming rules
+.
+Directories
+Directory buckets organize data hierarchically into directories as opposed to the flat
+sorting structure of general purpose buckets.

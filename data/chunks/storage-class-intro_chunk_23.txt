@@ -1,0 +1,40 @@
+How S3 Intelligent-Tiering works
+.
+S3 One Zone-IA (
+ONEZONE_IA
+)
+Recreatable, infrequently accessed data (once a month) with millisecond
+access
+99.999999999%
+99.5%
+1
+30 days
+128 KB
+Per-GB retrieval fees apply. Not resilient to the loss of the Availability
+Zone.
+S3 Express One Zone (
+EXPRESS_ONEZONE
+)
+Single-digit millisecond data access for latency-sensitive applications within a single AWS Availability Zone
+99.999999999%
+99.95%
+1
+None
+None
+S3 Express One Zone (
+EXPRESS_ONEZONE
+) objects are stored in a single AWS Availability Zone that you
+choose.
+S3 Glacier Instant Retrieval (
+GLACIER_IR
+)
+Long-lived, archive data accessed once a quarter with millisecond access
+99.999999999%
+99.9%
+>= 3
+90 days
+128 KB
+Per-GB retrieval fees apply.
+S3 Glacier Flexible Retrieval (
+GLACIER
+)

@@ -1,0 +1,15 @@
+year).
+Amazon CloudFront integration provides flexible content delivery from Amazon EC2 or other AWS
+or external sources on a pay per GB basis (1 TB per month included for the first
+year).
+Performance
+Choose from 2 to 64 vCPUs (1 to 32 cores), and 512 MiB to 256 GiB memory.
+Unlimited scaling from a single shared to hundreds of CPU cores, and 1 to 1000s of
+GiB memory.
+Unlimited scaling from a single shared to hundreds of CPU cores, and 1 to 1000s of
+GiB memory.
+Pricing
+Fixed and predictable monthly pricing.
+There is no additional charge for AWS Elastic Beanstalk. You pay for AWS resources (e.g. Amazon EC2 instances or Amazon S3 buckets) you create to store and run your application.
+Flexible pay-per-use hourly, or commit-based pricing.
+Details on the differences

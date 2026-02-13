@@ -1,0 +1,16 @@
+manage data access at scale for shared datasets in Amazon S3.
+Access control
+lists (ACLs)
+â Grant read and write permissions for
+individual buckets and objects to authorized users. As a general rule, we
+recommend using S3 resource-based policies (bucket policies and access point
+policies) or IAM user policies for access control instead of ACLs.
+Policies are a simplified and more flexible access control option. With
+bucket policies and access point policies, you can define rules that apply
+broadly across all requests to your Amazon S3 resources. For more information
+about the specific cases when you'd use ACLs instead of resource-based
+policies or IAM user policies, see
+Managing access with ACLs
+.
+S3 Object Ownership
+â Take ownership of every object

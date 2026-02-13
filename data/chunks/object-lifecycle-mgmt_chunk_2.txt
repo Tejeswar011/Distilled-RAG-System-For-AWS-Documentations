@@ -1,0 +1,22 @@
+pricing
+.
+Expiration actions
+â These actions define
+when objects expire. Amazon S3 deletes expired objects on your behalf. For example, you
+might to choose to expire objects after they have been stored for a regulatory
+compliance period. For more information, see
+Expiring objects
+.
+There are potential costs associated with lifecycle expiration only when you
+expire objects in a storage class with a minimum storage duration. For more
+information, see
+Minimum storage duration
+charge
+.
+Important
+General purpose buckets
+â You can't use a bucket policy to
+prevent deletions or transitions by an S3 Lifecycle rule. For example, even if your
+bucket policy denies all actions for all principals, your S3 Lifecycle configuration
+still functions as normal.
+Existing and new objects

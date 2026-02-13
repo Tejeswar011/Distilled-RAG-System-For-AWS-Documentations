@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2? - Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="lightsail-elastic-beanstalk-ec2" /><meta name="default_state" content="lightsail-elastic-beanstalk-ec2" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" /><meta name="description" content="Understand the differences and pick the one that's right for you" /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?" /><meta name="guide" content="AWS Decision guide" /><meta name="abstract" content="Insert abstract text" /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="id-id" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="id" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="de-de" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="de" /><link rel="alternative" href="https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="en-us" /><link rel="alternative" href="https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="en" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="es-es" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="es" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="fr-fr" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="fr" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="it-it" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="it" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="ja-jp" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="ja" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="ko-kr" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="ko" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="pt-br" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="pt" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_cn/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="zh-cn" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_tw/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="zh-tw" /><link rel="alternative" href="https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" hreflang="x-default" /><meta name="feedback-folder" content="a0d18259-7974-4e8f-8382-0a4be53f4374" /><meta name="this_doc_product" content="Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?" /><meta name="this_doc_guide" content="AWS Decision guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'decision-guides'}"></script><meta id="panorama-serviceSubSection" value="AWS Decision guide" /><meta id="panorama-serviceConsolePage" value="Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2? - Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?</title><meta name="pdf" content="/pdfs/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.pdf#lightsail-elastic-beanstalk-ec2" /><meta name="rss" content="lightsail-or-ec2.rss" /><meta name="forums" content="https://repost.aws/" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?feedback_destination_id=a0d18259-7974-4e8f-8382-0a4be53f4374&amp;topic_url=https://docs.aws.amazon.com/en_us/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html" /><meta name="keywords" content="Amazon Lightsail,Amazon EC2,AWS Elastic Beanstalk,Decision Guide" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "AWS Decision Guides",
+        "item" : "https://aws.amazon.com/getting-started/decision-guides/"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "AWS Decision guide",
+        "item" : "https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?",
+        "item" : "https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.pdf#lightsail-elastic-beanstalk-ec2" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="https://aws.amazon.com/getting-started/decision-guides/">AWS Decision Guides</a><a href="lightsail-elastic-beanstalk-ec2.html">AWS Decision guide</a></div><div id="page-toc-src"><a href="#introduction">Introduction</a><a href="#differences">Details on the differences</a><a href="#use">Use</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="lightsail-elastic-beanstalk-ec2">Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p><b>Understand the differences and pick the one that's right for you</b>
+ </p><div class="table-container"><div class="table-contents disable-scroll"><table id="w55aab6b5">
+    <tr>
+     <td tabindex="-1">
+      <p><b>Purpose</b></p>
+     </td>
+     <td tabindex="-1">
+      <p>To explore whether Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2 meets 
+       your needs for a cloud platform or compute web service.</p>
+     </td>
+    </tr>
+
+    <tr>
+     <td tabindex="-1">  
+      <p><b>Last updated</b></p>
+     </td>
+     <td tabindex="-1">
+      <p>February 17, 2025</p>
+     </td>
+    </tr>
+
+    <tr>
+     <td tabindex="-1">  
+      <p><b>Covered services</b></p>
+     </td>
+     <td tabindex="-1">
+      <div class="itemizedlist">
+        
+        
+        
+      <ul class="itemizedlist"><li class="listitem">
+        <p><a href="https://docs.aws.amazon.com/lightsail/latest/userguide/what-is-amazon-lightsail.html">Amazon Lightsail</a></p>
+       </li><li class="listitem">
+        <p><a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk</a></p>
+       </li><li class="listitem">
+        <p><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html">Amazon EC2</a></p>
+       </li></ul></div>
+     </td>
+    </tr>
+
+   </table></div></div>  
+  <h2 id="introduction">Introduction</h2>
+
+  <p>
+    Amazon Web Services (AWS) offers services that can meet your needs for a cloud platform or compute web service. 
+    Three services that are often considered alongside one another are:</p>
+  <div class="itemizedlist">
+     
+     
+     
+  <ul class="itemizedlist"><li class="listitem">
+      <p><b>Amazon Lightsail</b> â a set of core services
+        designed to help you build websites or web applications. Consider Lightsail if you want a
+        simple unified platform with a few foundational services, including virtual servers, HTTP
+        load balancing, managed databases, public container deployment, content delivery network
+        (CDN), DNS management, and domain registration. Lightsail provides fixed and predictable
+        monthly pricing. </p>
+    </li><li class="listitem">
+      <p><b>AWS Elastic Beanstalk</b> â a
+        service that makes it easy to deploy, manage, and scale web
+        applications and services. It supports several programming
+        languages such as Python, Java, PHP, Node.js, Ruby, .NET, and
+        Go. With Elastic Beanstalk, you simply upload your application
+        code, and AWS handles the underlying infrastructure, including
+        provisioning resources like Amazon EC2 instances, load balancers, and
+        databases, as well as auto-scaling and monitoring. It provides
+        built-in integration with AWS services like RDS, Amazon S3, and
+        CloudWatch. Elastic Beanstalk offers a balance between control
+        and automation, giving developers the ability to customize
+        infrastructure while offloading operational overhead. There is
+        no additional charge for Elastic Beanstalk. You pay for AWS
+        resources (e.g. Amazon EC2 instances or Amazon S3 buckets) you create to store
+        and run your application. </p>
+    </li><li class="listitem">
+      <p><b>Amazon Elastic Compute Cloud (Amazon EC2)</b> â an AWS service that
+        provides on-demand, scalable computing capacity, with the goal of allowing you to develop,
+        deploy, and scale applications faster. You can use it to launch as many or as few compute
+        instances as you need, configure security and networking, and manage storage. You can also
+        add capacity by provisioning larger instances (up to hundreds of cores and thousands of GiB
+        memory) or load balancing clusters of smaller instances. Several different pricing models
+        are available depending on your requirements. </p>
+    </li></ul></div>
+   <p> When choosing between Lightsail, Elastic Beanstalk, and Amazon EC2, keep in mind the future growth of your
+    workload and how you intend to grow your AWS environment. If your future deployment requires
+    advanced networking or integration with AWS services such as Amazon Relational Database Service (Amazon RDS), Amazon DynamoDB, or
+    AWS Lambda, you should strongly consider using Amazon EC2. </p>
+   <p>Here's a high-level view of the key differences between these services to get you started.
+   </p>
+
+  <div class="table-container"><div class="table-contents disable-scroll"><table id="w55aab6b8c11"><thead>
+        
+        <tr>
+          <th></th>
+          <th align="center" style="text-align: center;">
+            <span class="inlinemediaobject">
+               
+                <img src="/images/decision-guides/latest/lightsail-elastic-beanstalk-ec2/images/Amazon_Lightsail_64.png" class="aws-docs-img-whiteBg aws-docs-img-xs-padding" alt="Circular icon with a clock face and arrow indicating time passing or scheduling." data-alt-text-source="generated" />
+               
+            </span>
+            <p><b>Amazon Lightsail</b></p>
+          </th>
+          
+          <th align="center" style="text-align: center;">
+            <span class="inlinemediaobject">
+               
+                <img src="/images/decision-guides/latest/lightsail-elastic-beanstalk-ec2/images/aeb.png" class="aws-docs-img-whiteBg aws-docs-img-xs-padding" alt="Cloud icon with tree-like structure inside, representing cloud computing services." data-alt-text-source="generated" />
+               
+            </span>
+            <p><b>Elastic Beanstalk</b></p>
+          </th>
+          
+          <th align="center" style="text-align: center;">
+            <span class="inlinemediaobject">
+               
+                <img src="/images/decision-guides/latest/lightsail-elastic-beanstalk-ec2/images/Amazon_EC2_64.png" class="aws-docs-img-whiteBg aws-docs-img-xs-padding" alt="Microchip icon representing a computer processor or integrated circuit." data-alt-text-source="generated" />
+               
+            </span>
+            <p><b>Amazon EC2</b></p>
+          </th>
+          
+        </tr>
+      </thead>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Instance Size</b></p>
+          </td>
+          <td tabindex="-1">
+            
+            <p>Multiple instance types, ranging from 512 MiB to 256 GiB of RAM, and 2 to 64 vCPUs.
+              For more information, see the <em>compute and block storage</em> tab in
+              the <a href="#differences">differences</a> section below.</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>400+ instance types, from 0.5 GiB to 24 TiB of RAM, and 1 to 448 vCPUs.</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>400+ instance types, from 0.5 GiB to 24 TiB of RAM, and 1 to 448 vCPUs.</p>
+            <p></p>
+          </td>
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Block Storage</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>Preconfigured disks up to 1280 GB per instance (storage size is tied to instance type).
+              Attach additional disks up to 16 TB with variable pricing.</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Amazon EBS volumes up to 64 TB per volume. Input/output operations per second (IOPS) up
+              to 64,000 per volume (storage size is independent of instance type).</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Amazon EBS volumes up to 64 TB per volume. Input/output operations per second (IOPS) up
+              to 64,000 per volume (storage size is independent of instance type).</p>
+            <p></p>
+          </td>
+          
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Application Blueprints</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>34 pre-configured blueprints, including WordPress, Magento, Drupal, Node.js, and more.</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>A number of managed platforms on Amazon Linux (Docker, Go, Java, Ruby, Python, .NET core, Tomcat), and .NET/IIS on Windows Server.</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Common operating systems and with pre-configured software and services in the
+                <a href="https://aws.amazon.com/marketplace/search/results?prevFilters=%257B%2522ref_%2522%3A%2522hmpg_categories_all%3Fref_%3Dhmpg_categories_promo%2522%257D&amp;searchTerms=ec2&amp;FULFILLMENT_OPTION_TYPE=AMAZON_MACHINE_IMAGE%2CCONTAINER&amp;filters=FULFILLMENT_OPTION_TYPE" rel="noopener noreferrer" target="_blank"><span>AWS Marketplace</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+            <p></p>
+          </td>
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Container Support</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>Simple deployment of public container images for a fixed monthly cost including data transfer.
+            </p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>Supports individual Docker containers, multiple containers with Docker Compose as well as Amazon Elastic Container Service (Amazon ECS).
+            </p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>
+              Run container workloads natively on Amazon EC2 using self-managed Docker or Kubernetes, or deploy containers to separate 
+              AWS container services such as Amazon ECS, Amazon EKS, AWS Fargate, AWS App Runner, AWS Elastic Beanstalk, Lambda, and others.
+            </p>
+            <p></p>
+            
+          </td>
+          
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Data Transfer</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>
+              Generous data transfer allocation included with the fixed monthly fee for every Lightsail compute instance.
+            </p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>
+              Pay per GB data transfer (out) with ï¬exible pricing tiers and no cost for ingress traï¬c.
+            </p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Pay per GB data transfer (out) with flexible pricing tiers and no cost for ingress
+              traffic.</p>
+            <p></p>
+          </td>
+          
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Load Balancing</b></p>
+          </td>
+          
+          
+          <td tabindex="-1">
+            <p>Basic load balancing of HTTP/HTTPS for low volume web traffic (up to 5 GB per
+              hour).</p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Flexible load balancing for any type of networking use case, including HTTP, HTTPS, TCP, UDP, health checks, auto scaling, and more.</p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Flexible load balancing for any type of networking use case, including HTTP,
+              HTTPS, TCP, UDP, health checks, auto scaling, and more.</p>
+            <p></p>
+          </td>
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>CDN Support</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>Global content delivery from Lightsail sources for a fixed monthly fee (up to 50
+              GB per month included for the first year).</p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>Amazon CloudFront integration provides flexible content delivery from Amazon EC2 or other AWS
+              or external sources on a pay per GB basis (1 TB per month included for the first
+              year). </p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>Amazon CloudFront integration provides flexible content delivery from Amazon EC2 or other AWS
+              or external sources on a pay per GB basis (1 TB per month included for the first
+              year). </p>
+            <p></p>
+            
+          </td>
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Performance</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>Choose from 2 to 64 vCPUs (1 to 32 cores), and 512 MiB to 256 GiB memory.</p>
+            <p></p>
+          </td>
+          
+          <td tabindex="-1">
+            <p>Unlimited scaling from a single shared to hundreds of CPU cores, and 1 to 1000s of
+              GiB memory.</p>
+            
+            <p></p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>Unlimited scaling from a single shared to hundreds of CPU cores, and 1 to 1000s of
+              GiB memory.</p>
+            
+            <p></p>
+            
+          </td>
+        </tr>  
+        
+        <tr>
+          <td tabindex="-1">
+            <p><b>Pricing</b></p>
+          </td>
+          <td tabindex="-1">
+            <p>Fixed and predictable monthly pricing.</p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>There is no additional charge for AWS Elastic Beanstalk. You pay for AWS resources (e.g. Amazon EC2 instances or Amazon S3 buckets) you create to store and run your application. </p>
+            
+          </td>
+          
+          <td tabindex="-1">
+            <p>Flexible pay-per-use hourly, or commit-based pricing.</p>
+            <p></p>
+            
+          </td>
+        </tr>
+        
+      </table></div></div>
+  
+
+    
+  <h2 id="differences">Details on the differences</h2>
+  <p>Explore differences between Lightsail, AWS Elastic Beanstalk, and Amazon EC2 in six areas. These cover ease of use, compute and block storage, container deployments, 
+     load balancing, content delivery network, and managed database support.
+     </p>
+
+  <awsdocs-tabs><dl style="display: none">
+    
+    <dt>Ease of use</dt><dd tab-id="tab-difference-ease-of-use">  
+        
+        <p><b>Ease of use</b></p>
+        
+        <p>Lightsail offers a set of core services to deploy web servers and database backed
+          applications, with support for load balancing, containers, content delivery network (CDN),
+          DNS management, and domain registration. You can also choose from a set of application
+          blueprints to deploy standard applications such as a WordPress site, or LAMP stack
+          application. Lightsail is a good fit for organizations with simple website and
+          application requirements, and those who prefer fixed, predictable monthly pricing.</p>
+        
+        
+        <p>
+          Elastic Beanstalk, on the other hand, is a more flexible service
+          for deploying and scaling web applications. It supports multiple
+          programming languages and web servers, automatically handles
+          capacity provisioning, load balancing, auto-scaling, and
+          application health monitoring. Elastic Beanstalk integrates
+          seamlessly with other AWS services like RDS and CloudWatch,
+          allowing for more complex architectures and fine-grained control
+          over the underlying resources.
+        </p>
+          
+        <p>With Amazon EC2, you have greater flexibility to configure workloads over a broader set of compute 
+          capacities, features, and integrations with other AWS services. Amazon EC2 provides more flexible purchase 
+          options including on-demand hourly and lower commit-based pricing. A typical deployment of Amazon EC2 may 
+          require the use of other AWS services, such as databases and load balancers, that each have their 
+          own pricing models and configuration details.
+        </p>
+        <p></p>
+      </dd>
+
+    <dt>Compute and block storage</dt><dd tab-id="tab-difference-compute">
+        
+        
+        <p><b>Compute and block storage</b></p>
+        
+        <p>Lightsail provides multiple options for your instance size, ranging from 2 vCPUs,
+          512 MiB memory, and 20 GB of SSD storage, up to 64 vCPUs, 256 GiB of memory, and 1280 GB of
+          SSD storage. Lightsail compute instances also include a generous free data transfer
+          allocation, and are billed with fixed, predictable pricing. </p>
+
+        <p>Elastic Beanstalk and Amazon EC2 support hundreds of instance types supporting any workload, with 1 to 100s of vCPUs, and 1000s of 
+          GiB RAM. Multiple individually sized storage volumes can be attached to Elastic Beanstalk and Amazon EC2 instances with various 
+          performance tiers. Elastic Beanstalk and Amazon EC2 also both support Spot Instances and Graviton-based instances, allowing cost-efficient scaling and high-performance computing. 
+        </p>
+        <p></p>
+      </dd>
+
+    <dt>Container deployments</dt><dd tab-id="tab-difference-container">
+      
+        
+        <p><b>Container deployments</b></p>
+        
+        <p>Lightsail containers provide a straightforward way to get started deploying public
+          container images on AWS compute instances, with 0.25 vCPUs and 512 MiB RAM, to 4 vCPUs
+          and 8 GiB RAM. Every Lightsail container deployment comes with 500 GB of data transfer
+          for a fixed monthly fee. </p>
+        
+        <p>Elastic Beanstalk can run individual Docker containers, multiple containers with Docker Compose, 
+          or deploy to Amazon ECS, a fully managed container orchestration service which manages and scales the 
+          Amazon EC2 instances running containers.</p>
+
+        <p>Containers can be self-managed on Amazon EC2, or deployed to a fully managed AWS
+          container service such as Amazon ECS, Amazon EKS, App Runner, Elastic Beanstalk, and Lambda. These services support
+          both public and private images, more flexible hourly or commit-based billing, and greater
+          vertical and horizontal scaling capabilities. </p>
+        <p></p>
+      </dd>
+
+    <dt>Load balancing</dt><dd tab-id="tab-difference-load-balance">
+        
+        
+        <p><b>Load balancing</b></p>
+        
+        <p>Lightsail provides a simple HTTP or HTTPS load balancer for low volume web traffic (up to 5 GB and 
+          400k connections per hour). Lightsail load balancers handle certificate management and are available for 
+          a fixed monthly cost.
+        </p>
+          
+        <p>
+          YouÂ can
+          <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-types.html#using-features.managing.changetype">enable
+            load balancing</a> for your Elastic Beanstalk environment,
+          which will create
+          anÂ <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/">Elastic
+            Load Balancing</a>Â load balancer dedicated to your
+          environment. Elastic Beanstalk fully manages this load balancer,
+          taking care of security settings and of terminating the load
+          balancer when you terminate your environment.
+        </p>
+        <p>
+          Alternatively, you can choose to share a load balancer across
+          several Elastic Beanstalk environments. With a shared load
+          balancer, you save on operational cost by avoiding a dedicated
+          load balancer for each environment. Elastic Beanstalk supports
+          the Classic Load Balancer, the Application Load Balancer, and
+          the Network Application Load Balancer types.
+        </p>
+          
+        <p>Amazon EC2 Elastic Load Balancing (ELB) offers a broader and more scalable range of load balancer options using more flexible 
+          on demand or commit pricing. Amazon EC2 load balancers support both application (HTTP, HTTPS, WebSockets) and 
+          network (TCP, UDP) traffic.
+        </p>
+        <p></p>
+      </dd>
+
+    <dt>Content delivery network</dt><dd tab-id="tab-difference-content-delivery">
+        
+        
+        <p><b>Content delivery network</b></p>
+        
+        <p>To improve web content load time, Lightsail lets you add a content delivery network
+          (CDN) distribution to your website or application. Lightsail CDN distributions are
+          available in three monthly data transfer tiers, including 50 GB included for the first
+          year, 200 GB, and 500 GB, for a fixed monthly price. </p>
+        <p>After you have created and deployed your Elastic Beanstalk
+          application you can sign up for CloudFront and start using
+          CloudFront to distribute your content.</p>
+        <p>Amazon EC2 and Elastic Load Balancing work directly with the Amazon CloudFront CDN (the same CDN used by
+          Lightsail). Using CloudFront directly offers more integration possibilities with other
+          AWS services or external origins. It also offers more flexible on demand and
+          commit-based pricing than Lightsail. </p>
+        <p></p>
+      </dd>
+
+    <dt>Managed database support</dt><dd tab-id="tab-difference-managed-db">
+        
+        
+        <p><b>Managed database support</b></p>
+        
+        <p>Lightsail offers managed databases in six standard, and six high availability
+          configurations, ranging from 1 to 4 processor cores, 1 GiB to 32 GiB RAM, and 40 GB to 960
+          GB storage. Lightsail databases are billed using a fixed, predictable monthly price. </p>
+        
+        <p>Elastic Beanstalk provides integration
+          withÂ <a href="https://aws.amazon.com/rds/" rel="noopener noreferrer" target="_blank"><span>Amazon
+            Relational Database Service (Amazon RDS)</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. You can use
+          Elastic Beanstalk to add a MySQL, PostgreSQL, Oracle, or SQL
+          Server database to an existing environment or a new one when you
+          create it. When you add a database instance, Elastic Beanstalk
+          provides the connection information to your application. It does
+          this by setting the environment properties for the database
+          hostname, port, user name, password, and database name. You can
+          also connect to an external database managed outside of Elastic
+          Beanstalk which allows you to use database types that aren't
+          supported with integrated databases. This option will require
+          additional security group and connection string configuration.</p>
+        
+        <p>Amazon EC2 works directly with Amazon RDS and NoSQL services, such as Amazon DynamoDB. Amazon RDS offers a
+          more scalable and broader range of configurations, including fixed instance types ranging
+          from 2 to dozens of vCPUs, and 100s of GiB RAM, unlimited storage, and seamlessly scalable
+          serverless options. </p>
+        <p></p>
+      </dd>
+
+  </dl></awsdocs-tabs>
+   
+   
+   
+  <p>
+    Here's a decision table comparing <b>Amazon
+      Lightsail, AWS Elastic Beanstalk, and Amazon EC2</b>
+    based on key decision factors:
+  </p>
+  
+  <div class="table-container"><div class="table-contents disable-scroll"><table id="w55aab6c11b9"><thead>
+        <tr>
+          <th align="center" style="text-align: center;">
+           <p> <b>Criteria</b> </p>
+          </th>
+          <th align="center" style="text-align: center;">
+            <p><b>Amazon Lightsail</b></p>
+          </th>
+          <th align="center" style="text-align: center;">
+            <p><b>AWS Elastic Beanstalk</b></p>
+          </th>
+          <th align="center" style="text-align: center;">
+            <p><b>Amazon EC2</b></p>
+          </th>
+        </tr>
+      </thead>
+        <tr>
+          <td tabindex="-1">
+            <b>Best For</b>
+          </td>
+          <td tabindex="-1">
+            Simple applications, small-scale deployments
+          </td>
+          <td tabindex="-1">
+            Web applications with automated deployment
+          </td>
+          <td tabindex="-1">
+            Full control over infrastructure
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Ease of Use</b>
+          </td>
+          <td tabindex="-1">
+            Very easy, simplified UI, preconfigured instances
+          </td>
+          <td tabindex="-1">
+            Easy, managed deployment with minimal setup
+          </td>
+          <td tabindex="-1">
+            Complex, requires manual setup and management
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Scalability</b>
+          </td>
+          <td tabindex="-1">
+            Limited auto-scaling, designed for small workloads
+          </td>
+          <td tabindex="-1">
+            Supports auto-scaling, but not as granular as EC2
+          </td>
+          <td tabindex="-1">
+            Fully customizable auto-scaling
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Customization</b>
+          </td>
+          <td tabindex="-1">
+            Limited configuration options
+          </td>
+          <td tabindex="-1">
+            Moderate customization with platform choices
+          </td>
+          <td tabindex="-1">
+            Full control over OS, networking, and resources
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Pricing</b>
+          </td>
+          <td tabindex="-1">
+            Fixed pricing, budget-friendly
+          </td>
+          <td tabindex="-1">
+            Pay for underlying EC2, but with some automation
+          </td>
+          <td tabindex="-1">
+            Pay-as-you-go, can be expensive if mismanaged
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Performance</b>
+          </td>
+          <td tabindex="-1">
+            Best for low to medium workloads
+          </td>
+          <td tabindex="-1">
+            Good for web applications with auto-scaling
+          </td>
+          <td tabindex="-1">
+            Best for high-performance and compute-intensive workloads
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Management</b>
+          </td>
+          <td tabindex="-1">
+            Fully managed, minimal maintenance
+          </td>
+          <td tabindex="-1">
+            Managed deployment, but needs monitoring
+          </td>
+          <td tabindex="-1">
+            Fully self-managed, requires expertise
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Supported Languages</b>
+          </td>
+          <td tabindex="-1">
+            Limited, works best with common stacks (LAMP, Node.js,
+            etc.)
+          </td>
+          <td tabindex="-1">
+            Supports multiple runtimes (Node.js, Python, Java, .NET,
+            etc.)
+          </td>
+          <td tabindex="-1">
+            Any OS and runtime supported
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Integration</b>
+          </td>
+          <td tabindex="-1">
+            Limited integrations with AWS services
+          </td>
+          <td tabindex="-1">
+            Good AWS integrations (RDS, S3, CloudWatch)
+          </td>
+          <td tabindex="-1">
+            Full AWS integration
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Security</b>
+          </td>
+          <td tabindex="-1">
+            Basic security features, simpler to manage
+          </td>
+          <td tabindex="-1">
+            Automated security updates, but still needs monitoring
+          </td>
+          <td tabindex="-1">
+            Full control over security settings
+          </td>
+        </tr>
+        <tr>
+          <td tabindex="-1">
+            <b>Use Case Examples</b>
+          </td>
+          <td tabindex="-1">
+            Personal blogs, small websites, MVPs, prototyping
+          </td>
+          <td tabindex="-1">
+            Web applications, APIs, SaaS platforms
+          </td>
+          <td tabindex="-1">
+            Large-scale applications, databases, custom networking
+          </td>
+        </tr>
+      </table></div></div>
+  
+    <p>
+      <b>Decision Guidelines:</b>
+    </p>
+  <div class="itemizedlist">
+     
+     
+     
+  <ul class="itemizedlist"><li class="listitem">
+      <p>
+        Choose <b>Lightsail</b> if you
+        want a simple, budget-friendly solution with minimal setup.
+      </p>
+    </li><li class="listitem">
+      <p>
+        Choose <b>Elastic Beanstalk</b> if
+        you need easy application deployment with some level of
+        control and scalability.
+      </p>
+    </li><li class="listitem">
+      <p>
+        Choose <b>EC2</b> if you need full
+        control over your infrastructure, high performance, or custom
+        configurations.
+      </p>
+    </li></ul></div>
+   
+   
+    
+  <h2 id="use">Use</h2>
+  <p>Now that youâve learned about what these services (and the supporting AWS tools and services) are optimized for, 
+    you can now dive deeper into how best to use them.
+     </p>
+
+  <awsdocs-tabs><dl style="display: none">
+    
+    <dt>Amazon Lightsail</dt><dd tab-id="tab-use-lightsail">
+
+        <div class="itemizedlist">
+           
+           
+           
+        <ul class="itemizedlist"><li class="listitem">
+            <p><b>What is Amazon Lightsail?</b>
+            </p>
+            <p>Get the full story on Amazon Lightsail, including what it does, and how you can benefit from it. This guide also includes 
+              step-by-step guidance to help you get started using Lightsail â and then configure it to meet your needs.
+            </p>
+            <p><a href="https://docs.aws.amazon.com/lightsail/latest/userguide/what-is-amazon-lightsail.html">Explore the guide</a>
+            </p>
+            <p></p>
+          </li><li class="listitem">
+            <p><b>Creating Lightsail container service images</b>
+            </p>                
+            <p>Learn how to create a container image on your local machine using a Dockerfile. You can then push it to your Lightsail 
+              container service to deploy it.
+            </p>
+            <p><a href="https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-creating-container-images.html">Use the tutorial</a>
+            </p>
+            <p></p>
+          </li><li class="listitem">
+            <p><b>Amazon Lightsail resource center</b>
+            </p>
+            <p>Explore Lightsail tutorials, videos, and links to core concept documentation.
+            </p>
+            <p><a href="https://aws.amazon.com/lightsail/resources/" rel="noopener noreferrer" target="_blank"><span>Visit the resource center</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+            </p>
+            <p></p>
+          </li></ul></div>  
+        
+      </dd>
+
+
+    <dt>Elastic Beanstalk</dt><dd tab-id="tab-use-beanstalk">
+        
+        <div class="itemizedlist">
+           
+           
+           
+        <ul class="itemizedlist"><li class="listitem">
+            <p><b>What is Elastic Beanstalk?</b>
+            </p>
+            <p>Get an overview of AWS Elastic Beanstalk. This guide not only provides an introduction of the service, 
+              but also covers how to get started using it and then provides in-depth descriptions of key features and how to use them.
+            </p>
+            <p><a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">Explore the guide</a>
+            </p>
+            <p></p>
+          </li><li class="listitem">
+            <p><b>Getting started with Elastic Beanstalk</b>
+            </p>               
+            <p>To help you understand how AWS Elastic Beanstalk works, this tutorial walks you through creating, exploring, updating, and deleting an Elastic Beanstalk application. 
+              It takes less than an hour to complete.
+            </p>
+            <p><a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.html">Use the tutorial</a>
+            </p>
+            <p></p>
+          </li><li class="listitem">
+            <p><b>Set up the Elastic Beanstalk command line interface</b>
+            </p>
+            <p>In this step-by-step tutorial, you will set up the Elastic Beanstalk Command Line Interface (EB CLI).</p>
+            <p><a href="https://aws.amazon.com/getting-started/hands-on/set-up-command-line-elastic-beanstalk/" rel="noopener noreferrer" target="_blank"><span>Use the tutorial</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+            </p>
+            <p></p>
+          </li></ul></div>  
+        
+      </dd>
+
+
+    <dt>Amazon EC2</dt><dd tab-id="tab-use-ec2">
+
+        <div class="itemizedlist">
+           
+           
+           
+        <ul class="itemizedlist"><li class="listitem">
+            <p><b>What is Amazon EC2?</b>
+            </p>
+            <p>Get an overview of Amazon EC2. This guide not only provides an introduction of the service, but also covers how to get started 
+              using it and then provides in-depth descriptions of key features and how to use them.
+            </p>
+            <p><a href="https://docs.aws.amazon.com/ec2/index.html">Explore the guide</a>
+            </p>
+            <p></p>
+          </li><li class="listitem">
+            <p><b>Amazon EC2 instance types</b>
+            </p>               
+            <p>When you launch an EC2 instance, the instance type that you specify determines the hardware of the host computer used for your 
+              instance. Each instance type offers different compute, memory, and storage capabilities, and is grouped in an instance family based 
+              on these capabilities. This guide walks you through EC2 instance types.
+            </p>
+            <p><a href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html">Explore the guide</a>
+            </p>
+            <p></p>
+          </li><li class="listitem">
+            <p><b>Amazon EC2 Auto Scaling with EC2 Spot Instances</b>
+            </p>
+            <p>Learn how to create a stateless, fault tolerant workload using Amazon EC2 Auto Scaling with
+              launch templates to request Amazon EC2 Spot Instances. </p>
+            <p><a href="https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/" rel="noopener noreferrer" target="_blank"><span>Get started with the tutorial</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+            </p>
+            <p></p>
+          </li></ul></div>  
+        
+      </dd>
+
+  </dl></awsdocs-tabs>
+   
+ <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./doc-history.html">Document history</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?feedback_destination_id=a0d18259-7974-4e8f-8382-0a4be53f4374&amp;topic_url=https://docs.aws.amazon.com/en_us/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?feedback_destination_id=a0d18259-7974-4e8f-8382-0a4be53f4374&amp;topic_url=https://docs.aws.amazon.com/en_us/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

@@ -1,0 +1,19 @@
+storage class. To help you optimize costs between S3 Standard and S3 Standard-IA you can use
+Amazon S3 analytics â Storage Class Analysis
+.
+S3 Express One Zone
+(
+EXPRESS_ONEZONE
+) â Amazon S3 Express One Zone is a
+high-performance, single-zone Amazon S3 storage class that is purpose-built to deliver
+consistent, single-digit millisecond data access for your most latency-sensitive
+applications. S3 Express One Zone is the lowest latency cloud object storage class available
+today, with data access speed up to 10x faster and with request costs 50 percent lower
+than S3 Standard. With S3 Express One Zone, your data is redundantly stored on multiple devices
+within a single Availability Zone. For more information, see
+S3 Express One Zone
+.
+Reduced Redundancy
+Storage
+(
+REDUCED_REDUNDANCY

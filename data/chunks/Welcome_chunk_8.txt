@@ -1,0 +1,21 @@
+Configuring block public access
+settings for your S3 buckets
+.
+AWS Identity and Access Management (IAM)
+â IAM is a web service that helps
+you securely control access to AWS resources, including your Amazon S3
+resources. With IAM, you can centrally manage permissions that control
+which AWS resources users can access. You use IAM to control who is
+authenticated (signed in) and authorized (has permissions) to use
+resources.
+Bucket
+policies
+â Use IAM-based policy language to configure
+resource-based permissions for your S3 buckets and the objects in
+them.
+Amazon S3 access points
+â Configure named network endpoints with dedicated access policies to
+manage data access at scale for shared datasets in Amazon S3.
+Access control
+lists (ACLs)
+â Grant read and write permissions for

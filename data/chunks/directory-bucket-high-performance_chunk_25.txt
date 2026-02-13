@@ -1,0 +1,15 @@
+plane on AWS.
+Kubernetes
+is an open source system that
+automates the management, scaling, and deployment of containerized
+applications.
+Amazon Elastic Container Service (Amazon ECS)
+â Amazon ECS is a fully managed container
+orchestration service that helps you easily deploy, manage, and scale
+containerized applications.
+AWS Key Management Service (AWS KMS)
+â AWS Key Management Service (AWS KMS) is an AWS managed service that makes it easy for you to create and control the encryption keys that are used to encrypt your data. The AWS KMS keys that you create in AWS  KMS are protected by FIPS 140-2 validated hardware security modules (HSM).
+To use or manage your KMS keys, you interact with AWS KMS.
+Amazon Athena
+â
+Athena is an interactive query service that makes it easy to analyze data

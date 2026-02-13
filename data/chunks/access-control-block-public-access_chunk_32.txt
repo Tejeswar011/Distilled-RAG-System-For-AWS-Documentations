@@ -1,0 +1,27 @@
+account Block Public Access settings
+s3:PutAccountPublicAccessBlock
+DELETE
+account Block Public Access settings
+s3:PutAccountPublicAccessBlock
+PUT
+access point Block Public Access settings
+s3:CreateAccessPoint
+Note
+The
+DELETE
+operations require the same permissions as the
+PUT
+operations. There are no separate permissions for the
+DELETE
+operations.
+Configuring block public
+access
+For more information about configuring block public access for your AWS account, your Amazon S3
+buckets, and your access points, see the following topics:
+Configuring block public
+access settings for your account
+Configuring block public access
+settings for your S3 buckets
+Performing
+block public access operations on an access point
+Javascript is disabled or is unavailable in your browser.

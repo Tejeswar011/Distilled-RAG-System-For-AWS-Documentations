@@ -1,0 +1,20 @@
+instances.
+Explore the guide
+Getting started with the console using Linux containers on
+AWS Fargate
+Get started with Amazon ECS on AWS Fargate by using the Fargate launch type for
+your tasks in the Regions where Amazon ECS supports AWS Fargate.
+Explore the guide
+Creating a cluster with a Fargate Linux task using the
+AWS CLI
+Set up a cluster, register a task definition, run a Linux task, and perform
+other common scenarios in Amazon ECS with the AWS CLI.
+Explore the guide
+AWS Outposts
+Getting started with AWS Outposts
+Access the complete set of AWS Outposts technical documentation.
+Explore the guides
+What is AWS Outposts?
+Get an introduction to this fully managed service that extends AWS
+infrastructure, services, APIs, and tools to customer premises.
+Explore the guide

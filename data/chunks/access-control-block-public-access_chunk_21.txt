@@ -1,0 +1,34 @@
+An AWS principal, user, role, or service principal (e.g.
+aws:PrincipalOrgID
+)
+A set of Classless Inter-Domain Routings (CIDR) blocks, using
+aws:SourceIp
+.
+For more information about CIDR, see
+RFC 4632
+on the RFC
+Editor website.
+Note
+Bucket policies that grant access conditioned on the
+aws:SourceIp
+condition
+key with very broad IP ranges (for example, 0.0.0.0/1) are evaluated as
+"public." This includes values broader than
+/8
+for IPv4 and
+/32
+for IPv6 (excluding RFC1918 private ranges). Block
+public access will reject these "public" policies and prevent cross-account
+access to buckets that are already using these "public" policies.
+aws:SourceArn
+aws:SourceVpc
+aws:SourceVpce
+aws:SourceOwner
+aws:SourceAccount
+aws:userid
+, outside the pattern
+"
+AROLEID:*
+"
+s3:DataAccessPointArn
+Note

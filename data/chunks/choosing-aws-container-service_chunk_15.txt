@@ -1,0 +1,23 @@
+Choose
+Now that you know the criteria by which you are evaluating your container options, you are
+ready to choose which AWS container services might be a good fit for your organizational
+requirements.
+The following table highlights which services are optimized for which circumstances. Use the
+table to help determine which container services and tools are.
+Containers category
+When would you use it?
+Services
+Capacity
+Use when you want to run your containers on self-managed or AWS managed
+compute.
+AWS Fargate
+Amazon EC2
+AWS Outposts
+Orchestration
+Use when you need the capacity to deploy and manage up to thousands of containers.
+Amazon ECS
+Amazon EKS
+Red Hat OpenShift Service on AWS
+Vertical solutions
+Use when you or your team don't have a lot of experience with containers or
+infrastructure.

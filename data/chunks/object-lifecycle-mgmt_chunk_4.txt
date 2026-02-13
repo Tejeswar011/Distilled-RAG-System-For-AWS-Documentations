@@ -1,0 +1,17 @@
+the object becomes eligible for the lifecycle action. For example, if an object is
+scheduled to expire and Amazon S3 doesn't immediately expire the object, you won't be charged
+for storage after the expiration time.
+The one exception to this behavior is if you have a lifecycle rule to transition to the
+S3 Intelligent-Tiering storage class. In that case, billing changes don't occur until the
+object has transitioned to S3 Intelligent-Tiering. For more information about S3 Lifecycle
+rules, see
+Lifecycle configuration elements
+.
+Note
+There are no data retrieval charges for lifecycle transitions. However, there are
+per-request ingestion charges when using
+PUT
+,
+COPY
+, or
+lifecycle rules to move data into any S3 storage class. Consider the ingestion or

@@ -1,0 +1,22 @@
+can access them. For information, see
+Restoring an archived object
+.
+Reduced Redundancy Storage  (
+REDUCED_REDUNDANCY
+) Not recommended
+Noncritical, frequently accessed data with millisecond access
+99.99%
+99.99%
+>= 3
+None
+None
+None
+* S3 Glacier Flexible Retrieval requires 40 KB of additional metadata for each archived
+object. This includes 32 KB of metadata charged at the S3 Glacier Flexible Retrieval rate
+(required to identify and retrieve your data), and an additional 8 KB data charged at the
+S3 Standard rate. The S3 Standard rate is required to maintain the user-defined name and
+metadata for objects archived to S3 Glacier Flexible Retrieval. For more information about
+storage classes, see
+Amazon S3 storage
+classes
+.

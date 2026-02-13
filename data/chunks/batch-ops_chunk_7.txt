@@ -1,0 +1,10 @@
+can also specify a manifest in a simple CSV format that enables you to perform batch
+operations on a customized list of objects contained within a single bucket.
+After you create a job, Amazon S3 processes the list of objects in the manifest and runs the
+specified operation against each object. While a job is running, you can monitor its progress
+programmatically or through the Amazon S3 console. You can also configure a job to generate a
+completion report when it finishes. The completion report describes the results of each task
+that was performed by the job. For more information about monitoring jobs, see
+Managing S3 Batch Operations jobs
+.
+There are costs associated with S3 Batch Operations. You are billed for creating Batch

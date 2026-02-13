@@ -1,0 +1,27 @@
+SRR, see
+When to use Same-Region Replication
+.
+Topics
+Why use replication?
+When to use Cross-Region Replication
+When to use Same-Region Replication
+When to use two-way replication (bi-directional
+replication)
+When to use S3 Batch Replication
+Workload requirements and live
+replication
+What does Amazon S3 replicate?
+Requirements and considerations for
+replication
+Setting up live replication overview
+Managing or pausing live replication
+Replicating existing objects with
+Batch Replication
+Troubleshooting replication
+Monitoring replication with metrics, event notifications,
+and statuses
+Why use replication?
+Replication can help you do the following:
+Replicate objects while retaining metadata
+â
+You can use replication to make copies of your objects that retain all metadata, such as

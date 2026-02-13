@@ -1,0 +1,17 @@
+AWS KMS keys (DSSE-KMS). For more information, see
+Data protection and encryption
+.
+S3 Express One Zone offers you the option to choose the checksum algorithm that is used to
+validate your data during upload or download. You can select one of the following Secure
+Hash Algorithms (SHA) or Cyclic Redundancy Check (CRC) data-integrity check algorithms:
+CRC32, CRC32C, SHA-1, and SHA-256. MD5-based checksums are not supported with the
+S3 Express One Zone storage class.
+For more information, see
+S3 additional checksum best
+practices
+.
+AWS Signature Version 4
+(SigV4)
+S3 Express One Zone uses AWS Signature Version 4 (SigV4). SigV4 is
+a signing protocol used to authenticate requests to Amazon S3 over HTTPS. S3 Express One Zone
+signs requests by using AWS Sigv4. For more information, see

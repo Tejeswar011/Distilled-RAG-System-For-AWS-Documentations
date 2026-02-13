@@ -1,0 +1,21 @@
+simple
+DELETE
+request (a request that doesn't specify a version ID), Amazon S3 returns a
+200 OK
+response and inserts a
+delete marker
+in
+the bucket, and that marker becomes the current version of the object with a new ID. For more
+information about managing delete markers with Object Lock, see
+Managing delete markers with Object Lock
+.
+Best practices for using S3 Object Lock
+Consider using
+Governance mode
+if you want to protect objects from being deleted by most
+users during a pre-defined retention period, but at the same time want some users with
+special permissions to have the flexibility to alter the retention settings or delete the
+objects.
+Consider using
+Compliance mode
+if you never want any user, including the root user in your

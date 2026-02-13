@@ -1,0 +1,17 @@
+Retain Until Date
+for the object version
+by adding the specified duration to the object version's creation timestamp. The object
+version is then protected exactly as though you explicitly placed an individual lock
+with that retention period on the object version.
+Note
+When you
+PUT
+an object version that has an explicit individual
+retention mode and period in a bucket, the object version's individual Object Lock
+settings override any bucket property retention settings.
+Like all other Object Lock settings, retention periods apply to individual object
+versions. Different versions of a single object can have different retention modes and
+periods.
+For example, suppose that you have an object that is 15 days into a 30-day retention
+period, and you
+PUT

@@ -1,0 +1,15 @@
+designed to meet the needs of the majority of general purpose workloads, such as
+large-scale micro-services, web servers, small and medium databases, data logging,
+code repositories, virtual desktops, and development and test environments.
+The baseline utilization and ability to burst are governed by CPU credits. Each
+burstable performance instance continuously earns credits when it stays below the CPU
+baseline, and continuously spends credits when it bursts above the baseline. For more
+information, see
+Burstable
+performance instances
+in the
+Amazon EC2 User Guide
+.
+Flex instances
+C7i-flex, C8i-flex, M7i-flex, M8i-flex, R8i-flex instances offer a balance of compute, memory, and network resources,
+and they provide the most cost-effective way to run a broad spectrum of general purpose

@@ -1,0 +1,17 @@
+no
+longer applies. Thus, "Account-2" regains access to the bucket, even if you
+leave
+RestrictPublicBuckets
+enabled.
+Access points
+Amazon S3 evaluates block public access settings slightly differently for access points
+compared to buckets. The rules that Amazon S3 applies to determine when an access point policy is
+public are generally the same for access points as for buckets, except in the following
+situations:
+An access point that has a VPC network origin is always considered non-public,
+regardless of the contents of its access point policy.
+An access point policy that grants access to a set of access points using
+s3:DataAccessPointArn
+is considered public. Note that this
+behavior is different than for bucket policies. For example, a bucket policy
+that grants access to values of

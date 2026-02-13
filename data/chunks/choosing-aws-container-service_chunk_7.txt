@@ -1,0 +1,12 @@
+process of deploying and managing applications. The AWS services in this layer are:
+AWS App Runner:
+AWS App Runner is a fully managed service
+designed to simplify the deployment and use of containerized web applications and APIs.
+You provide your container image, and App Runner automatically builds, deploys, and scales
+your application. It handles the provisioning of the underlying compute resources, load
+balancing, and automatic scaling based on incoming traffic.
+Amazon Lightsail:
+Amazon Lightsail is a cloud
+platform that offers pre-configured virtual private servers (instances) and other
+resources for running applications. It provides pre-defined configurations for quickly
+provisioning compute instances, databases, storage, and networking resources.

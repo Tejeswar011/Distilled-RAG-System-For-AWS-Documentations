@@ -1,0 +1,13 @@
+analytics users to discover, prepare, move, and integrate data from multiple
+sources. You can use AWS Glue for analytics, machine learning, and application
+development. AWS Glue also includes additional productivity and data-ops tooling
+for authoring, running jobs, and implementing business workflows.
+Amazon EMR
+â Amazon EMR is a managed cluster platform that simplifies
+running big data frameworks, such as Apache Hadoop and
+Apache Spark, on AWS to process and analyze vast amounts of
+data.
+AWSCloudTrail
+â AWSCloudTrail is s an AWS service
+that helps you enable operational and risk auditing, governance, and compliance of your AWS account.
+Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in

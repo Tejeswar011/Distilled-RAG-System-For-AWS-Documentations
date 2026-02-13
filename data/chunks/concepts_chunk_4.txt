@@ -1,0 +1,21 @@
+AWS Backup
+Automate backing up your Amazon EC2 instances and the Amazon EBS volumes attached to
+them.
+Amazon CloudWatch
+Monitor your instances and Amazon EBS volumes.
+Elastic Load Balancing
+Automatically distribute incoming application traffic across multiple
+instances.
+Amazon GuardDuty
+Detect potentially unauthorized or malicious use of your EC2 instances.
+EC2 Image Builder
+Automate the creation, management, and deployment of customized, secure, and
+up-to-date server images.
+AWS Launch Wizard
+Size, configure, and deploy AWS resources for third-party applications
+without having to manually identify and provision individual AWS
+resources.
+AWS Systems Manager
+Perform operations at scale on EC2 instances with this secure end-to-end
+management solution.
+Additional compute services

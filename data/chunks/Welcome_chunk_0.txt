@@ -1,0 +1,17 @@
+What is Amazon S3? - Amazon Simple Storage Service
+What is Amazon S3? - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+Features of Amazon S3
+How Amazon S3 works
+Amazon S3 data consistency model
+Related services
+Accessing Amazon S3
+Paying for Amazon S3
+PCI DSS compliance
+What is Amazon S3?
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability,
+data availability, security, and performance. Customers of all sizes and industries can use
+Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes,
+websites, mobile applications, backup and restore, archive, enterprise applications, IoT

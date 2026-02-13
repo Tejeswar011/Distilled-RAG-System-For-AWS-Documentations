@@ -1,0 +1,15 @@
+buckets are private and can be accessed only by users who are explicitly granted
+access. Unlike general purpose buckets, which can set the access control boundary at the
+bucket, prefix, or object tag level, the access control boundary for
+directory buckets is set only at the bucket level. For more information, see
+Authorizing Regional endpoint API operations with IAM
+.
+S3 Block Public
+Access
+â All S3 Block Public Access settings are enabled
+by default at the bucket level. This default setting can't be modified.
+S3 Object Ownership
+(bucket
+owner enforced by default) â Access control lists (ACLs) are not
+supported for directory buckets. Directory buckets automatically use the
+bucket owner enforced setting for S3 Object Ownership. Bucket owner enforced

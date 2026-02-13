@@ -1,0 +1,14 @@
+default retention period on an S3 bucket. You may also restrict the minimum and
+maximum allowable retention periods with the
+s3:object-lock-remaining-retention-days
+condition key in the bucket
+policy. This condition key helps you establish the allowable retention period. For more information, see
+Setting limits on retention periods with a bucket policy
+.
+Legal hold
+â A legal hold provides the
+same protection as a retention period, but it has no expiration date. Instead, a
+legal hold remains in place until you explicitly remove it. Legal holds are
+independent from retention periods and are placed on individual object
+versions.
+Object Lock works only in buckets that have S3 Versioning enabled. When you lock an object

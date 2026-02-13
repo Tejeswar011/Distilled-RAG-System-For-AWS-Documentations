@@ -1,0 +1,11 @@
+that account. Account-level settings automatically inherit from organization policies
+when present. Similarly, if you apply a setting to a bucket, it applies to all access points
+associated with that bucket.
+The policy inheritance and enforcement works as follows:
+Organization-level policies automatically apply to member accounts, enforcing
+any existing account-level settings
+Account-level setting inherit from organization policies when present, or use
+locally configured settings when no organization policy exists
+Bucket-level settings operate independently but are subject to enforcement
+restrictions. S3 applies the most restrictive combination across all applicable
+levels - organization/account-level and bucket-level settings. This means a

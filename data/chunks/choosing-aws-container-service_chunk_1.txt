@@ -1,0 +1,12 @@
+standard for organizing compute resources, and managing the content of your application
+deployments.
+Containers provide a discrete reproducible compute environment for building software
+to deploy in the cloud. They also simplify packaging and dependency management. You can
+use them for everything from orchestrating web applications or very large multi-cluster
+estates to testing your work and doing a proof of concept on your laptop.
+This decision guide helps you get started and choose the right AWS container service
+for your modern application development.
+This 3Â½-minute excerpt is from an 11-minute presentation at re:Invent 2023 by
+Umar Saeed, an AWS senior manager and solutions architect. He provides a quick
+overview of AWS container choices.
+Understand

@@ -1,0 +1,19 @@
+CreateSession
+.
+The
+supported AWS SDKs
+for S3 Express One Zone
+handle session establishment and refreshment on your
+behalf. To protect your sessions, temporary security
+credentials expire after 5 minutes. After you download and install the AWS SDKs and
+configure the necessary AWS Identity and Access Management (IAM) permissions, you can immediately start
+using API operations.
+Features of S3 Express One Zone
+The following S3 features are available for S3 Express One Zone. For a complete list of
+supported API operationss and unsupported features, see
+Differences for directory buckets
+.
+Access management and
+security
+You can use the following features to audit and manage access. By default, directory
+buckets are private and can be accessed only by users who are explicitly granted

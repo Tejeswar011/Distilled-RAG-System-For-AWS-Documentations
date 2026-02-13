@@ -1,0 +1,14 @@
+Identities
+When you create an AWS account, you begin with one sign-in identity called the AWS account
+root user
+that has complete access to all AWS services and resources. We strongly recommend that you don't use the root user for everyday tasks. For tasks that require root user credentials, see
+Tasks that require root user credentials
+in the
+IAM User Guide
+.
+Use IAM to set up other identities in addition to your
+root user, such as administrators, analysts, and developers, and grant them access to the resources
+they need to succeed in their tasks.
+Access management
+After a user is set up in IAM, they use their sign-in credentials to authenticate with
+AWS. Authentication is provided by matching the sign-in credentials to a principal (an

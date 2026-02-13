@@ -1,0 +1,17 @@
+lessens your need to invest in hardware up front, so you can develop and deploy
+applications faster. You can use Amazon EC2 to launch as many or as few virtual
+servers as you need, configure security and networking, and manage
+storage.
+AWS Lambda
+â Lambda is a compute service that lets you run
+code without provisioning or managing servers. You configure notification
+settings on a bucket, and grant Amazon S3 permission to invoke a function on the
+function's resource-based permissions policy.
+Amazon Elastic Kubernetes Service
+(Amazon EKS)
+â Amazon EKS is a managed service that eliminates the need
+to install, operate, and maintain your own Kubernetes control
+plane on AWS.
+Kubernetes
+is an open source system that
+automates the management, scaling, and deployment of containerized

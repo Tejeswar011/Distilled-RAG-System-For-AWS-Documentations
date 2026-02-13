@@ -1,0 +1,16 @@
+the hardware of the host computer used for your instance. Each instance type offers
+different compute, memory, and storage capabilities, and is grouped in an instance
+family based on these capabilities. This guide walks you through EC2 instance
+types.
+Explore the guide
+Amazon EC2 Auto Scaling with EC2 Spot Instances
+Learn how to create a stateless, fault-tolerant workload using Amazon EC2 Auto Scaling with
+launch templates to request Amazon EC2 Spot Instances.
+Get started with the tutorial
+AWS Fargate
+Getting started with AWS Fargate
+This guide explains the basics of AWS Fargate, a technology that you can use
+with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2
+instances.
+Explore the guide
+Getting started with the console using Linux containers on

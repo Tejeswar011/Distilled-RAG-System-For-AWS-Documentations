@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>High performance workloads - Amazon Simple Storage Service</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="directory-bucket-high-performance" /><meta name="default_state" content="directory-bucket-high-performance" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html" /><meta name="description" content="Amazon S3 Express One Zone, a high-performance, single-zone Amazon S3 storage class that is purpose-built to deliver consistent, single-digit millisecond data access for your most latency-sensitive applications." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon Simple Storage Service" /><meta name="guide" content="User Guide" /><meta name="abstract" content="Learn how to use Amazon Simple Storage Service (Amazon S3) to store and retrieve any amount of data from anywhere. This guide explains Amazon S3 concepts, such as buckets, objects, and related configurations, and includes code examples for common operations." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="id-id" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="id" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="de-de" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="de" /><link rel="alternative" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="en-us" /><link rel="alternative" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="en" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="es-es" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="es" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="fr-fr" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="fr" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="it-it" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="it" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="ja-jp" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="ja" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="ko-kr" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="ko" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="pt-br" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="pt" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="zh-cn" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_tw/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="zh-tw" /><link rel="alternative" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html" hreflang="x-default" /><meta name="feedback-item" content="S3" /><meta name="this_doc_product" content="Amazon Simple Storage Service" /><meta name="this_doc_guide" content="User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'s3'}"></script><meta id="panorama-serviceSubSection" value="User Guide" /><meta id="panorama-serviceConsolePage" value="High performance workloads" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>High performance workloads - Amazon Simple Storage Service</title><meta name="pdf" content="/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf#directory-bucket-high-performance" /><meta name="rss" content="s3-userguide-rss-updates.rss" /><meta name="forums" content="https://repost.aws/tags/TADSTjraA0Q4-a1dxk6eUYaw" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=S3&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/directory-bucket-high-performance.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/directory-bucket-high-performance.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/directory-bucket-high-performance.html" /><meta name="keywords" content="S3,Amazon S3,S3 User Guide,Amazon S3 User Guide,Amazon User Guide,s3 bucket,s3 object,cloud storage,data storage,bucket type,Availability Zone,directory bucket limits,directory buckets use cases,low latency storage class,data residency,high performance Amazon S3 storage class,latency-sensitive applications,low latency,faster data access speed,single Availability Zone" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon Simple Storage Service (S3)",
+        "item" : "https://docs.aws.amazon.com/s3/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "User Guide",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "Working with directory buckets",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 5,
+        "name" : "Use cases for directory buckets",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-use-cases.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 6,
+        "name" : "High performance workloads",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-use-cases.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf#directory-bucket-high-performance" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/s3/index.html">Amazon Simple Storage Service (S3)</a><a href="Welcome.html">User Guide</a></div><div id="page-toc-src"><a href="#s3-express-one-zone">S3 Express One Zone</a></div><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="directory-bucket-high-performance">High performance workloads</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div>
+	<h2 id="s3-express-one-zone">S3 Express One Zone</h2>
+	 <p> You can use Amazon S3 Express One Zone for high-performance workloads. S3 Express One Zone is the first S3
+		storage class where you can select a single Availability Zone with the option to co-locate
+		your object storage with your compute resources which provides the highest possible access
+		speed. Objects in S3 Express One Zone are stored in directory buckets located in Availability Zones.
+		For more information on directory buckets, see <a href="https://docs.aws.amazon.com//AmazonS3/latest/userguide/directory-buckets-overview.html">Directory
+			buckets</a>. </p>
+	<p>Amazon S3 Express One Zone is a high-performance, single-zone Amazon S3 storage class that is
+		purpose-built to deliver consistent, single-digit millisecond data access for your most
+		latency-sensitive applications. S3 Express One Zone is the lowest latency cloud-object storage class
+		available today, with data access speeds up to 10x faster and with request costs 50 percent
+		lower than S3 Standard. Applications can benefit immediately from requests being completed up
+		to an order of magnitude faster. S3 Express One Zone provides similar performance elasticity as
+		other S3 storage classes. S3 Express One Zone is used for workloads or performance-critical applications that
+		require consistent single-digit millisecond latency. </p>
+	<p>As with other Amazon S3 storage classes, you don't need to plan or provision capacity or
+		throughput requirements in advance. You can scale your storage up or down, based on need,
+		and access your data through the Amazon S3 API.</p>
+	
+	<p>The Amazon S3 Express One Zone storage class is designed for 99.95 percent availability within a single Availability Zone and is backed
+		by the <a href="https://aws.amazon.com/s3/sla/" rel="noopener noreferrer" target="_blank"><span>Amazon S3 Service Level Agreement</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. With
+		S3 Express One Zone, your data is redundantly stored on multiple devices within a single
+		Availability Zone. S3 Express One Zone is designed to handle concurrent device failures by quickly
+		detecting and repairing any lost redundancy. If the existing device encounters a
+		failure, S3 Express One Zone automatically shifts requests to new devices within an Availability Zone. 
+		This redundancy helps ensure uninterrupted access to your data within an Availability
+		Zone.</p>
+	<p>S3 Express One Zone is ideal for any application where it's important to minimize the latency
+		required to access an object. Such applications can be human-interactive workflows, like
+		video editing, where creative professionals need responsive access to content from their
+		user interfaces. S3 Express One Zone also benefits analytics and machine learning workloads that
+		have similar responsiveness requirements from their data, especially workloads with lots of
+		smaller accesses or large numbers of random accesses. S3 Express One Zone can be used with other
+		AWS services to support analytics and artificial intelligence and machine learning (AI/ML)
+		workloads, such as Amazon EMR, Amazon SageMaker AI, and Amazon Athena.</p>
+	<div class="mediaobject">
+		 
+		 
+			<img src="/images/AmazonS3/latest/userguide/images/s3-express-one-zone.png" class="aws-docs-img-whiteBg aws-docs-img-padding" alt="Diagram showing how S3 Express One Zone works." />
+		 
+		
+	</div>
+	<p>For the directory buckets that use the S3 Express One Zone storage class, data is stored across multiple devices
+		within a single Availability Zone but doesn't store data redundantly across Availability
+		Zones. When you create a directory bucket to use the S3 Express One Zone storage class, we recommend that you specify an AWS Region and
+		an Availability Zone that's local to your Amazon EC2, Amazon Elastic Kubernetes Service, or Amazon Elastic Container Service (Amazon ECS) compute instances
+		to optimize performance. </p>
+	<p>When using S3 Express One Zone, you can interact with your directory bucket in a virtual private cloud (VPC) by
+		using a gateway VPC endpoint. With a gateway endpoint, you can access S3 Express One Zone
+		directory buckets from your VPC without an internet gateway or NAT device for your VPC,
+		and at no additional cost. </p>
+	<p>You can use many of the same Amazon S3 API operations and features with directory buckets
+		that you use with general purpose buckets and other storage classes. These include Mountpoint for
+		Amazon S3, server-side encryption with Amazon S3 managed keys (SSE-S3), server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), S3 Batch Operations, and S3 Block
+		Public Access. You can access S3 Express One Zone by using the Amazon S3 console, AWS Command Line Interface (AWS CLI),
+		AWS SDKs, and the Amazon S3 REST API.</p>
+
+	<p>For more information about S3 Express One Zone, see the following topics.</p>
+	<div class="itemizedlist">
+		 
+		 
+		 
+		 
+	<ul class="itemizedlist"><li class="listitem">
+			<p><a href="#s3-express-one-zone-overview">Overview</a></p>
+		</li><li class="listitem">
+			<p><a href="#s3-express-features">Features of S3 Express One Zone</a></p>
+		</li><li class="listitem">
+			<p><a href="#s3-express-related-services">Related services</a></p>
+		</li><li class="listitem">
+			<p><a href="#s3-express-next-steps">Next steps</a></p>
+		</li></ul></div>
+	
+	 
+		<h3 id="s3-express-one-zone-overview">Overview</h3>
+		<p>To optimize performance and reduce latency, S3 Express One Zone introduces the following new
+			concepts.</p>
+		 
+			<h4 id="s3-express-overview-az">Availability Zones</h4>
+			<p>The Amazon S3 Express One Zone storage class is designed for 99.95 percent availability within a single Availability Zone and is backed
+		by the <a href="https://aws.amazon.com/s3/sla/" rel="noopener noreferrer" target="_blank"><span>Amazon S3 Service Level Agreement</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. With
+		S3 Express One Zone, your data is redundantly stored on multiple devices within a single
+		Availability Zone. S3 Express One Zone is designed to handle concurrent device failures by quickly
+		detecting and repairing any lost redundancy. If the existing device encounters a
+		failure, S3 Express One Zone automatically shifts requests to new devices within an Availability Zone. 
+		This redundancy helps ensure uninterrupted access to your data within an Availability
+		Zone.</p>
+			<p>An Availability Zone is one or more discrete data centers with redundant power,
+				networking, and connectivity in an AWS Region. When you create a directory bucket,
+				you choose the Availability Zone and AWS Region where your bucket will be located.
+			</p>
+			 
+				<h5 id="directory-buckets-availability-zone">Single Availability Zone</h5>
+				<p>When you create a directory bucket, you choose the Availability Zone and
+					AWS Region.</p>
+				<p>Directory buckets use the S3 Express One Zone storage class, which is built to be used by
+					performance-sensitive applications. S3 Express One Zone is the first S3 storage class where you can select a single Availability Zone with 
+the option to co-locate your object storage with your compute resources, which provides the highest possible access speed.</p>
+				<p>With
+		S3 Express One Zone, your data is redundantly stored on multiple devices within a single
+		Availability Zone. S3 Express One Zone is designed for 99.95 percent availability within a single Availability Zone and is backed
+		by the <a href="https://aws.amazon.com/s3/sla/" rel="noopener noreferrer" target="_blank"><span>Amazon S3 Service Level Agreement</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. For more information, see <a href="#s3-express-overview-az">Availability Zones</a></p>
+			 
+		 
+		 
+			<h4 id="s3-express-overview-endpoints">Endpoints and gateway VPC
+					endpoints</h4>
+			<p>Bucket-management API operations for directory buckets are available through a
+				Regional endpoint and are referred to as Regional endpoint API operations. Examples
+				of Regional endpoint API operations are <code class="code">CreateBucket</code> and
+					<code class="code">DeleteBucket</code>. After you create a directory bucket, you can use
+				Zonal endpoint API operations to upload and manage the objects in your directory
+				bucket. Zonal endpoint API operations are available through a Zonal endpoint.
+				Examples of Zonal endpoint API operations are <code class="code">PutObject</code> and
+					<code class="code">CopyObject</code>.</p>
+			<p>You can access S3 Express One Zone from your VPC by using gateway VPC endpoints. After you
+				create a gateway endpoint, you can add it as a target in your route table for
+				traffic destined from your VPC to S3 Express One Zone. As with Amazon S3, there is no additional
+				charge for using gateway endpoints. For more information about how to configure
+				gateway VPC endpoints, see <a href="./s3-express-networking.html">Networking for directory buckets</a></p>
+		 
+		 
+			<h4 id="s3-express-overview-authorization">Session-based
+					authorization</h4>
+			<p>With S3 Express One Zone, you authenticate and authorize requests through a new
+				session-based mechanism that is optimized to provide the lowest latency. You can use
+					<code class="code">CreateSession</code> to request temporary credentials that provide
+				low-latency access to your bucket. These temporary credentials are scoped to a
+				specific S3 directory bucket. Session tokens are used only with Zonal (object-level)
+				operations (with the exception of <a href="./directory-buckets-objects-copy.html">CopyObject</a>). For more information, see <a href="./s3-express-create-session.html">Authorizing Zonal endpoint API operations with
+                CreateSession</a>. </p>
+			<p>The <a href="./s3-express-SDKs.html#s3-express-getting-started-accessing-sdks">supported AWS SDKs
+					for S3 Express One Zone</a> handle session establishment and refreshment on your
+				behalf. To protect your sessions, temporary security
+            credentials expire after 5 minutes. After you download and install the AWS SDKs and
+				configure the necessary AWS Identity and Access Management (IAM) permissions, you can immediately start
+				using API operations.</p>
+		 
+	 
+	 
+		<h3 id="s3-express-features">Features of S3 Express One Zone</h3>
+		<p>The following S3 features are available for S3 Express One Zone. For a complete list of
+			supported API operationss and unsupported features, see <a href="./s3-express-differences.html">Differences for directory buckets</a>.</p>
+		 
+			<h4 id="s3-express-features-access-management">Access management and
+					security</h4>
+			<p>You can use the following features to audit and manage access. By default, directory
+				buckets are private and can be accessed only by users who are explicitly granted
+				access. Unlike general purpose buckets, which can set the access control boundary at the
+				bucket, prefix, or object tag level, the access control boundary for
+				directory buckets is set only at the bucket level. For more information, see <a href="./s3-express-security-iam.html">Authorizing Regional endpoint API operations with IAM</a>. </p>
+			<div class="itemizedlist">
+				 
+				 
+				 
+				 
+				 
+			<ul class="itemizedlist"><li class="listitem">
+					<p><a href="./access-control-block-public-access.html">S3 Block Public
+							Access</a> â All S3 Block Public Access settings are enabled
+						by default at the bucket level. This default setting can't be modified.
+					</p>
+				</li><li class="listitem">
+					<p><a href="./about-object-ownership.html">S3 Object Ownership</a> (bucket
+						owner enforced by default) â Access control lists (ACLs) are not
+						supported for directory buckets. Directory buckets automatically use the
+						bucket owner enforced setting for S3 Object Ownership. Bucket owner enforced
+						means that ACLs are disabled, and the bucket owner automatically owns and
+						has full control over every object in the bucket. This default setting can't
+						be modified. </p>
+				</li><li class="listitem">
+					<p><a href="./s3-express-security-iam.html">AWS Identity and Access Management (IAM)</a> â
+						IAM helps you securely control access to your directory buckets. You can
+						use IAM to grant access to bucket management (Regional) API operations and
+						object management (Zonal) API operations through the
+							<code class="code">s3express:CreateSession</code> action. For more information, see
+							<a href="./s3-express-security-iam.html">Authorizing Regional endpoint API operations with IAM</a>. Unlike object-management
+						actions, bucket management actions cannot be cross-account. Only the bucket
+						owner can perform those actions.</p>
+				</li><li class="listitem">
+					<p><a href="./s3-express-security-iam-example-bucket-policies.html">Bucket
+							policies</a> â Use IAM-based policy language to configure
+						resource-based permissions for your directory buckets. You can also use
+						IAM to control access to the <code class="code">CreateSession</code> API operation,
+						which allows you to use the Zonal, or object management, API operations. You
+						can grant same-account or cross-account access to Zonal API operations. For
+						more information about S3 Express One Zone permissions and policies, see <a href="./s3-express-security-iam.html">Authorizing Regional endpoint API operations with IAM</a>.</p>
+				</li><li class="listitem">
+					<p><a href="./access-analyzer.html">IAM Access Analyzer for S3</a>
+						â Evaluate and monitor your access policies to make sure that the
+						policies provide only the intended access to your S3 resources.</p>
+				</li></ul></div>
+		 
+		 
+			<h4 id="s3-express-features-logging-monitoring">Logging and
+					monitoring</h4>
+			<p>S3 Express One Zone uses the following S3 logging and monitoring tools that you can use to
+				monitor and control how your resources are being used:</p>
+			<div class="itemizedlist">
+				 
+				 
+			<ul class="itemizedlist"><li class="listitem">
+					<p><a href="./cloudwatch-monitoring.html">Amazon CloudWatch metrics</a> â
+						Monitor your AWS resources and applications by using CloudWatch to collect and
+						track metrics. S3 Express One Zone uses the same CloudWatch namespace as other Amazon S3
+						storage classes (<code class="code">AWS/S3</code>) and supports daily storage metrics for
+						directory buckets: <code class="code">BucketSizeBytes</code> and
+							<code class="code">NumberOfObjects</code>. For more information, see <a href="./cloudwatch-monitoring.html">Monitoring metrics with Amazon CloudWatch</a>.</p>
+				</li><li class="listitem">
+					<p><a href="./cloudtrail-logging-s3-info.html">AWS CloudTrail logs</a> â AWS CloudTrail is an
+						AWS service that helps you implement operational and risk auditing,
+						governance, and compliance of your AWS account by recording the actions
+						taken by a user, role, or an AWS service. For S3 Express One Zone, CloudTrail captures
+						Regional endpoint API operations (for example, <code class="code">CreateBucket</code> and
+							<code class="code">PutBucketPolicy</code>) as management events and Zonal API
+						operations (for example, <code class="code">GetObject</code> and <code class="code">PutObject</code>)
+						as data events. These events include actions taken in the AWS Management Console,
+						AWS Command Line Interface (AWS CLI), AWS SDKs, and AWS API operations. For more
+						information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-one-zone-logging.html">Logging with AWS CloudTrail for S3 Express One Zone</a>.</p>
+				</li></ul></div>
+			<div class="awsdocs-note"><div class="awsdocs-note-title"><awsui-icon name="status-info" variant="link"></awsui-icon><h6>Note</h6></div><div class="awsdocs-note-text"><p>Amazon S3 server access logs aren't supported with S3 Express One Zone.</p></div></div>
+		 
+		 
+			<h4 id="s3-express-features-object-management">Object management</h4>
+			<p>You can manage your object storage by using the Amazon S3 console, AWS SDKs, and AWS CLI. The
+				following features are available for object management with S3 Express One Zone:</p>
+			<div class="itemizedlist">
+				 
+				 
+			<ul class="itemizedlist"><li class="listitem">
+					<p><a href="./batch-ops-create-job.html">S3 Batch Operations</a> â Use
+						Batch Operations to perform bulk operations on objects in directory buckets, for
+						example, <b>Copy</b> and <b>Invoke AWS Lambda function</b>. For example, you can use
+						Batch Operations to copy objects between directory buckets and
+						general purpose buckets. With Batch Operations, you can manage billions of objects at
+						scale with a single S3 request by using the AWS SDKs or AWS CLI or a few
+						clicks in the Amazon S3 console. </p>
+				</li><li class="listitem">
+					<p><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-import-job.html">Import</a>
+						â After you create a directory bucket, you can populate your bucket
+						with objects by using the import feature in the Amazon S3 console. Import is a
+						streamlined method for creating Batch Operations jobs to copy objects from general
+						purpose buckets to directory buckets.</p>
+				</li></ul></div>
+		 
+		 
+			<h4 id="s3-express-features-client-libraries">AWS SDKs and client
+					libraries</h4>
+			<p> You can manage your object storage by using the AWS SDKs and client libraries. </p>
+			<div class="itemizedlist">
+				 
+				 
+				 
+				 
+				
+			<ul class="itemizedlist"><li class="listitem">
+					<p><a href="https://github.com/awslabs/mountpoint-s3/blob/main/doc/SEMANTICS.md" rel="noopener noreferrer" target="_blank"><span>Mountpoint for Amazon S3</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> â Mountpoint for Amazon S3 is an open source file
+						client that delivers high-throughput access, lowering compute costs for data
+						lakes on Amazon S3. Mountpoint for Amazon S3 translates local file system API calls to S3
+						object API calls like <code class="code">GET</code> and <code class="code">LIST</code>. It is ideal
+						for read-heavy data lake workloads that process petabytes of data and need
+						the high elastic throughput provided by Amazon S3 to scale up and down across
+						thousands of instances.</p>
+				</li><li class="listitem">
+					<p><a href="https://hadoop.apache.org/docs/stable/hadoop-aws/tools/hadoop-aws/index.html#Introducing_the_Hadoop_S3A_client" rel="noopener noreferrer" target="_blank"><span>S3A</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> â S3A is a
+						recommended Hadoop-compatible interface for accessing data
+						stores in Amazon S3. S3A replaces the S3N
+						Hadoop file system client.</p>
+				</li><li class="listitem">
+					<p><a href="https://docs.aws.amazon.com//sagemaker/latest/dg/pytorch.html">PyTorch on AWS</a> â PyTorch on AWS
+						is an open source deep-learning framework that makes it easier to develop
+						machine learning models and deploy them to production. </p>
+				</li><li class="listitem">
+					<p><a href="https://aws.amazon.com//developer/tools/" rel="noopener noreferrer" target="_blank"><span>AWS SDKs</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> â You can use
+						the AWS SDKs when developing applications with Amazon S3. The AWS SDKs
+						simplify your programming tasks by wrapping the underlying Amazon S3 REST API.
+						For more information about using the AWS SDKs with S3 Express One Zone, see <a href="./s3-express-SDKs.html#s3-express-getting-started-accessing-sdks">AWS SDKs</a>.</p>
+				</li></ul></div>
+		 
+		
+		 
+		 
+			<h3 id="s3-express-features-encryption">Encryption and data
+					protection</h3>
+			<p>Objects in S3 Express One Zone are automatically encrypted by server-side encryption with Amazon S3
+			managed keys (SSE-S3). S3 Express One Zone also supports server-side encryption with AWS Key Management Service
+			(AWS KMS) keys (SSE-KMS). S3 Express One Zone doesn't support server-side encryption with
+			customer-provided encryption keys (SSE-C), or dual-layer server-side encryption with
+			AWS KMS keys (DSSE-KMS). For more information, see <a href="./s3-express-data-protection.html">Data protection and encryption</a>.</p>
+			<p>S3 Express One Zone offers you the option to choose the checksum algorithm that is used to
+        validate your data during upload or download. You can select one of the following Secure
+        Hash Algorithms (SHA) or Cyclic Redundancy Check (CRC) data-integrity check algorithms:
+        CRC32, CRC32C, SHA-1, and SHA-256. MD5-based checksums are not supported with the
+        S3 Express One Zone storage class. </p>
+			<p>For more information, see <a href="./s3-express-optimizing-performance.html#s3-express-optimizing-performance-checksums">S3 additional checksum best
+          practices</a>.</p>
+		 
+		 
+			<h3 id="s3-express-features-sigv4">AWS Signature Version 4
+					(SigV4)</h3>
+			<p>S3 Express One Zone uses AWS Signature Version 4 (SigV4). SigV4 is
+				a signing protocol used to authenticate requests to Amazon S3 over HTTPS. S3 Express One Zone
+				signs requests by using AWS Sigv4. For more information, see <a href="https://docs.aws.amazon.com//AmazonS3/latest/API/sig-v4-authenticating-requests.html">Authenticating Requests (AWS Signature Version 4)</a> in the
+					<em>Amazon Simple Storage Service API Reference</em>.</p>
+		 
+		 
+			<h3 id="s3-express-features-strong-consistency">Strong consistency</h3>
+			<p>S3 Express One Zone provides strong read-after-write consistency for <code class="code">PUT</code> and
+					<code class="code">DELETE</code> requests of objects in your directory buckets in all
+				AWS Regions. For more information, see <a href="./Welcome.html#ConsistencyModel">Amazon S3 data consistency model</a>.</p>
+		 
+	
+	 
+		<h3 id="s3-express-related-services">Related services</h3>
+		<p>You can use the following AWS services with the S3 Express One Zone storage class to support your
+			specific low-latency use case.</p>
+		<div class="itemizedlist">
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+		<ul class="itemizedlist"><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/ec2/index.html">Amazon Elastic Compute Cloud (Amazon EC2)</a> â Amazon EC2
+					provides secure and scalable computing capacity in the AWS Cloud. Using Amazon EC2
+					lessens your need to invest in hardware up front, so you can develop and deploy
+					applications faster. You can use Amazon EC2 to launch as many or as few virtual
+					servers as you need, configure security and networking, and manage
+					storage.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html.html">AWS Lambda</a> â Lambda is a compute service that lets you run
+					code without provisioning or managing servers. You configure notification
+					settings on a bucket, and grant Amazon S3 permission to invoke a function on the
+					function's resource-based permissions policy. </p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html">Amazon Elastic Kubernetes Service
+						(Amazon EKS)</a> â Amazon EKS is a managed service that eliminates the need
+					to install, operate, and maintain your own Kubernetes control
+					plane on AWS. <a href="https://kubernetes.io/docs/concepts/overview/" rel="noopener noreferrer" target="_blank"><span>Kubernetes</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> is an open source system that
+					automates the management, scaling, and deployment of containerized
+					applications.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html">Amazon Elastic Container Service (Amazon ECS)</a> â Amazon ECS is a fully managed container
+					orchestration service that helps you easily deploy, manage, and scale
+					containerized applications.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html">AWS Key Management Service (AWS KMS)</a> â AWS Key Management Service (AWS KMS) is an AWS managed service that makes it easy for you to create and control the encryption keys that are used to encrypt your data. The AWS KMS keys that you create in AWS  KMS are protected by FIPS 140-2 validated hardware security modules (HSM). 
+					To use or manage your KMS keys, you interact with AWS KMS.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/athena/latest/ug/what-is.html">Amazon Athena</a> â
+					Athena is an interactive query service that makes it easy to analyze data
+					directly in Amazon S3 by using standard <a href="https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html">SQL</a>. You can also use
+					Athena to interactively run data analytics by using Apache Spark
+					without having to plan for, configure, or manage resources. When you run
+						Apache Spark applications on Athena, you submit
+						Spark code for processing and receive the results
+					directly.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com//sagemaker/latest/dg/how-it-works-training.html">Amazon SageMaker
+						Training</a> â Review the options for training models with Amazon
+					SageMaker, including built-in algorithms, custom algorithms, libraries, and
+					models from the AWS Marketplace.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html">AWS Glue</a>
+					â AWS Glue is a serverless data-integration service that makes it easy for
+					analytics users to discover, prepare, move, and integrate data from multiple
+					sources. You can use AWS Glue for analytics, machine learning, and application
+					development. AWS Glue also includes additional productivity and data-ops tooling
+					for authoring, running jobs, and implementing business workflows.</p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-what-is-emr.html">Amazon EMR</a> â Amazon EMR is a managed cluster platform that simplifies
+					running big data frameworks, such as Apache Hadoop and
+						Apache Spark, on AWS to process and analyze vast amounts of
+					data. </p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-user-guide.html">AWSCloudTrail</a> â AWSCloudTrail is s an AWS service 
+					that helps you enable operational and risk auditing, governance, and compliance of your AWS account. 
+					Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in 
+					the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs. </p>
+			</li><li class="listitem">
+				<p><a href="https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/Welcome.html">AWS
+						CloudFormation </a> â is a service that helps you model and set
+					up your AWS resources so that you can spend less time managing those resources
+					and more time focusing on your applications that run in AWS. You create a
+					template that describes all the AWS resources that you want (like Amazon EC2
+					instances or Amazon RDS DB instances), and CloudFormation takes care of
+					provisioning and configuring those resources for you. You don't need to
+					individually create and configure AWS resources and figure out what's
+					dependent on what; CloudFormation handles that.</p>
+				</li></ul></div>
+	 
+	
+
+	 
+		<h3 id="s3-express-next-steps">Next steps</h3>
+		<p>For more information about working with the S3 Express One Zone storage class and directory buckets,
+			see the following topics:</p>
+		<div class="itemizedlist">
+
+			 
+			 
+			 
+
+			 
+			 
+			 
+		<ul class="itemizedlist"><li class="listitem">
+				<p><a href="./s3-express-getting-started.html">Tutorial: Getting started with S3 Express One Zone</a></p>
+			</li><li class="listitem">
+				<p><a href="./s3-express-Endpoints.html">S3 Express One Zone Availability Zones and Regions</a></p>
+			</li><li class="listitem">
+				<p><a href="./directory-bucket-az-networking.html">Networking for directory buckets in an Availability Zone</a></p>
+			</li><li class="listitem">
+				<p><a href="./directory-bucket-create.html">Creating directory buckets in an Availability Zone</a></p>
+			</li><li class="listitem">
+				<p><a href="./endpoint-directory-buckets-AZ.html">Regional and Zonal endpoints for directory buckets in an Availability Zone</a></p>
+			</li><li class="listitem">
+				<p><a href="./s3-express-performance.html">Optimizing S3 Express One Zone performance</a></p>
+			</li></ul></div>
+	 
+
+
+
+<awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./directory-bucket-use-cases.html">Use cases for directory buckets</div><div id="next" class="next-link" accesskey="n" href="./s3-express-getting-started.html">Tutorial: Getting started with S3 Express One Zone</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=S3&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/directory-bucket-high-performance.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=S3&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/directory-bucket-high-performance.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

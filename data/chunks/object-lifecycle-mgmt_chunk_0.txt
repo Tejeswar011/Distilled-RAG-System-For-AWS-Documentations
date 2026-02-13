@@ -1,0 +1,18 @@
+Managing the lifecycle of objects - Amazon Simple Storage Service
+Managing the lifecycle of objects - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+Managing the complete lifecycle of
+objects
+Managing the lifecycle of objects
+S3 Lifecycle helps you store objects cost effectively throughout their lifecycle by
+transitioning them to lower-cost storage classes, or, deleting expired objects on your
+behalf. To manage the lifecycle of your objects, create an
+S3 Lifecycle
+configuration
+for your bucket. An S3 Lifecycle configuration is a set of rules
+that define actions that Amazon S3 applies to a group of objects. There are two types of
+actions:
+Transition actions
+â These actions define

@@ -1,0 +1,12 @@
+changing or unknown access patterns
+S3 Intelligent-Tiering
+(
+INTELLIGENT_TIERING
+) is an Amazon S3 storage class that's
+designed to optimize storage costs by automatically moving data to the most cost-effective
+access tier, without performance impact or operational overhead. S3 Intelligent-Tiering is the
+only cloud storage class that delivers automatic cost savings by moving data on a granular
+object level between access tiers when access patterns change. S3 Intelligent-Tiering is the
+ideal storage class when you want to optimize storage costs for data that has unknown or
+changing access patterns. There are no retrieval fees for S3 Intelligent-Tiering.
+For a small monthly object monitoring and automation fee, S3 Intelligent-Tiering monitors

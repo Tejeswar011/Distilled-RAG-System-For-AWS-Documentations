@@ -1,0 +1,12 @@
+Managing access to shared datasets in directory buckets with access points
+.
+Access control lists (ACLs)
+You can use ACLs to grant read and write permissions to authorized users for
+individual general purpose buckets and objects. Each general purpose bucket and object has an ACL attached to it as
+a subresource. The ACL defines which AWS accounts or groups are granted access and
+the type of access. ACLs are an access control mechanism that predates IAM. For
+more information about ACLs, see
+Access control list (ACL) overview
+.
+S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to both control ownership of the objects that are
+uploaded to your bucket and to disable or enable ACLs. By default, Object Ownership is set to the Bucket owner enforced setting,

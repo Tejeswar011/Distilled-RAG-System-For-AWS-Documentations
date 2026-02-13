@@ -1,0 +1,18 @@
+explanation for each section.
+Cost Explorer uses the same dataset that is used to generate the AWS Cost and Usage Reports and the
+detailed billing reports. For a comprehensive review of the data, you can download it into a
+comma-separated value (CSV) file.
+Topics
+Enabling Cost Explorer
+Getting started with Cost Explorer
+Exploring your data using Cost Explorer
+Comparing your costs between time periods
+Exploring more data for advanced cost
+analysis
+Using the AWS Cost Explorer API
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+Adding tags to dashboards
+Enabling Cost Explorer
+Did this page help you? - Yes

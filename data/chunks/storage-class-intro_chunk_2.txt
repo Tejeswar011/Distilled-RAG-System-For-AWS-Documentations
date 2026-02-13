@@ -1,0 +1,17 @@
+Comparing the Amazon S3 storage classes
+Setting the storage class of an object
+Amazon S3 analytics â Storage Class Analysis
+Managing storage costs with Amazon S3 Intelligent-Tiering
+Understanding S3 Glacier storage classes for long-term data storage
+Working with archived objects
+Storage classes for frequently accessed objects
+For performance-sensitive use cases (those that require millisecond access time) and
+frequently accessed data, Amazon S3 provides the following storage classes:
+S3 Standard
+(
+STANDARD
+) â The default storage class. If you
+don't specify the storage class when you upload an object, Amazon S3 assigns the S3 Standard
+storage class. To help you optimize costs between S3 Standard and S3 Standard-IA you can use
+Amazon S3 analytics â Storage Class Analysis
+.

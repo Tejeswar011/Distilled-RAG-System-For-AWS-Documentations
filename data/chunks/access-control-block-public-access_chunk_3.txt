@@ -1,0 +1,8 @@
+block public access settings for the access point. If there is an existing block public access
+setting that prohibits the requested access, Amazon S3 rejects the request.
+Amazon S3 Block Public Access provides four settings. These settings are independent and can be
+used in any combination. Each setting can be applied to an access point, a bucket, or an entire
+AWS account. At the organization level, all four settings are applied together as a
+unified policy - you cannot select individual settings granularly. If the block public
+access settings for the access point, bucket, or account differ, then Amazon S3 applies the most
+restrictive combination of the access point, bucket, and account settings. Account-level settings automatically inherit

@@ -1,0 +1,23 @@
+Lambda. Lambda supports two types of deployment packages: container images and
+.zip
+file archives.
+Explore
+the guide
+Amazon Lightsail
+What is Amazon Lightsail?
+Get the full story on Amazon Lightsail, including what it does and how you can
+benefit from it. This guide also includes step-by-step guidance to help you get
+started using Lightsail and then configure it to meet your needs.
+Explore the guide
+Creating Lightsail container service
+images
+Learn how to create a container image on your local machine using a Dockerfile.
+You can then push it to your Lightsail container service to deploy it.
+Explore the guide
+Amazon Lightsail resource center
+Explore Lightsail tutorials, videos, and links to core concept
+documentation.
+Visit the resource
+center
+AWS Batch
+What is AWS Batch?

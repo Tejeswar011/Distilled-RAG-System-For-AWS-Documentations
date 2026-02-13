@@ -1,0 +1,12 @@
+the number of objects that you can store in a bucket. Your bucket quota is applied to each
+Region in your AWS account. If your application requires increasing this limit, contact
+Support.
+Important
+Directory buckets in Availability Zones that have no request activity for a period of at least 90 days
+transition to an inactive state. While in an inactive state, a directory bucket is
+temporarily inaccessible for reads and writes. Inactive buckets retain all storage,
+object metadata, and bucket metadata. Existing storage charges apply to inactive
+buckets. If you make an access request to an inactive bucket, the bucket transitions to
+an active state, typically within a few minutes. During this transition period, reads
+and writes return an HTTP
+503 (Service Unavailable)

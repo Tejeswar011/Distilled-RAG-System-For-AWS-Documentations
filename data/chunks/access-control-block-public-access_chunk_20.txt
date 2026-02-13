@@ -1,0 +1,25 @@
+The meaning of
+"public"
+ACLs
+Amazon S3 considers a bucket or object ACL public if it grants any
+permissions to members of the predefined
+AllUsers
+or
+AuthenticatedUsers
+groups. For more information
+about predefined groups, see
+Amazon S3 predefined
+groups
+.
+Bucket policies
+When evaluating a bucket policy, Amazon S3 begins by assuming that the policy is public. It
+then evaluates the policy to determine whether it qualifies as non-public. To be
+considered non-public, a bucket policy must grant access only to fixed values
+(values that don't contain a wildcard or
+an AWS Identity and Access Management
+Policy Variable
+) for one or more of the following:
+An AWS principal, user, role, or service principal (e.g.
+aws:PrincipalOrgID
+)
+A set of Classless Inter-Domain Routings (CIDR) blocks, using

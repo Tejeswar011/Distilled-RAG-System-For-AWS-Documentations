@@ -1,0 +1,17 @@
+"public"
+Using IAM Access Analyzer for S3 to review public
+buckets
+Permissions
+Configuring block public
+access
+Configuring block public
+access settings for your account
+Configuring block public access
+settings for your S3 buckets
+Block public access settings
+S3 Block Public Access provides four settings. You can apply these settings in any
+combination to individual access points, buckets, or entire AWS accounts. At the organization
+level, you can only enable or disable all four settings together using an "all" or
+"none" approach - granular control over individual settings is not available. If you
+apply a setting to an account, it applies to all buckets and access points that are owned by
+that account. Account-level settings automatically inherit from organization policies

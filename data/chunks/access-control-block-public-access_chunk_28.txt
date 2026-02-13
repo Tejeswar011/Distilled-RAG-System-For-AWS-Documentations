@@ -1,0 +1,16 @@
+is considered public. Note that this
+behavior is different than for bucket policies. For example, a bucket policy
+that grants access to values of
+s3:DataAccessPointArn
+that
+match
+arn:aws:s3:us-west-2:123456789012:accesspoint/*
+is not
+considered public. However, the same statement in an access point policy would
+render the access point public.
+Using IAM Access Analyzer for S3 to review public
+buckets
+You can use IAM Access Analyzer for S3 to review buckets with bucket ACLs, bucket policies, or access point
+policies that grant public access. IAM Access Analyzer for S3 alerts you to buckets that are configured
+to allow access to anyone on the internet or other AWS accounts, including
+AWS accounts outside of your organization. For each public or shared bucket, you

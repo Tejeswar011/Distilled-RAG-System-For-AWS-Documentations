@@ -1,0 +1,20 @@
+Logging with AWS CloudTrail for S3 Express One Zone
+.
+Note
+Amazon S3 server access logs aren't supported with S3 Express One Zone.
+Object management
+You can manage your object storage by using the Amazon S3 console, AWS SDKs, and AWS CLI. The
+following features are available for object management with S3 Express One Zone:
+S3 Batch Operations
+â Use
+Batch Operations to perform bulk operations on objects in directory buckets, for
+example,
+Copy
+and
+Invoke AWS Lambda function
+. For example, you can use
+Batch Operations to copy objects between directory buckets and
+general purpose buckets. With Batch Operations, you can manage billions of objects at
+scale with a single S3 request by using the AWS SDKs or AWS CLI or a few
+clicks in the Amazon S3 console.
+Import

@@ -1,0 +1,21 @@
+container registry.
+Explore the guides
+What is Amazon Elastic Container Registry (Amazon ECR)?
+A guide to getting started withâand usingâAmazon ECR.
+Explore the guide
+Amazon ECR in Multi-Account and Multi-Region
+Architectures
+Explore key considerations for Amazon ECR architectures that span across
+AWS accounts and AWS Regions, and architectures related to hypothetical customer
+use cases.
+Read the blog post
+On-premises
+Amazon ECS Anywhere
+What is Amazon ECS Anywhere?
+Learn how Amazon ECS Anywhere provides support for registering an
+external instance
+, such as an on-premises server or
+virtual machine (VM), to your Amazon ECS cluster.
+Explore the guide
+Amazon ECS Anywhere pricing
+Use this pricing guide to understand Amazon ECS Anywhere pricing, which is based on a

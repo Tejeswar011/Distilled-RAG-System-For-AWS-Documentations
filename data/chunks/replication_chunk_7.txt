@@ -1,0 +1,15 @@
+.
+Sync buckets, replicate existing objects, and replicate
+previously failed or replicated objects
+â To sync buckets and
+replicate existing objects, use Batch Replication as an on-demand replication action. For
+more information about when to use Batch Replication, see
+When to use S3 Batch Replication
+.
+Replicate objects and fail over to a bucket in another
+AWS Region
+â To keep all metadata and objects in sync across buckets
+during data replication, use two-way replication (also known as bi-directional
+replication) rules before configuring Amazon S3 Multi-Region Access Point failover controls. Two-way replication
+rules help ensure that when data is written to the S3 bucket that traffic fails over to,
+that data is then replicated back to the source bucket.

@@ -1,0 +1,11 @@
+You can manage Block Public Access settings at multiple levels: organization level (using
+AWS Organizations), account level, and bucket and access point level. For instructions on configuring public
+block access, see
+Configuring block public
+access
+.
+When Amazon S3 receives a request to access a bucket or an object, it determines whether the
+bucket or the bucket owner's account has a block public access setting applied. If the
+account is part of an AWS Organizations with Block Public Access policies, Amazon S3 also checks for
+organization-level settings. If the request was made through an access point, Amazon S3 also checks for
+block public access settings for the access point. If there is an existing block public access

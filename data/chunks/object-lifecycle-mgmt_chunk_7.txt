@@ -1,0 +1,10 @@
+retained for regulatory compliance.
+By combining S3 Lifecycle actions to manage an object's complete lifecycle. For
+example, suppose that the objects you create have a well-defined lifecycle. Initially,
+the objects are frequently accessed for a period of 30 days. Then, objects are
+infrequently accessed for up to 90 days. After that, the objects are no longer needed,
+so you might choose to archive or delete them.
+In this scenario, you can create an S3 Lifecycle rule in which you specify the initial
+transition action to S3 Intelligent-Tiering, S3 Standard-IA, or S3 One Zone-IA storage,
+another transition action to S3 Glacier Flexible Retrieval storage for archiving, and an
+expiration action. As you move the objects from one storage class to another, you save

@@ -1,0 +1,11 @@
+Replicate objects while retaining metadata
+â
+You can use replication to make copies of your objects that retain all metadata, such as
+the original object creation times and version IDs. This capability is important if you
+must ensure that your replica is identical to the source object.
+Replicate objects into different storage classes
+â You can use replication to directly put objects into S3 Glacier Flexible Retrieval,
+S3 Glacier Deep Archive, or another storage class in the destination buckets. You
+can also replicate your data to the same storage class and use lifecycle configurations on
+the destination buckets to move your objects to a colder storage class as they age.
+Maintain object copies under different ownership

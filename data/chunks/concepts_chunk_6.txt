@@ -1,0 +1,20 @@
+instances. For more information, see
+Choosing an AWS container service
+.
+Amazon Elastic Kubernetes Service (Amazon EKS)
+Run your Kubernetes applications on AWS.  For more information, see
+Choosing an AWS container service
+.
+Access Amazon EC2
+You can create and manage your Amazon EC2 instances using the following interfaces:
+Amazon EC2 console
+A simple web interface to create and manage Amazon EC2 instances and resources.
+If you've signed up for an AWS account, you can access the Amazon EC2 console
+by signing into the AWS Management Console and selecting
+EC2
+from
+the console home page.
+AWS Command Line Interface
+Enables you to interact with AWS services using commands in your command-line shell. It
+is supported on Windows, Mac, and Linux. For more information about the
+AWS CLI , see

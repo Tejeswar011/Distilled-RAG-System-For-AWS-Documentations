@@ -1,0 +1,17 @@
+â Provides fully managed support for
+file transfers directly into and out of Amazon S3 or Amazon Elastic File System (Amazon EFS) using Secure
+Shell (SSH) File Transfer Protocol (SFTP), File Transfer Protocol over SSL
+(FTPS), and File Transfer Protocol (FTP).
+Accessing Amazon S3
+You can work with Amazon S3 in any of the following ways:
+AWS Management Console
+The console is a web-based user interface for managing Amazon S3 and AWS resources.
+If you've signed up for an AWS account, you can access the Amazon S3 console by signing
+into the AWS Management Console and choosing
+S3
+from the AWS Management Console home
+page.
+AWS Command Line Interface
+You can use the AWS command line tools to issue commands or build scripts at
+your system's command line to perform AWS (including S3) tasks.
+The

@@ -1,0 +1,24 @@
+from 2 to dozens of vCPUs, and 100s of GiB RAM, unlimited storage, and seamlessly scalable
+serverless options.
+Here's a decision table comparing
+Amazon
+Lightsail, AWS Elastic Beanstalk, and Amazon EC2
+based on key decision factors:
+Criteria
+Amazon Lightsail
+AWS Elastic Beanstalk
+Amazon EC2
+Best For
+Simple applications, small-scale deployments
+Web applications with automated deployment
+Full control over infrastructure
+Ease of Use
+Very easy, simplified UI, preconfigured instances
+Easy, managed deployment with minimal setup
+Complex, requires manual setup and management
+Scalability
+Limited auto-scaling, designed for small workloads
+Supports auto-scaling, but not as granular as EC2
+Fully customizable auto-scaling
+Customization
+Limited configuration options

@@ -1,0 +1,15 @@
+, which is a useful resource for anyone
+who wants to explore this question further. In addition, the
+Containers and Serverless Recommendation
+Guide
+takes you through the choices to make when choosing your operating
+model.
+Consider
+It's important to choose a container service that aligns to your application requirements
+and operational preferences. The following section outlines some of the key criteria to consider
+when choosing a container service, as well as supporting tools and services.
+Managed service and operation overhead
+Organizations might choose to build on managed container services to reduce their
+operational overhead. This approach allows developers and operators to focus on their
+unique activities that add value, instead of on undiï¬erentiated tasks.
+Workload characteristics

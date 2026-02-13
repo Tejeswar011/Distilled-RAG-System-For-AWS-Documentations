@@ -1,0 +1,35 @@
+Choosing an AWS container service - Choosing an AWS container service
+Choosing an AWS container service - Choosing an AWS container service
+Documentation
+AWS Decision Guides
+AWS Decision Guide
+Introduction
+Understand
+Consider
+Choose
+Use
+Explore
+Choosing an AWS container service
+Taking the first step
+Purpose
+Determine which AWS container service is the best fit for your
+organization.
+Last updated
+May 16, 2025
+Covered services
+Amazon EC2
+Amazon ECR
+Amazon ECS
+Amazon EKS
+Amazon Lightsail
+AWS App Runner
+AWS Batch
+AWS Fargate
+AWS Lambda
+AWS Outposts
+Red Hat OpenShift Service on AWS
+(ROSA)
+Introduction
+Containers are a key component of modern application development. They are the
+standard for organizing compute resources, and managing the content of your application
+deployments.

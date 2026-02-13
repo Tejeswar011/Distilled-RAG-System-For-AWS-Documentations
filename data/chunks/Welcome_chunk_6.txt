@@ -1,0 +1,20 @@
+layer of protection against object changes and deletions.
+S3 Replication
+â Replicate objects and their respective metadata and object tags to
+one or more destination buckets in the same or different AWS Regions for
+reduced latency, compliance, security, and other use cases.
+S3 Batch Operations
+â Manage billions of objects at scale
+with a single S3 API request or a few clicks in the Amazon S3 console. You can
+use Batch Operations to perform operations such as
+Copy
+,
+Invoke AWS Lambda
+function
+, and
+Restore
+on
+millions or billions of objects.
+Access management and security
+Amazon S3 provides features for auditing and managing access to your buckets and
+objects. By default, S3 buckets and the objects in them are private. You have access

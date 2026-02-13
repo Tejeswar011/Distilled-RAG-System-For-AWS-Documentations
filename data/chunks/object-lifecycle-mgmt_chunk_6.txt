@@ -1,0 +1,11 @@
+If you upload periodic logs to a bucket, your application might need them for
+a week or a month. After that, you might want to delete them.
+Some documents are frequently accessed for a limited period of time. After
+that, they are infrequently accessed. At some point, you might not need
+real-time access to them, but your organization or regulations might require you
+to archive them for a specific period. After that, you can delete them.
+You might upload some types of data to Amazon S3 primarily for archival purposes.
+For example, you might archive digital media, financial, and healthcare records,
+raw genomics sequence data, long-term database backups, and data that must be
+retained for regulatory compliance.
+By combining S3 Lifecycle actions to manage an object's complete lifecycle. For

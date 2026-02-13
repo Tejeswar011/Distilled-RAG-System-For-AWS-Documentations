@@ -1,0 +1,13 @@
+performance-sensitive applications. S3 Express One Zone is the first S3 storage class where you can select a single Availability Zone with
+the option to co-locate your object storage with your compute resources, which provides the highest possible access speed.
+With
+S3 Express One Zone, your data is redundantly stored on multiple devices within a single
+Availability Zone. S3 Express One Zone is designed for 99.95 percent availability within a single Availability Zone and is backed
+by the
+Amazon S3 Service Level Agreement
+. For more information, see
+Availability Zones
+Endpoints and gateway VPC
+endpoints
+Bucket-management API operations for directory buckets are available through a
+Regional endpoint and are referred to as Regional endpoint API operations. Examples

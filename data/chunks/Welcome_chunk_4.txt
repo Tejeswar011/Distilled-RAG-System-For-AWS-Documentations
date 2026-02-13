@@ -1,0 +1,18 @@
+S3 Express One Zone
+and
+Working with directory buckets
+.
+You can store data with changing or unknown access patterns in
+S3 Intelligent-Tiering, which optimizes storage costs by automatically moving your
+data between four access tiers when your access patterns change. These four access
+tiers include two low-latency access tiers optimized for frequent and infrequent
+access, and two opt-in archive access tiers designed for asynchronous access for
+rarely accessed data.
+For more information, see
+Understanding and managing Amazon S3 storage classes
+.
+Storage management
+Amazon S3 has storage management features that you can use to manage costs, meet
+regulatory requirements, reduce latency, and save multiple distinct copies of your
+data for compliance requirements.
+S3 Lifecycle

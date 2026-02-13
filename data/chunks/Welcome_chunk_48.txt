@@ -1,0 +1,13 @@
+that you provide. For more information about how to make requests to Amazon S3, see
+Making requests
+.
+Amazon S3 REST API
+The architecture of Amazon S3 is designed to be programming language-neutral, using
+AWS-supported interfaces to store and retrieve objects. You can access S3 and
+AWS programmatically by using the Amazon S3 REST API. The REST API is an HTTP interface
+to Amazon S3. With the REST API, you use standard HTTP requests to create, fetch, and
+delete buckets and objects.
+To use the REST API, you can use any toolkit that supports HTTP. You can even use
+a browser to fetch objects, as long as they are anonymously readable.
+The REST API uses standard HTTP headers and status codes, so that standard
+browsers and toolkits work as expected. In some areas, we have added functionality

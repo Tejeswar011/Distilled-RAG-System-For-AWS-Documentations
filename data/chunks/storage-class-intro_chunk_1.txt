@@ -1,0 +1,14 @@
+depending on your use case scenario and performance access requirements. Choosing a storage class designed for your use case lets you optimize storage costs, performance, and availability for your objects. All of these storage classes offer high durability.
+The following sections provide details of the various storage classes and how to set the
+storage class for your objects.
+Topics
+Storage classes for frequently accessed objects
+Storage class for automatically optimizing data with
+changing or unknown access patterns
+Storage classes for infrequently accessed
+objects
+Storage classes for rarely accessed objects
+Storage class for Amazon S3 on Outposts
+Comparing the Amazon S3 storage classes
+Setting the storage class of an object
+Amazon S3 analytics â Storage Class Analysis

@@ -1,0 +1,22 @@
+lakes on Amazon S3. Mountpoint for Amazon S3 translates local file system API calls to S3
+object API calls like
+GET
+and
+LIST
+. It is ideal
+for read-heavy data lake workloads that process petabytes of data and need
+the high elastic throughput provided by Amazon S3 to scale up and down across
+thousands of instances.
+S3A
+â S3A is a
+recommended Hadoop-compatible interface for accessing data
+stores in Amazon S3. S3A replaces the S3N
+Hadoop file system client.
+PyTorch on AWS
+â PyTorch on AWS
+is an open source deep-learning framework that makes it easier to develop
+machine learning models and deploy them to production.
+AWS SDKs
+â You can use
+the AWS SDKs when developing applications with Amazon S3. The AWS SDKs
+simplify your programming tasks by wrapping the underlying Amazon S3 REST API.

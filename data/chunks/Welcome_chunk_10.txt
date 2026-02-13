@@ -1,0 +1,16 @@
+policies or IAM user policies, see
+Managing access with ACLs
+.
+S3 Object Ownership
+â Take ownership of every object
+in your bucket, simplifying access management for data stored in Amazon S3.
+S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to
+disable or enable ACLs. By default, ACLs are disabled. With ACLs disabled,
+the bucket owner owns all the objects in the bucket and manages access to
+data exclusively by using access-management policies.
+IAM Access Analyzer for S3
+â Evaluate and monitor your S3 bucket access policies, ensuring that
+the policies provide only the intended access to your S3 resources.
+Data processing
+To transform data and trigger workflows to automate a variety of other processing
+activities at scale, you can use the following features.

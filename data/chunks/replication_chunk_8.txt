@@ -1,0 +1,14 @@
+rules help ensure that when data is written to the S3 bucket that traffic fails over to,
+that data is then replicated back to the source bucket.
+When to use Cross-Region Replication
+S3 Cross-Region Replication (CRR) is used to copy objects across Amazon S3 buckets in different
+AWS Regions. CRR can help you do the following:
+Meet compliance requirements
+â Although Amazon S3
+stores your data across multiple geographically distant Availability Zones by default,
+compliance requirements might dictate that you store data at even greater distances. To
+satisfy these requirements, use Cross-Region Replication to replicate data between distant
+AWS Regions.
+Minimize latency
+â If your customers are in
+two geographic locations, you can minimize latency in accessing objects by maintaining

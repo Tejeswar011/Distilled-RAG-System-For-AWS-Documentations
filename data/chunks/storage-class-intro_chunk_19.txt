@@ -1,0 +1,13 @@
+separate Amazon Glacier service. For information about the Amazon Glacier service, see the
+Amazon Glacier Developer Guide
+.
+Storage class for Amazon S3 on Outposts
+With Amazon S3 on Outposts, you can create S3 buckets on your AWS Outposts resources and store and
+retrieve objects on-premises for applications that require local data access, local data
+processing, and data residency. You can use the same API operations and features on AWS Outposts as
+you do on Amazon S3, including access policies, encryption, and tagging. You can use S3 on Outposts
+through the AWS Management Console, AWS CLI, AWS SDKs, or REST API.
+S3 on Outposts provides a new storage class, S3 Outposts (
+OUTPOSTS
+). The S3
+Outposts storage class is available only for objects stored in buckets on Outposts. If you try

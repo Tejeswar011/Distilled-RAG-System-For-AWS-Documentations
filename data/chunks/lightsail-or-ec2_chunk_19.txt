@@ -1,0 +1,11 @@
+create it. When you add a database instance, Elastic Beanstalk
+provides the connection information to your application. It does
+this by setting the environment properties for the database
+hostname, port, user name, password, and database name. You can
+also connect to an external database managed outside of Elastic
+Beanstalk which allows you to use database types that aren't
+supported with integrated databases. This option will require
+additional security group and connection string configuration.
+Amazon EC2 works directly with Amazon RDS and NoSQL services, such as Amazon DynamoDB. Amazon RDS offers a
+more scalable and broader range of configurations, including fixed instance types ranging
+from 2 to dozens of vCPUs, and 100s of GiB RAM, unlimited storage, and seamlessly scalable

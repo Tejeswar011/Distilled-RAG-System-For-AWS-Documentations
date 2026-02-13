@@ -1,0 +1,15 @@
+determine the final value is to perform a read after both writes have been
+acknowledged.
+Related services
+After you load your data into Amazon S3, you can use it with other AWS services. The
+following are the services that you might use most frequently:
+Amazon Elastic Compute Cloud
+(Amazon EC2)
+â Provides secure and scalable computing
+capacity in the AWS Cloud. Using Amazon EC2 eliminates your need to invest in
+hardware upfront, so you can develop and deploy applications faster. You can
+use Amazon EC2 to launch as many or as few virtual servers as you need, configure
+security and networking, and manage storage.
+Amazon EMR
+â Helps businesses, researchers, data
+analysts, and developers easily and cost-effectively process vast amounts of

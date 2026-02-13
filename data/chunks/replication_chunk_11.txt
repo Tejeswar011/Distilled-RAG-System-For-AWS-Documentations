@@ -1,0 +1,14 @@
+compliance regulations don't allow the data to leave your country.
+When to use two-way replication (bi-directional
+replication)
+Build shared datasets across multiple AWS Regions
+â With replica modification sync, you can easily replicate metadata changes, such
+as object access control lists (ACLs), object tags, or object locks, on replication
+objects. This two-way replication is important if you want to keep all objects and object
+metadata changes in sync. You can
+enable replica modification sync
+on a new or existing replication rule when
+performing two-way replication between two or more buckets in the same or different
+AWS Regions.
+Keep data synchronized across Regions during failover
+â You can synchronize data in buckets between AWS Regions by configuring two-way

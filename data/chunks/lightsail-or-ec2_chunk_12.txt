@@ -1,0 +1,11 @@
+over the underlying resources.
+With Amazon EC2, you have greater flexibility to configure workloads over a broader set of compute
+capacities, features, and integrations with other AWS services. Amazon EC2 provides more flexible purchase
+options including on-demand hourly and lower commit-based pricing. A typical deployment of Amazon EC2 may
+require the use of other AWS services, such as databases and load balancers, that each have their
+own pricing models and configuration details.
+Compute and block storage
+Compute and block storage
+Lightsail provides multiple options for your instance size, ranging from 2 vCPUs,
+512 MiB memory, and 20 GB of SSD storage, up to 64 vCPUs, 256 GiB of memory, and 1280 GB of
+SSD storage. Lightsail compute instances also include a generous free data transfer

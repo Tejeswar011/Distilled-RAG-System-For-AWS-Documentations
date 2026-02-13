@@ -1,0 +1,16 @@
+FAILED
+.
+Replicate objects that were already replicated
+â You might be required to store multiple copies of your data in separate
+AWS accounts or AWS Regions. Batch Replication can replicate existing objects to
+newly added destinations.
+Replicate replicas of objects that were created from a
+replication rule
+â Replication configurations create replicas of
+objects in destination buckets. Replicas of objects can be replicated only with
+Batch Replication.
+Workload requirements and live
+replication
+Depending on your workload requirements, some types of live replication will be better
+suited to your use case than others. Use the following table to determine which type of
+replication to use for your situation, and whether to use S3 Replication Time Control (S3 RTC) for your workload.

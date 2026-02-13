@@ -1,0 +1,27 @@
+levels - organization/account-level and bucket-level settings. This means a
+bucket inherits the baseline protection from its account (which may be
+organization-managed), but S3 will enforce whichever configuration is more
+restrictive between the bucket's settings and the account's effective
+settings.
+The following table contains the available settings.
+Name
+Description
+BlockPublicAcls
+Setting this option to
+TRUE
+causes the following
+behavior:
+PutBucketAcl
+and
+PutObjectAcl
+calls fail if the specified
+access control list (ACL) is public.
+PutObject
+calls fail if the request includes a public ACL.
+If this setting is applied to an account, then
+PUT Bucket
+calls fail if
+the request includes a public ACL.
+When this setting is set to
+TRUE
+, the specified operations fail (whether

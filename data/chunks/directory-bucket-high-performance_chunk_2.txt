@@ -1,0 +1,11 @@
+require consistent single-digit millisecond latency.
+As with other Amazon S3 storage classes, you don't need to plan or provision capacity or
+throughput requirements in advance. You can scale your storage up or down, based on need,
+and access your data through the Amazon S3 API.
+The Amazon S3 Express One Zone storage class is designed for 99.95 percent availability within a single Availability Zone and is backed
+by the
+Amazon S3 Service Level Agreement
+. With
+S3 Express One Zone, your data is redundantly stored on multiple devices within a single
+Availability Zone. S3 Express One Zone is designed to handle concurrent device failures by quickly
+detecting and repairing any lost redundancy. If the existing device encounters a

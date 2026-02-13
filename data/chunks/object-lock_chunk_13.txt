@@ -1,0 +1,28 @@
+How deletes work with S3 Object Lock
+If your bucket has S3 Object Lock enabled and the object is protected by a retention period or
+legal hold and you try to delete an object, Amazon S3 returns one of the following responses, depending on
+how you tried to delete the object:
+Permanent
+DELETE
+request
+â If you issued a
+permanent
+DELETE
+request (a request that specifies a version ID), Amazon S3 returns an
+Access Denied (
+403 Forbidden
+) error when you try to delete the object. For more
+information about troubleshooting Access Denied errors with Object Lock, see
+S3 Object Lock settings
+.
+Simple
+DELETE
+request
+â If you issued a
+simple
+DELETE
+request (a request that doesn't specify a version ID), Amazon S3 returns a
+200 OK
+response and inserts a
+delete marker
+in

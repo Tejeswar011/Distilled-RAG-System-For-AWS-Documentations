@@ -1,0 +1,14 @@
+because W1 and W2 finish before the start of R2, R2 returns
+color =
+garnet
+.
+In the last example, W2 begins before W1 has received an acknowledgment.
+Therefore, these writes are considered concurrent. Amazon S3 internally uses
+last-writer-wins semantics to determine which write takes precedence. However, the
+order in which Amazon S3 receives the requests and the order in which applications
+receive acknowledgments cannot be predicted because of various factors, such as
+network latency. For example, W2 might be initiated by an Amazon EC2 instance in the same
+Region, while W1 might be initiated by a host that is farther away. The best way to
+determine the final value is to perform a read after both writes have been
+acknowledged.
+Related services

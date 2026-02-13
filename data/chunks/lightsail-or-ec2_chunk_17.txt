@@ -1,0 +1,12 @@
+Content delivery network
+Content delivery network
+To improve web content load time, Lightsail lets you add a content delivery network
+(CDN) distribution to your website or application. Lightsail CDN distributions are
+available in three monthly data transfer tiers, including 50 GB included for the first
+year, 200 GB, and 500 GB, for a fixed monthly price.
+After you have created and deployed your Elastic Beanstalk
+application you can sign up for CloudFront and start using
+CloudFront to distribute your content.
+Amazon EC2 and Elastic Load Balancing work directly with the Amazon CloudFront CDN (the same CDN used by
+Lightsail). Using CloudFront directly offers more integration possibilities with other
+AWS services or external origins. It also offers more flexible on demand and

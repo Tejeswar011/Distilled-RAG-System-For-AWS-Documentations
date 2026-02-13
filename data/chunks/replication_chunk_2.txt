@@ -1,0 +1,30 @@
+On-demand replication
+â
+To
+replicate existing objects
+from the source bucket to one or more destination
+buckets on demand, use S3 Batch Replication. For more information about replicating
+existing objects, see
+When to use S3 Batch Replication
+.
+There are two forms of live replication:
+Cross-Region Replication
+(CRR)
+and
+Same-Region Replication
+(SRR)
+.
+Cross-Region Replication (CRR)
+â You can use CRR
+to replicate objects across Amazon S3 buckets in different AWS Regions. For more information
+about CRR, see
+When to use Cross-Region Replication
+.
+Same-Region Replication (SRR)
+â You can use
+SRR to copy objects across Amazon S3 buckets in the same AWS Region. For more information about
+SRR, see
+When to use Same-Region Replication
+.
+Topics
+Why use replication?

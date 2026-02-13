@@ -1,0 +1,16 @@
+higher share of that resource while it's available.
+Each instance type provides higher or lower minimum performance from a shared resource.
+For example, instance types with high I/O performance have a larger allocation of shared resources.
+Allocating a larger share of shared resources also reduces the variance of I/O performance.
+For most applications, moderate I/O performance is more than enough. However, for
+applications that require greater or more consistent I/O performance, consider
+an instance type with higher I/O performance.
+For pricing information, see
+Amazon EC2 Pricing
+.
+Topics
+Current generation instances
+Previous generation instances
+Instance performance
+Current generation instances
+For the best performance, we recommend that you use the following instance types

@@ -1,0 +1,27 @@
+Amazon EKS Anywhere pricing
+Use this pricing guide to understand Amazon EKS Anywhere pricing.
+Explore the pricing
+guide
+Amazon EKS Anywhere FAQs
+Get answers to frequently asked questions about Amazon EKS Anywhere.
+Explore the
+FAQs
+Amazon EKS Hybrid Nodes
+Amazon EKS Hybrid Nodes overview
+Use the documentation to understand the use of and best practices for Amazon EKS
+Hybrid Nodes.
+Read the documentation
+Amazon EKS Hybrid Nodes pricing
+Use the pricing guide to understand Amazon EKS Hybrid Nodes pricing.
+Explore the pricing
+guide
+A deep dive into Amazon EKS Hybrid Nodes
+Explore how you can use your existing on-premises and edge infrastructure as nodes
+in Amazon EKS clusters.
+Read the blog post
+Explore
+For your role
+Developers
+Solution Architects
+Professional development
+Startups

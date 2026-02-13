@@ -1,0 +1,12 @@
+individual settings to suit your storage use cases.
+Enabling Block Public Access helps protect your resources by preventing public access from
+being granted through the resource policies or access control lists (ACLs) that are
+directly attached to S3 resources. In addition to enabling Block Public Access,
+carefully inspect the following policies to confirm that they don't grant public
+access:
+Identity-based policies attached to associated AWS principals (for example, IAM roles)
+Resource-based policies attached to associated AWS resources (for example, AWS Key Management Service (KMS) keys)
+Note
+You can enable block public access settings only for organizations, access points, buckets, and
+AWS accounts. Amazon S3 doesn't support block public access settings on a
+per-object basis.

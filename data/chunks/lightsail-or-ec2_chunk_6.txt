@@ -1,0 +1,11 @@
+Amazon EBS volumes up to 64 TB per volume. Input/output operations per second (IOPS) up
+to 64,000 per volume (storage size is independent of instance type).
+Application Blueprints
+34 pre-configured blueprints, including WordPress, Magento, Drupal, Node.js, and more.
+A number of managed platforms on Amazon Linux (Docker, Go, Java, Ruby, Python, .NET core, Tomcat), and .NET/IIS on Windows Server.
+Common operating systems and with pre-configured software and services in the
+AWS Marketplace
+.
+Container Support
+Simple deployment of public container images for a fixed monthly cost including data transfer.
+Supports individual Docker containers, multiple containers with Docker Compose as well as Amazon Elastic Container Service (Amazon ECS).

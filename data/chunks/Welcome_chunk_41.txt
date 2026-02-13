@@ -1,0 +1,20 @@
+for 15 minutes after enabling versioning before issuing write operations (PUT or
+DELETE requests) on objects in the bucket.
+Concurrent applications
+This section provides examples of behavior to be expected from Amazon S3 when multiple
+clients are writing to the same items.
+In this example, both W1 (write 1) and W2 (write 2) finish before the start of R1
+(read 1) and R2 (read 2). Because S3 is strongly consistent, R1 and R2 both return
+color = ruby
+.
+In the next example, W2 does not finish before the start of R1. Therefore, R1
+might return
+color = ruby
+or
+color = garnet
+. However,
+because W1 and W2 finish before the start of R2, R2 returns
+color =
+garnet
+.
+In the last example, W2 begins before W1 has received an acknowledgment.

@@ -1,0 +1,18 @@
+overwritten.
+Buckets and the objects in them are private and can be accessed only if you explicitly
+grant access permissions. You can use bucket policies, AWS Identity and Access Management (IAM) policies,
+access control lists (ACLs), and S3 Access Points to manage access.
+Topics
+Buckets
+Objects
+Keys
+S3 Versioning
+Version ID
+Bucket policy
+S3 access points
+Access control lists (ACLs)
+Regions
+Buckets
+Amazon S3 supports four types of bucketsâgeneral purpose buckets, directory buckets, table buckets, and vector buckets. Each type of bucket provides a unique set of features for different use cases.
+General purpose buckets
+â General purpose buckets are recommended for most use cases and access patterns and are the original S3 bucket type.

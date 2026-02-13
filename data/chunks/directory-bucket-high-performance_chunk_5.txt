@@ -1,0 +1,8 @@
+Zones. When you create a directory bucket to use the S3 Express One Zone storage class, we recommend that you specify an AWS Region and
+an Availability Zone that's local to your Amazon EC2, Amazon Elastic Kubernetes Service, or Amazon Elastic Container Service (Amazon ECS) compute instances
+to optimize performance.
+When using S3 Express One Zone, you can interact with your directory bucket in a virtual private cloud (VPC) by
+using a gateway VPC endpoint. With a gateway endpoint, you can access S3 Express One Zone
+directory buckets from your VPC without an internet gateway or NAT device for your VPC,
+and at no additional cost.
+You can use many of the same Amazon S3 API operations and features with directory buckets

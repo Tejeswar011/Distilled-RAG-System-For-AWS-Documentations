@@ -1,0 +1,28 @@
+Actions - Amazon Elastic Compute Cloud
+Actions - Amazon Elastic Compute Cloud
+Documentation
+Amazon EC2
+API Reference
+Actions
+The following actions are supported:
+AcceptAddressTransfer
+AcceptCapacityReservationBillingOwnership
+AcceptReservedInstancesExchangeQuote
+AcceptTransitGatewayMulticastDomainAssociations
+AcceptTransitGatewayPeeringAttachment
+AcceptTransitGatewayVpcAttachment
+AcceptVpcEndpointConnections
+AcceptVpcPeeringConnection
+AdvertiseByoipCidr
+AllocateAddress
+AllocateHosts
+AllocateIpamPoolCidr
+ApplySecurityGroupsToClientVpnTargetNetwork
+AssignIpv6Addresses
+AssignPrivateIpAddresses
+AssignPrivateNatGatewayAddress
+AssociateAddress
+AssociateCapacityReservationBillingOwner
+AssociateClientVpnTargetNetwork
+AssociateDhcpOptions
+AssociateEnclaveCertificateIamRole

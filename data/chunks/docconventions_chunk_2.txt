@@ -1,0 +1,26 @@
+in the
+Amazon VPC User Guide
+AWS APIs
+The following pages provide information that is useful when using an AWS API:
+Retry behavior
+in the
+AWS SDKs and Tools Reference Guide
+Signing AWS API requests
+in the
+IAM User Guide
+AWS services endpoints and quotas
+You can learn about the endpoints and service quotas in the following pages:
+AWS service endpoints
+AWS service quotas
+Service endpoints and quotas
+Specifying which AWS Regions your account can use
+in the
+AWS Account Management Guide
+AWS Glossary
+For the latest AWS terminology, see the
+AWS Glossary
+.
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+AWS service endpoints

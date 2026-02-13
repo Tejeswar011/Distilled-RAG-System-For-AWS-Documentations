@@ -1,0 +1,20 @@
+provides practical experience scaling, monitoring, and managing container workflows
+using  Amazon ECS and AWS Fargate.
+Explore the
+workshop
+Deploy containers on Amazon ECS
+Learn how to run a sample application on an Amazon ECS cluster behind a load
+balancer, test the sample application, and delete your resources to avoid
+charges.
+Explore the guide
+Amazon EKS
+Getting started with Amazon EKS
+Learn more about Amazon EKS, a managed service that you can use to run Kubernetes on
+AWS without needing to install, operate, and maintain your own Kubernetes control
+plane or nodes.
+Explore the guide
+Amazon EKS deployment
+Explore Amazon EKS deployment options on AWS and learn how to use it to manage a
+general containerized application.
+Explore the guide
+Amazon EKS workshop

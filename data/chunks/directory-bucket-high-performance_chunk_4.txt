@@ -1,0 +1,7 @@
+have similar responsiveness requirements from their data, especially workloads with lots of
+smaller accesses or large numbers of random accesses. S3 Express One Zone can be used with other
+AWS services to support analytics and artificial intelligence and machine learning (AI/ML)
+workloads, such as Amazon EMR, Amazon SageMaker AI, and Amazon Athena.
+For the directory buckets that use the S3 Express One Zone storage class, data is stored across multiple devices
+within a single Availability Zone but doesn't store data redundantly across Availability
+Zones. When you create a directory bucket to use the S3 Express One Zone storage class, we recommend that you specify an AWS Region and

@@ -1,0 +1,11 @@
+Block Public Access policies for centralized control. Additionally, we recommend that
+you also turn on all four settings for each bucket to comply with AWS Security Hub
+Foundational Security Best Practices control S3.8. These settings block public access
+for all current and future buckets and access points.
+Before applying these settings, verify that your applications will work
+correctly without public access. If you require some level of public access to your
+buckets or objects, for example to host a static website as described at
+Hosting a static website using Amazon S3
+, you can customize the
+individual settings to suit your storage use cases.
+Enabling Block Public Access helps protect your resources by preventing public access from

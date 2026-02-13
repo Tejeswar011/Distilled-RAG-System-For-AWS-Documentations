@@ -1,0 +1,24 @@
+class durability and availability, see
+Comparing the Amazon S3 storage classes
+at the end of this section. For pricing information, see
+Amazon S3 pricing
+. For data residency and isolation use cases, you can
+create directory buckets in AWS Local Zones and use the S3 Express One Zone (
+EXPRESS_ONEZONE
+) and S3 One Zone-IA (
+ONEZONE_IA
+) storage classes. For more information about
+directory buckets in Local Zones, see
+Data residency workloads
+.
+We recommend the following:
+S3 Standard-IA
+(
+STANDARD_IA
+) â Use for your primary or only
+copy of data that can't be re-created.
+S3 One Zone-IA
+(
+ONEZONE_IA
+) â Use if you can re-create the
+data if the Availability Zone fails, for object replicas when configuring S3

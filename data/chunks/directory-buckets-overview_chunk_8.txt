@@ -1,0 +1,23 @@
+Write TPS per directory bucket
+Each  directory bucket: up to 100,000 write TPS
+To request a quota increase, contact
+Support
+.
+The number of PUT/DELETE requests per second per directory bucket.
+Creating and using directory buckets
+For more information about working with directory buckets, see the following
+topics.
+Use cases for directory buckets
+Differences for directory buckets
+Networking for directory buckets
+Directory bucket naming rules
+Viewing directory bucket properties
+Managing directory bucket policies
+Emptying a directory bucket
+Deleting a directory bucket
+Listing directory buckets
+Determining whether you can access a directory bucket
+Working with objects in a directory
+bucket
+Security for directory buckets
+Managing access to shared datasets in directory buckets with access points

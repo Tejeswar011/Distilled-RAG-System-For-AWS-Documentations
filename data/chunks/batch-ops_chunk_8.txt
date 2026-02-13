@@ -1,0 +1,15 @@
+Managing S3 Batch Operations jobs
+.
+There are costs associated with S3 Batch Operations. You are billed for creating Batch
+Operations jobs, including jobs that are canceled before completion. For more information, see
+Amazon S3 pricing
+.
+S3 Batch Operations jobs by default can process up to 4 billion objects for all
+operations. Specifically Copy, Object Tagging, Object Lock, invoking an AWS Lambda function,
+and Batch Replication jobs can support up to 20 billion objects. There is a limit of 6 active
+Batch Replication jobs per AWS account. To get started creating a Batch Operations job, see
+Creating an S3 Batch Operations job
+.
+S3 Batch Operations tutorial
+The following tutorial presents complete end-to-end procedures for some Batch Operations tasks.
+Tutorial: Batch-transcoding

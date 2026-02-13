@@ -1,0 +1,29 @@
+Amazon EC2 - AWS CloudFormation
+Amazon EC2 - AWS CloudFormation
+Documentation
+AWS CloudFormation
+Template Reference
+This is the new
+CloudFormation Template Reference Guide
+.
+Please update your bookmarks and links. For help getting started with CloudFormation, see the
+AWS CloudFormation User Guide
+.
+Amazon EC2
+Resource types
+AWS::EC2::CapacityManagerDataExport
+AWS::EC2::CapacityReservation
+AWS::EC2::CapacityReservationFleet
+AWS::EC2::CarrierGateway
+AWS::EC2::ClientVpnAuthorizationRule
+AWS::EC2::ClientVpnEndpoint
+AWS::EC2::ClientVpnRoute
+AWS::EC2::ClientVpnTargetNetworkAssociation
+AWS::EC2::CustomerGateway
+AWS::EC2::DHCPOptions
+AWS::EC2::EC2Fleet
+AWS::EC2::EgressOnlyInternetGateway
+AWS::EC2::EIP
+AWS::EC2::EIPAssociation
+AWS::EC2::EnclaveCertificateIamRoleAssociation
+AWS::EC2::FlowLog

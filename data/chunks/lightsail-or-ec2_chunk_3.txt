@@ -1,0 +1,12 @@
+infrastructure while offloading operational overhead. There is
+no additional charge for Elastic Beanstalk. You pay for AWS
+resources (e.g. Amazon EC2 instances or Amazon S3 buckets) you create to store
+and run your application.
+Amazon Elastic Compute Cloud (Amazon EC2)
+â an AWS service that
+provides on-demand, scalable computing capacity, with the goal of allowing you to develop,
+deploy, and scale applications faster. You can use it to launch as many or as few compute
+instances as you need, configure security and networking, and manage storage. You can also
+add capacity by provisioning larger instances (up to hundreds of cores and thousands of GiB
+memory) or load balancing clusters of smaller instances. Several different pricing models
+are available depending on your requirements.

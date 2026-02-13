@@ -1,0 +1,17 @@
+operations on a custom list of objects, or you can use an Amazon S3 Inventory report to easily generate lists
+of objects. Amazon S3 Batch Operations use the same Amazon S3 API operations that you already use with Amazon S3.
+Note
+For more information about using the Amazon S3 Express One Zone storage class with directory buckets,
+see
+S3 Express One Zone
+and
+Working with directory buckets
+. For more
+information about using Batch Operations with S3 Express One Zone and directory buckets, see
+Using Batch Operations with
+directory buckets
+.
+S3 Batch Operations basics
+You can use S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects.
+S3 Batch Operations can run a single operation or action on lists of Amazon S3 objects that you specify.
+Terminology

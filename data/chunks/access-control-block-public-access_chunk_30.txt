@@ -1,0 +1,13 @@
+bucket is public. This behavior occurs because Amazon S3 block public access performs
+validation on the existence of actions in addition to evaluating public access. Suppose
+that the bucket policy contains an
+Action
+statement that allows public
+access for an action that isn't supported by Amazon S3 (for example,
+s3:NotASupportedAction
+). In this case, Amazon S3 block public access
+evaluates the bucket as public because such a statement could potentially make the
+bucket public if the action later becomes supported. In cases where Amazon S3 block public
+access and IAM Access Analyzer for S3 differ in their evaluations, we recommend reviewing the bucket
+policy and removing any unsupported actions.
+For more information about IAM Access Analyzer for S3, see

@@ -1,0 +1,14 @@
+following:
+For storing backups.
+For older data that is accessed infrequently, but that still requires millisecond
+access. For example, when you upload data, you might choose the S3 Standard storage class,
+and use lifecycle configuration to tell Amazon S3 to transition the objects to the
+S3 Standard-IA or S3 One Zone-IA class.
+For more information about lifecycle management, see
+Managing the lifecycle of objects
+.
+Note
+The S3 Standard-IA and S3 One Zone-IA storage classes are suitable for objects larger than
+128 KB that you plan to store for at least 30 days. If an object is less than 128 KB, Amazon S3
+charges you for 128 KB. If you delete an object before the end of the 30-day minimum storage
+duration period, you are charged for 30 days.

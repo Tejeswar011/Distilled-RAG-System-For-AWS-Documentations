@@ -1,0 +1,20 @@
+charges. This model gives you a variable-cost service that can grow with your business
+while giving you the cost advantages of the AWS infrastructure. For more information,
+see
+Amazon S3 Pricing
+.
+When you sign up for AWS, your AWS account is automatically signed up for all
+services in AWS, including Amazon S3. However, you are charged only for the services that
+you use. If you are a new Amazon S3 customer, you can get started with Amazon S3 for free. For
+more information, see
+AWS free tier
+.
+To see your bill, go to the Billing and Cost Management Dashboard in the
+AWS Billing and Cost Management console
+. To learn more about AWS account billing, see the
+AWS Billing User Guide
+. If you have
+questions concerning AWS billing and AWS accounts, contact
+AWS Support
+.
+PCI DSS compliance

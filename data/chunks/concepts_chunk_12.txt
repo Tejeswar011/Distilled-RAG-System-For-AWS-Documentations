@@ -1,0 +1,29 @@
+Microsoft
+workloads
+to a modern architecture that uses open source and
+cloud-native services deployed on AWS, use the
+AWS
+Modernization Calculator for Microsoft Workloads
+.
+To see your bill, go to the
+Billing and Cost Management
+Dashboard
+in the
+AWS Billing and Cost Management
+console
+. Your bill contains links to usage reports that provide details
+about your bill. To learn more about AWS account billing, see
+AWS Billing and Cost Management User
+Guide
+.
+If you have questions concerning AWS billing, accounts, and events,
+contact AWS Support
+.
+To calculate the cost of a sample provisioned
+environment, see
+Cloud Economics
+Center
+.
+When calculating the cost of a provisioned
+environment, remember to include incidental costs such as snapshot storage for EBS
+volumes.

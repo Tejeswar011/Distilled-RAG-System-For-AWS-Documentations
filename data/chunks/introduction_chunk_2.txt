@@ -1,0 +1,8 @@
+AWS. Authentication is provided by matching the sign-in credentials to a principal (an
+IAM user, AWS STS federated principal, IAM role, or application) trusted by the AWS account. Next, a
+request is made to grant the principal access to resources. Access is granted in response to an
+authorization request if the user has been given permission to the resource. For example, when
+you first sign in to the console and are on the console Home page, you aren't accessing a
+specific service. When you select a service, the request for authorization is sent to that
+service and it looks to see if your identity is on the list of authorized users, what policies
+are being enforced to control the level of access granted, and any other policies that might be

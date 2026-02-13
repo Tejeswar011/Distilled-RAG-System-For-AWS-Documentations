@@ -1,0 +1,9 @@
+months. The current month's data is available for viewing in about 24 hours. The rest of
+your data takes a few days longer. Cost Explorer refreshes your cost data at least once
+every 24 hours. However, this depends on your upstream data from your billing applications,
+and some data might be updated later than 24 hours. After you sign up, Cost Explorer by
+default can display up to 13 months of historical data (if you have that much), the current
+month, and the forecasted costs for the next 18 months. The first time that you use
+Cost Explorer, Cost Explorer walks you through the main parts of the console with an
+explanation for each section.
+Cost Explorer uses the same dataset that is used to generate the AWS Cost and Usage Reports and the

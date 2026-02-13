@@ -1,0 +1,24 @@
+.
+AWS CloudTrail logs
+â AWS CloudTrail is an
+AWS service that helps you implement operational and risk auditing,
+governance, and compliance of your AWS account by recording the actions
+taken by a user, role, or an AWS service. For S3 Express One Zone, CloudTrail captures
+Regional endpoint API operations (for example,
+CreateBucket
+and
+PutBucketPolicy
+) as management events and Zonal API
+operations (for example,
+GetObject
+and
+PutObject
+)
+as data events. These events include actions taken in the AWS Management Console,
+AWS Command Line Interface (AWS CLI), AWS SDKs, and AWS API operations. For more
+information, see
+Logging with AWS CloudTrail for S3 Express One Zone
+.
+Note
+Amazon S3 server access logs aren't supported with S3 Express One Zone.
+Object management

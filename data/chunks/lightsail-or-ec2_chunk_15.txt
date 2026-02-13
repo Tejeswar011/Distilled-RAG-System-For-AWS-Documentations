@@ -1,0 +1,20 @@
+vertical and horizontal scaling capabilities.
+Load balancing
+Load balancing
+Lightsail provides a simple HTTP or HTTPS load balancer for low volume web traffic (up to 5 GB and
+400k connections per hour). Lightsail load balancers handle certificate management and are available for
+a fixed monthly cost.
+YouÂ can
+enable
+load balancing
+for your Elastic Beanstalk environment,
+which will create
+anÂ
+Elastic
+Load Balancing
+Â load balancer dedicated to your
+environment. Elastic Beanstalk fully manages this load balancer,
+taking care of security settings and of terminating the load
+balancer when you terminate your environment.
+Alternatively, you can choose to share a load balancer across
+several Elastic Beanstalk environments. With a shared load

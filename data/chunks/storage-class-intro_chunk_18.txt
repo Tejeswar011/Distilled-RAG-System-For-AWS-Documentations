@@ -1,0 +1,19 @@
+Retrieving archived objects
+You can set the storage class of an object to S3 Glacier Flexible Retrieval (
+GLACIER
+) or
+S3 Glacier Deep Archive (
+DEEP_ARCHIVE
+) in the same ways that you do for the other storage classes
+as described in the section
+Setting the storage class of an object
+.
+However, S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive objects are archived, and not
+available for real-time access. For more information, see
+Understanding archival storage in S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive
+.
+Note
+When you use S3 Glacier storage classes, your objects remain in Amazon S3. You can't access them directly through the
+separate Amazon Glacier service. For information about the Amazon Glacier service, see the
+Amazon Glacier Developer Guide
+.

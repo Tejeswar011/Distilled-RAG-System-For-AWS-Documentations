@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Replicating objects within and across Regions - Amazon Simple Storage Service</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="replication" /><meta name="default_state" content="replication" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html" /><meta name="description" content="Set up and configure replication to allow automatic, asynchronous copying of objects across Amazon S3 buckets." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon Simple Storage Service" /><meta name="guide" content="User Guide" /><meta name="abstract" content="Learn how to use Amazon Simple Storage Service (Amazon S3) to store and retrieve any amount of data from anywhere. This guide explains Amazon S3 concepts, such as buckets, objects, and related configurations, and includes code examples for common operations." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/AmazonS3/latest/userguide/replication.html" hreflang="id-id" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/AmazonS3/latest/userguide/replication.html" hreflang="id" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/replication.html" hreflang="de-de" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/replication.html" hreflang="de" /><link rel="alternative" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html" hreflang="en-us" /><link rel="alternative" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html" hreflang="en" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/AmazonS3/latest/userguide/replication.html" hreflang="es-es" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/AmazonS3/latest/userguide/replication.html" hreflang="es" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/AmazonS3/latest/userguide/replication.html" hreflang="fr-fr" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/AmazonS3/latest/userguide/replication.html" hreflang="fr" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/AmazonS3/latest/userguide/replication.html" hreflang="it-it" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/AmazonS3/latest/userguide/replication.html" hreflang="it" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/replication.html" hreflang="ja-jp" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/replication.html" hreflang="ja" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/replication.html" hreflang="ko-kr" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/replication.html" hreflang="ko" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/replication.html" hreflang="pt-br" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/replication.html" hreflang="pt" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/replication.html" hreflang="zh-cn" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_tw/AmazonS3/latest/userguide/replication.html" hreflang="zh-tw" /><link rel="alternative" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html" hreflang="x-default" /><meta name="feedback-item" content="S3" /><meta name="this_doc_product" content="Amazon Simple Storage Service" /><meta name="this_doc_guide" content="User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'s3'}"></script><meta id="panorama-serviceSubSection" value="User Guide" /><meta id="panorama-serviceConsolePage" value="Replicating objects within and across Regions" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>Replicating objects within and across Regions - Amazon Simple Storage Service</title><meta name="pdf" content="/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf#replication" /><meta name="rss" content="s3-userguide-rss-updates.rss" /><meta name="forums" content="https://repost.aws/tags/TADSTjraA0Q4-a1dxk6eUYaw" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=S3&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/replication.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/replication.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/replication.html" /><meta name="keywords" content="S3,Amazon S3,S3 User Guide,Amazon S3 User Guide,Amazon User Guide,s3 bucket,s3 object,cloud storage,data storage,prevent data loss in Amazon S3,Amazon S3 data redundancy,Amazon S3 backup for objects,replicate Amazon S3data,lock objects in Amazon S3,keep multiple versions of objects in Amazon S3,failover controls for Amazon S3,disaster recovery in Amazon S3,high availability in Amazon S3,resiliency in Amazon S3,business continuity in Amazon S3,replication,replication use cases,bi-directional replication,bidirectional replication,live replication,on-demand replication,Batch Replication,Cross-Region Replication (CRR),Same-Region Replication (SRR)" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon Simple Storage Service (S3)",
+        "item" : "https://docs.aws.amazon.com/s3/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "User Guide",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "Data protection in Amazon S3",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide/data-protection.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 5,
+        "name" : "Replicating objects within and across Regions",
+        "item" : "https://docs.aws.amazon.com/AmazonS3/latest/userguide/data-protection.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/AmazonS3/latest/userguide/s3-userguide.pdf#replication" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/s3/index.html">Amazon Simple Storage Service (S3)</a><a href="Welcome.html">User Guide</a></div><div id="page-toc-src"><a href="#replication-scenario">Why use replication?</a><a href="#crr-scenario">When to use Cross-Region Replication</a><a href="#srr-scenario">When to use Same-Region Replication</a><a href="#two-way-replication-scenario">When to use two-way replication (bi-directional
+        replication)</a><a href="#batch-replication-scenario">When to use S3 Batch Replication</a><a href="#replication-workload-requirements">Workload requirements and live
+        replication</a></div><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="replication">Replicating objects within and across Regions</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>You can use replication to enable automatic, asynchronous copying of objects across Amazon S3
+    buckets. Buckets that are configured for object replication can be owned by the same
+    AWS account or by different accounts. You can replicate objects to a single destination bucket
+    or to multiple destination buckets. The destination buckets can be in different AWS Regions or
+    within the same Region as the source bucket.</p><p>There are two types of replication: <em>live replication</em> and
+      <em>on-demand replication</em>.</p><div class="itemizedlist">
+     
+     
+  <ul class="itemizedlist"><li class="listitem">
+      <p><b>Live replication</b> â <b>To
+          automatically replicate new and updated objects</b> as they are written to the
+        source bucket, use live replication. Live replication doesn't replicate any objects that
+        existed in the bucket before you set up replication. To replicate objects that existed
+        before you set up replication, use on-demand replication.</p>
+    </li><li class="listitem">
+      <p><b>On-demand replication</b> â <b>To
+          replicate existing objects</b> from the source bucket to one or more destination
+        buckets on demand, use S3 Batch Replication. For more information about replicating
+        existing objects, see <a href="#batch-replication-scenario">When to use S3 Batch Replication</a>.</p>
+    </li></ul></div><p>There are two forms of live replication: <em>Cross-Region Replication
+      (CRR)</em> and <em>Same-Region Replication
+    (SRR)</em>.</p><div class="itemizedlist">
+     
+     
+  <ul class="itemizedlist"><li class="listitem">
+      <p><b>Cross-Region Replication (CRR)</b> â You can use CRR
+        to replicate objects across Amazon S3 buckets in different AWS Regions. For more information
+        about CRR, see <a href="#crr-scenario">When to use Cross-Region Replication</a>.</p>
+    </li><li class="listitem">
+      <p><b>Same-Region Replication (SRR)</b> â You can use
+        SRR to copy objects across Amazon S3 buckets in the same AWS Region. For more information about
+        SRR, see <a href="#srr-scenario">When to use Same-Region Replication</a>.</p>
+    </li></ul></div><div class="highlights"><h6>Topics</h6><ul><li><p><a href="#replication-scenario">Why use replication?</a></p></li><li><p><a href="#crr-scenario">When to use Cross-Region Replication</a></p></li><li><p><a href="#srr-scenario">When to use Same-Region Replication</a></p></li><li><p><a href="#two-way-replication-scenario">When to use two-way replication (bi-directional
+        replication)</a></p></li><li><p><a href="#batch-replication-scenario">When to use S3 Batch Replication</a></p></li><li><p><a href="#replication-workload-requirements">Workload requirements and live
+        replication</a></p></li><li><p><a href="./replication-what-is-isnot-replicated.html">What does Amazon S3 replicate?</a></p></li><li><p><a href="./replication-requirements.html">Requirements and considerations for
+        replication</a></p></li><li><p><a href="./replication-how-setup.html">Setting up live replication overview</a></p></li><li><p><a href="./disable-replication.html">Managing or pausing live replication </a></p></li><li><p><a href="./s3-batch-replication-batch.html">Replicating existing objects with
+            Batch Replication</a></p></li><li><p><a href="./replication-troubleshoot.html">Troubleshooting replication</a></p></li><li><p><a href="./replication-metrics.html">Monitoring replication with metrics, event notifications,
+      and statuses</a></p></li></ul></div>
+    <h2 id="replication-scenario">Why use replication?</h2>
+    <p>Replication can help you do the following:</p>
+    <div class="itemizedlist">
+       
+       
+       
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Replicate objects while retaining metadata</b> â
+          You can use replication to make copies of your objects that retain all metadata, such as
+          the original object creation times and version IDs. This capability is important if you
+          must ensure that your replica is identical to the source object.</p>
+      </li><li class="listitem">
+        <p><b>Replicate objects into different storage classes</b>
+          â You can use replication to directly put objects into S3 Glacier Flexible Retrieval,
+          S3 Glacier Deep Archive, or another storage class in the destination buckets. You
+          can also replicate your data to the same storage class and use lifecycle configurations on
+          the destination buckets to move your objects to a colder storage class as they age.</p>
+      </li><li class="listitem">
+        <p><b>Maintain object copies under different ownership</b>
+          â Regardless of who owns the source object, you can tell Amazon S3 to change replica
+          ownership to the AWS account that owns the destination bucket. This is referred to as
+          the <em>owner override</em> option. You can use this option to restrict access
+          to object replicas.</p>
+      </li><li class="listitem">
+        <p><b>Keep objects stored over multiple AWS Regions</b>
+          â To ensure geographic differences in where your data is kept, you can set multiple
+          destination buckets across different AWS Regions. This feature might help you meet
+          certain compliance requirements. </p>
+      </li><li class="listitem">
+        <p><b>Replicate objects within 15 minutes</b> â To
+          replicate your data in the same AWS Region or across different Regions within a
+          predictable time frame, you can use S3 Replication Time Control (S3 RTC). S3 RTC replicates 99.99 percent of new
+          objects stored in Amazon S3 within 15 minutes (backed by a service-level agreement). For more
+          information, see <a href="./replication-time-control.html">Meeting compliance requirements with
+            S3 Replication Time Control</a>.</p>
+        <div class="awsdocs-note"><div class="awsdocs-note-title"><awsui-icon name="status-info" variant="link"></awsui-icon><h6>Note</h6></div><div class="awsdocs-note-text"><p>S3 RTC does not apply to Batch Replication. Batch Replication is an on-demand
+            replication job, and can be tracked with S3 Batch Operations. For more information, see <a href="./batch-ops-job-status.html">Tracking job status and completion reports</a>.</p></div></div>
+      </li><li class="listitem">
+        <p><b>Sync buckets, replicate existing objects, and replicate
+            previously failed or replicated objects</b> â To sync buckets and
+          replicate existing objects, use Batch Replication as an on-demand replication action. For
+          more information about when to use Batch Replication, see <a href="#batch-replication-scenario">When to use S3 Batch Replication</a>.</p>
+      </li><li class="listitem">
+        <p><b>Replicate objects and fail over to a bucket in another
+            AWS Region</b> â To keep all metadata and objects in sync across buckets
+          during data replication, use two-way replication (also known as bi-directional
+          replication) rules before configuring Amazon S3 Multi-Region Access Point failover controls. Two-way replication
+          rules help ensure that when data is written to the S3 bucket that traffic fails over to,
+          that data is then replicated back to the source bucket.</p>
+      </li></ul></div>
+   
+    <h2 id="crr-scenario">When to use Cross-Region Replication</h2>
+    <p>S3 Cross-Region Replication (CRR) is used to copy objects across Amazon S3 buckets in different
+      AWS Regions. CRR can help you do the following:</p>
+    <div class="itemizedlist">
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Meet compliance requirements</b> â Although Amazon S3
+          stores your data across multiple geographically distant Availability Zones by default,
+          compliance requirements might dictate that you store data at even greater distances. To
+          satisfy these requirements, use Cross-Region Replication to replicate data between distant
+          AWS Regions.</p>
+      </li><li class="listitem">
+        <p><b>Minimize latency</b> â If your customers are in
+          two geographic locations, you can minimize latency in accessing objects by maintaining
+          object copies in AWS Regions that are geographically closer to your users.</p>
+      </li><li class="listitem">
+        <p><b>Increase operational efficiency</b> â If you have
+          compute clusters in two different AWS Regions that analyze the same set of objects, you
+          might choose to maintain object copies in those Regions.</p>
+      </li></ul></div>
+    
+   
+    <h2 id="srr-scenario">When to use Same-Region Replication</h2>
+    <p>Same-Region Replication (SRR) is used to copy objects across Amazon S3 buckets in the same
+      AWS Region. SRR can help you do the following:</p>
+    <div class="itemizedlist">
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Aggregate logs into a single bucket</b> â If you
+          store logs in multiple buckets or across multiple accounts, you can easily replicate logs
+          into a single, in-Region bucket. Doing so allows for simpler processing of logs in a
+          single location.</p>
+      </li><li class="listitem">
+        <p><b>Configure live replication between production and test
+            accounts</b> â If you or your customers have production and test accounts
+          that use the same data, you can replicate objects between those multiple accounts, while
+          maintaining object metadata.</p>
+      </li><li class="listitem">
+        <p><b>Abide by data sovereignty laws</b> â You might be
+          required to store multiple copies of your data in separate AWS accounts within a certain
+          Region. Same-Region Replication can help you automatically replicate critical data when
+          compliance regulations don't allow the data to leave your country.</p>
+      </li></ul></div>
+   
+    <h2 id="two-way-replication-scenario">When to use two-way replication (bi-directional
+        replication)</h2>
+    <div class="itemizedlist">
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Build shared datasets across multiple AWS Regions</b>
+          â With replica modification sync, you can easily replicate metadata changes, such
+          as object access control lists (ACLs), object tags, or object locks, on replication
+          objects. This two-way replication is important if you want to keep all objects and object
+          metadata changes in sync. You can <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-for-metadata-changes.html#enabling-replication-for-metadata-changes">enable replica modification sync</a> on a new or existing replication rule when
+          performing two-way replication between two or more buckets in the same or different
+          AWS Regions.</p>
+      </li><li class="listitem">
+        <p><b>Keep data synchronized across Regions during failover</b>
+          â You can synchronize data in buckets between AWS Regions by configuring two-way
+          replication rules with S3 Cross-Region Replication (CRR) directly from a Multi-Region Access Point. To make
+          an informed decision on when to initiate failover, you can also enable S3 replication
+          metrics so that you can monitor the replication in Amazon CloudWatch, in S3 Replication Time Control (S3 RTC), or from the
+          Multi-Region Access Point.</p>
+      </li><li class="listitem">
+        <p><b>Make your application highly available</b> â Even
+          in the event of a Regional traffic disruption, you can use two-way replication rules to
+          keep all metadata and objects in sync across buckets during data replication.</p>
+      </li></ul></div>
+   
+    <h2 id="batch-replication-scenario">When to use S3 Batch Replication</h2>
+    <p>Batch Replication replicates existing objects to different buckets as an on-demand
+      option. Unlike live replication, these jobs can be run as needed. Batch Replication can help
+      you do the following:</p>
+    <div class="itemizedlist">
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Replicate existing objects</b> â You can use
+          Batch Replication to replicate objects that were added to the bucket before Same-Region
+          Replication or Cross-Region Replication were configured.</p>
+      </li><li class="listitem">
+        <p><b>Replicate objects that previously failed to replicate</b>
+          â You can filter a Batch Replication job to attempt to replicate objects with a
+          replication status of <b>FAILED</b>.</p>
+      </li><li class="listitem">
+        <p><b>Replicate objects that were already replicated</b>
+          â You might be required to store multiple copies of your data in separate
+          AWS accounts or AWS Regions. Batch Replication can replicate existing objects to
+          newly added destinations.</p>
+      </li><li class="listitem">
+        <p><b>Replicate replicas of objects that were created from a
+            replication rule</b> â Replication configurations create replicas of
+          objects in destination buckets. Replicas of objects can be replicated only with
+          Batch Replication.</p>
+      </li></ul></div>
+   
+    <h2 id="replication-workload-requirements">Workload requirements and live
+        replication</h2>
+    <p>Depending on your workload requirements, some types of live replication will be better
+      suited to your use case than others. Use the following table to determine which type of
+      replication to use for your situation, and whether to use S3 Replication Time Control (S3 RTC) for your workload.
+      S3 RTC replicates 99.99 percent of new objects stored in Amazon S3 within 15 minutes (backed by a
+      service-level agreement, or SLA). For more information, see <a href="./replication-time-control.html">Meeting compliance requirements with
+            S3 Replication Time Control</a>.</p>
+    <div class="table-container"><div class="table-contents disable-scroll"><table id="w903aac26c13c25b5"><thead>
+          <tr>
+            <th>Workload requirement</th>
+            <th>S3 RTC (15-minute SLA)</th>
+            <th>Cross-Region Replication (CRR)</th>
+            <th>Same-Region Replication (SRR)</th>
+          </tr>
+        </thead>
+          <tr>
+            <td tabindex="-1">Replicate objects between different AWS accounts</td>
+            <td tabindex="-1">Yes</td>
+            <td tabindex="-1">Yes</td>
+            <td tabindex="-1">Yes</td>
+          </tr>
+          <tr>
+            <td tabindex="-1">Replicate objects within the same AWS Region within 24-48 hours (not SLA
+              backed)</td>
+            <td tabindex="-1">No</td>
+            <td tabindex="-1">No</td>
+            <td tabindex="-1">Yes</td>
+          </tr>
+          <tr>
+            <td tabindex="-1">Replicate objects between different AWS Regions within 24-48 hours (not SLA
+              backed)</td>
+            <td tabindex="-1">No</td>
+            <td tabindex="-1">Yes</td>
+            <td tabindex="-1">No</td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>Predictable replication time: Backed by SLA to replicate 99.9 percent of objects
+                within 15 minutes</p>
+            </td>
+            <td tabindex="-1">Yes</td>
+            <td tabindex="-1">No</td>
+            <td tabindex="-1">No</td>
+          </tr>
+        </table></div></div>
+  <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./data-protection.html">Data protection</div><div id="next" class="next-link" accesskey="n" href="./replication-what-is-isnot-replicated.html">What's replicated?</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=S3&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/replication.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=S3&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonS3/latest/userguide/replication.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

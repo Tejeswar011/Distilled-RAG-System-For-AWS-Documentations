@@ -1,0 +1,18 @@
+This policy qualifies as public because of the third statement. With this
+policy in place and
+RestrictPublicBuckets
+enabled, Amazon S3 allows
+access only by CloudTrail. Even though statement 2 isn't public, Amazon S3 disables access
+by "Account-2." This is because statement 3 renders the entire policy public, so
+RestrictPublicBuckets
+applies. As a result, Amazon S3 disables
+cross-account access, even though the policy delegates access to a specific
+account, "Account-2." But if you remove statement 3 from the policy, then the
+policy doesn't qualify as public, and
+RestrictPublicBuckets
+no
+longer applies. Thus, "Account-2" regains access to the bucket, even if you
+leave
+RestrictPublicBuckets
+enabled.
+Access points

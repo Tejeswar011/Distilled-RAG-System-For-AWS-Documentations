@@ -1,0 +1,16 @@
+storage with minute-to-hour retrieval times. The Archive Instant Access tier delivers millisecond
+access and high-throughput performance.
+Activate the Archive Access and Deep Archive Access tiers only if your objects can
+be accessed asynchronously by your application. If the object that you are retrieving is
+stored in the Archive Access or Deep Archive Access tiers, first restore the object by
+using
+RestoreObject
+.
+You can
+move newly created data to S3 Intelligent-Tiering
+, setting it as your default
+storage class. You can also choose to activate one or both of the archive access tiers by
+using the
+PutBucketIntelligentTieringConfiguration
+API operation, the AWS CLI,
+or the Amazon S3 console. For more information about using S3 Intelligent-Tiering and activating the

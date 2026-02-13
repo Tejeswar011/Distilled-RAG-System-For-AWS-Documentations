@@ -1,0 +1,18 @@
+AWS Billing User Guide
+. If you have
+questions concerning AWS billing and AWS accounts, contact
+AWS Support
+.
+PCI DSS compliance
+Amazon S3 supports the processing, storage, and transmission
+of credit card data by a merchant or service provider, and has been
+validated as being compliant with Payment Card Industry (PCI) Data Security Standard (DSS).
+For more information about PCI DSS, including how to request a copy of the AWS PCI Compliance Package,
+see
+PCI DSS Level 1
+.
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+Amazon S3 Object Lambda availability change
+Did this page help you? - Yes

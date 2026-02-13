@@ -1,0 +1,34 @@
+aws:SourceVpc
+aws:SourceVpce
+aws:SourceOwner
+aws:SourceAccount
+aws:userid
+, outside the pattern
+"
+AROLEID:*
+"
+s3:DataAccessPointArn
+Note
+When used in a bucket policy, this value can contain a wildcard for the access point name
+without rendering the policy public, as long as the account ID is fixed. For
+example, allowing access to
+arn:aws:s3:us-west-2:123456789012:accesspoint/*
+would
+permit access to any access point associated with account
+123456789012
+in Region
+us-west-2
+, without rendering the bucket policy
+public. This behavior is different for access point policies. For more information,
+see
+Access points
+.
+s3:DataAccessPointAccount
+For more information about bucket policies, see
+Bucket policies for Amazon S3
+.
+Note
+When using
+multivalued context keys
+, you must use the
+ForAllValues

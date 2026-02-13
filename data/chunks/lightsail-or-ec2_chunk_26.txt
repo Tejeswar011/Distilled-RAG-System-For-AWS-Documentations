@@ -1,0 +1,12 @@
+using it and then provides in-depth descriptions of key features and how to use them.
+Explore the guide
+Amazon EC2 instance types
+When you launch an EC2 instance, the instance type that you specify determines the hardware of the host computer used for your
+instance. Each instance type offers different compute, memory, and storage capabilities, and is grouped in an instance family based
+on these capabilities. This guide walks you through EC2 instance types.
+Explore the guide
+Amazon EC2 Auto Scaling with EC2 Spot Instances
+Learn how to create a stateless, fault tolerant workload using Amazon EC2 Auto Scaling with
+launch templates to request Amazon EC2 Spot Instances.
+Get started with the tutorial
+Javascript is disabled or is unavailable in your browser.

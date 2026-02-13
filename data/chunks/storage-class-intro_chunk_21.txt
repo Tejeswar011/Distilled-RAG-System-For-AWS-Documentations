@@ -1,0 +1,27 @@
+by using server-side encryption with customer-provided encryption keys (SSE-C). For more
+information, see
+Using server-side encryption with
+customer-provided keys (SSE-C)
+.
+Note
+S3 on Outposts doesn't support server-side encryption with AWS Key Management Service (AWS KMS) keys
+(SSE-KMS).
+For more information about S3 on Outposts, see
+What is S3 on Outposts
+in the
+Amazon S3 on Outposts User Guide
+.
+Comparing the Amazon S3 storage classes
+The following table compares the storage classes, including their availability,
+durability, minimum storage duration, and other considerations.
+Storage class
+Designed for
+Durability (designed for)
+Availability (designed for)
+Availability Zones
+Min storage duration
+Min billable object size
+Other considerations
+S3 Standard (
+STANDARD
+)

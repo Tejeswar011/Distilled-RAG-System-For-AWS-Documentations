@@ -1,0 +1,21 @@
+charge for using gateway endpoints. For more information about how to configure
+gateway VPC endpoints, see
+Networking for directory buckets
+Session-based
+authorization
+With S3 Express One Zone, you authenticate and authorize requests through a new
+session-based mechanism that is optimized to provide the lowest latency. You can use
+CreateSession
+to request temporary credentials that provide
+low-latency access to your bucket. These temporary credentials are scoped to a
+specific S3 directory bucket. Session tokens are used only with Zonal (object-level)
+operations (with the exception of
+CopyObject
+). For more information, see
+Authorizing Zonal endpoint API operations with
+CreateSession
+.
+The
+supported AWS SDKs
+for S3 Express One Zone
+handle session establishment and refreshment on your

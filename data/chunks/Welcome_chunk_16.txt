@@ -1,0 +1,19 @@
+object
+is a file and any metadata that describes
+the file. A
+bucket
+is a container for objects.
+To store your data in Amazon S3, you first create a bucket and specify a bucket name and
+AWS Region. Then, you upload your data to that bucket as objects in Amazon S3. Each object
+has a
+key
+(or
+key
+name
+), which is the unique identifier for the object within the
+bucket.
+S3 provides features that you can configure to support your specific use case. For
+example, you can use S3 Versioning to keep multiple versions of an object in the same
+bucket, which allows you to restore objects that are accidentally deleted or
+overwritten.
+Buckets and the objects in them are private and can be accessed only if you explicitly

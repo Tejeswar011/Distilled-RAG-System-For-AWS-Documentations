@@ -1,0 +1,14 @@
+necessary to run the specified operation on a list of objects. To create a job, you give
+S3 Batch Operations a list of objects and specify the action to perform on those objects. For
+information about the operations that S3 Batch Operations supports, see
+Operations supported by S3 Batch Operations
+.
+A batch job performs a specified operation on every object that's included in its
+manifest
+. A manifest lists the objects that you want a batch job to
+process and it is stored as an object in a bucket. You can use a comma-separated values
+(CSV)-formatted
+Cataloging and analyzing your data with S3 Inventory
+report
+as a manifest, which makes it easy to create large lists of objects located in a bucket. You
+can also specify a manifest in a simple CSV format that enables you to perform batch

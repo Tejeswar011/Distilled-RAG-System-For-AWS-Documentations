@@ -1,0 +1,11 @@
+its bucket-level settings.
+When Amazon S3 evaluates whether an operation is prohibited by a block public access setting, it
+rejects any request that violates an organization policy (which enforces the account BPA
+setting) or an access point, bucket, or account setting.
+Important
+Public access is granted to buckets and objects through access control lists (ACLs), access
+point policies, bucket policies, or all. To help ensure that all of your
+Amazon S3 access points, buckets, and objects have their public access blocked,
+we recommend that you turn on all four settings for block public access for your
+account. For organizations managing multiple accounts, consider using organization-level
+Block Public Access policies for centralized control. Additionally, we recommend that

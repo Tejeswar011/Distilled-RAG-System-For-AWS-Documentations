@@ -1,0 +1,29 @@
+etc.)
+Supports multiple runtimes (Node.js, Python, Java, .NET,
+etc.)
+Any OS and runtime supported
+Integration
+Limited integrations with AWS services
+Good AWS integrations (RDS, S3, CloudWatch)
+Full AWS integration
+Security
+Basic security features, simpler to manage
+Automated security updates, but still needs monitoring
+Full control over security settings
+Use Case Examples
+Personal blogs, small websites, MVPs, prototyping
+Web applications, APIs, SaaS platforms
+Large-scale applications, databases, custom networking
+Decision Guidelines:
+Choose
+Lightsail
+if you
+want a simple, budget-friendly solution with minimal setup.
+Choose
+Elastic Beanstalk
+if
+you need easy application deployment with some level of
+control and scalability.
+Choose
+EC2
+if you need full

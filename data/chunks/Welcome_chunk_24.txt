@@ -1,0 +1,5 @@
+for table buckets and tables, and IAM identity-based policies for users and roles. For more information, see
+Security for S3 Tables
+.
+Vector buckets
+â S3 vector buckets are a type of Amazon S3 bucket that are purpose-built to store and query vectors. Vector buckets use dedicated API operations to write and query vector data efficiently. With S3 vector buckets, you can store vector embeddings for machine learning models, perform similarity searches, and integrate with services like Amazon Bedrock and Amazon OpenSearch.

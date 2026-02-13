@@ -1,0 +1,16 @@
+periods.
+For example, suppose that you have an object that is 15 days into a 30-day retention
+period, and you
+PUT
+an object into Amazon S3 with the same name and a 60-day
+retention period. In this case, your
+PUT
+request succeeds, and Amazon S3 creates
+a new version of the object with a 60-day retention period. The older version maintains
+its original retention period and becomes deletable in 15 days.
+After you've applied a retention setting to an object version, you can extend the
+retention period. To do this, submit a new Object Lock request for the object version
+with a
+Retain Until Date
+that is later than the one currently
+configured for the object version. Amazon S3 replaces the existing retention period with the

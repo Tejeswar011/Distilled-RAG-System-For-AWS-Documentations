@@ -1,0 +1,23 @@
+your use, either On-Demand or as part of a Savings Plan. You can use your
+existing server-bound software licenses and get help meeting compliance
+requirements.
+On-Demand Capacity Reservations
+Reserve compute capacity for your EC2 instances in a specific Availability
+Zone for any duration of time.
+Per-second billing
+Removes the cost of unused minutes and seconds from your bill.
+For a complete list of charges and prices for Amazon EC2 and more information about the purchase
+models, see
+Amazon EC2 pricing
+.
+Estimates, billing, and cost
+optimization
+To create estimates for your AWS use cases, use the
+AWS Pricing Calculator
+.
+To estimate the cost of transforming
+Microsoft
+workloads
+to a modern architecture that uses open source and
+cloud-native services deployed on AWS, use the
+AWS

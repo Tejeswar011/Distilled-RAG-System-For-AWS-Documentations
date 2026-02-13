@@ -1,0 +1,30 @@
+.
+Directories
+Directory buckets organize data hierarchically into directories as opposed to the flat
+sorting structure of general purpose buckets.
+With a hierarchical namespace, the delimiter in the object key is important. The only
+supported delimiter is a forward slash (
+/
+). Directories are determined by
+delimiter boundaries. For example, the object key
+dir1/dir2/file1.txt
+results in the directories
+dir1
+/ and
+dir2/
+being automatically
+created, and the object
+file1.txt
+being added to the
+/dir2
+directory in the path
+dir1/dir2/file1.txt
+.
+The directory bucket indexing model returns unsorted results for the
+ListObjectsV2
+API operation. If you need to limit your results to a
+subsection of your bucket, you can specify a subdirectory path in the
+prefix
+parameter, for example,
+prefix=dir1/
+.

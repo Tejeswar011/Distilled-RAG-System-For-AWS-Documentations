@@ -1,0 +1,18 @@
+Working with objects in a directory
+bucket
+Security for directory buckets
+Managing access to shared datasets in directory buckets with access points
+Optimizing directory bucket
+performance
+Developing with directory buckets
+Using tags with S3 directory buckets
+Resilience testing in S3 Express One Zone
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+String functions
+Use cases for directory buckets
+Did this page help you? - Yes
+Thanks for letting us know we're doing a good job!
+If you've got a moment, please tell us what we did right so we can do more of it.
+Did this page help you? - No

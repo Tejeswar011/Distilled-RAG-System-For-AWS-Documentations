@@ -1,0 +1,11 @@
+Directory
+buckets
+.
+Amazon S3 Express One Zone is a high-performance, single-zone Amazon S3 storage class that is
+purpose-built to deliver consistent, single-digit millisecond data access for your most
+latency-sensitive applications. S3 Express One Zone is the lowest latency cloud-object storage class
+available today, with data access speeds up to 10x faster and with request costs 50 percent
+lower than S3 Standard. Applications can benefit immediately from requests being completed up
+to an order of magnitude faster. S3 Express One Zone provides similar performance elasticity as
+other S3 storage classes. S3 Express One Zone is used for workloads or performance-critical applications that
+require consistent single-digit millisecond latency.

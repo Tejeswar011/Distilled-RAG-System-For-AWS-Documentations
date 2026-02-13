@@ -1,0 +1,19 @@
+header. If you try to
+delete objects protected by
+governance
+mode and have the
+s3:BypassGovernanceRetention
+permission, the operation will
+succeed.
+Legal holds
+With Object Lock, you can also place a
+legal hold
+on an object
+version. Like a retention period, a legal hold prevents an object version from being
+overwritten or deleted. However, a legal hold doesn't have an associated fixed amount of
+time and remains in effect until removed. Legal holds can be freely placed and removed
+by any user who has the
+s3:PutObjectLegalHold
+permission.
+Legal holds are independent from retention periods. Placing a legal hold on an object
+version doesn't affect the retention mode or retention period for that object version.

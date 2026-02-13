@@ -1,0 +1,24 @@
+API operation, the AWS CLI,
+or the Amazon S3 console. For more information about using S3 Intelligent-Tiering and activating the
+archive access tiers, see
+Using S3 Intelligent-Tiering
+.
+To access objects in the Archive Access or Deep Archive Access tiers, you first need to restore them. For more information,
+see
+Restoring objects from the
+S3 Intelligent-Tiering Archive Access and Deep Archive Access tiers
+.
+Note
+If the size of an object is less than 128 KB, it is not monitored and not eligible for
+auto-tiering. Smaller objects are always stored in the Frequent Access tier. For more
+information about S3 Intelligent-Tiering, see
+S3 Intelligent-Tiering access
+tiers
+.
+Storage classes for infrequently accessed
+objects
+The
+S3 Standard-IA
+and
+S3 One
+Zone-IA

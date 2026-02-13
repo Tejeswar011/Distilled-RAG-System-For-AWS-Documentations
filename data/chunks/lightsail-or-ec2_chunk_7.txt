@@ -1,0 +1,11 @@
+Supports individual Docker containers, multiple containers with Docker Compose as well as Amazon Elastic Container Service (Amazon ECS).
+Run container workloads natively on Amazon EC2 using self-managed Docker or Kubernetes, or deploy containers to separate
+AWS container services such as Amazon ECS, Amazon EKS, AWS Fargate, AWS App Runner, AWS Elastic Beanstalk, Lambda, and others.
+Data Transfer
+Generous data transfer allocation included with the fixed monthly fee for every Lightsail compute instance.
+Pay per GB data transfer (out) with ï¬exible pricing tiers and no cost for ingress traï¬c.
+Pay per GB data transfer (out) with flexible pricing tiers and no cost for ingress
+traffic.
+Load Balancing
+Basic load balancing of HTTP/HTTPS for low volume web traffic (up to 5 GB per
+hour).

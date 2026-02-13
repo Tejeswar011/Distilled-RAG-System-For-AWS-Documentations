@@ -1,0 +1,10 @@
+For more information, see
+Access control in Amazon S3
+.
+Directory buckets
+â Recommended for low-latency use cases and data-residency use cases. By default, you can create up to 100 directory buckets in your
+AWS account, with no limit on the number of objects that you can store in a directory bucket. Directory buckets organize objects into hierarchical directories (prefixes) instead of the flat storage structure
+of general purpose buckets. This bucket type has no prefix limits and individual directories can scale horizontally. For more information, see
+Working with directory buckets
+.
+For low-latency use cases, you can create a directory bucket in a single AWS Availability Zone to store data. Directory buckets in Availability Zones support the

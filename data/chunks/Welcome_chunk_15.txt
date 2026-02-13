@@ -1,0 +1,17 @@
+Amazon S3 Inventory list
+.
+Strong consistency
+Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of
+objects in your Amazon S3 bucket in all AWS Regions. This behavior applies to both
+writes of new objects as well as PUT requests that overwrite existing objects and
+DELETE requests. In addition, read operations on Amazon S3 Select, Amazon S3 access control
+lists (ACLs), Amazon S3 Object Tags, and object metadata (for example, the HEAD object)
+are strongly consistent. For more information, see
+Amazon S3 data consistency model
+.
+How Amazon S3 works
+Amazon S3 is an object storage service that stores data as objects, hierarchical data, or tabular data within buckets. An
+object
+is a file and any metadata that describes
+the file. A
+bucket

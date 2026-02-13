@@ -1,0 +1,17 @@
+Replicating objects within and across Regions - Amazon Simple Storage Service
+Replicating objects within and across Regions - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+Why use replication?
+When to use Cross-Region Replication
+When to use Same-Region Replication
+When to use two-way replication (bi-directional
+replication)
+When to use S3 Batch Replication
+Workload requirements and live
+replication
+Replicating objects within and across Regions
+You can use replication to enable automatic, asynchronous copying of objects across Amazon S3
+buckets. Buckets that are configured for object replication can be owned by the same
+AWS account or by different accounts. You can replicate objects to a single destination bucket

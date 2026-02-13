@@ -1,0 +1,9 @@
+version doesn't affect the retention mode or retention period for that object version.
+For example, suppose that you place a legal hold on an object version and that object
+version is also protected by a retention period. If the retention period expires, the
+object doesn't lose its WORM protection. Rather, the legal hold continues to protect the
+object until an authorized user explicitly removes the legal hold. Similarly, if you
+remove a legal hold while an object version has a retention period in effect, the object
+version remains protected until the retention period expires.
+How deletes work with S3 Object Lock
+If your bucket has S3 Object Lock enabled and the object is protected by a retention period or

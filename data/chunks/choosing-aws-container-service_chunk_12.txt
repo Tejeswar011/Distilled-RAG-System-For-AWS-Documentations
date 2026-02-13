@@ -1,0 +1,11 @@
+or run an application both on premises and in the cloud.
+We recommend building competency in software architectures and build packaging with
+which you can readily port differentiating business logic between compute services.
+Applications built using some technologies might run more effectively on some compute
+services rather than others.
+Organization size and skills
+The skills of your organization are a major factor when deciding which container
+services you use. The approach you take can require some investment in DevOps and Site
+Reliability Engineer (SRE) teams. Building out an automated pipeline to deploy
+applications is common for most modern application development.
+Some choices elevate the amount of management you need to do. For example, some

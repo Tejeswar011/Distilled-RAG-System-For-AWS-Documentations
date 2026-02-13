@@ -1,0 +1,11 @@
+container images on AWS compute instances, with 0.25 vCPUs and 512 MiB RAM, to 4 vCPUs
+and 8 GiB RAM. Every Lightsail container deployment comes with 500 GB of data transfer
+for a fixed monthly fee.
+Elastic Beanstalk can run individual Docker containers, multiple containers with Docker Compose,
+or deploy to Amazon ECS, a fully managed container orchestration service which manages and scales the
+Amazon EC2 instances running containers.
+Containers can be self-managed on Amazon EC2, or deployed to a fully managed AWS
+container service such as Amazon ECS, Amazon EKS, App Runner, Elastic Beanstalk, and Lambda. These services support
+both public and private images, more flexible hourly or commit-based billing, and greater
+vertical and horizontal scaling capabilities.
+Load balancing

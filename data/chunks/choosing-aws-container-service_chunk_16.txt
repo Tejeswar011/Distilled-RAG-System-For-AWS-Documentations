@@ -1,0 +1,22 @@
+Red Hat OpenShift Service on AWS
+Vertical solutions
+Use when you or your team don't have a lot of experience with containers or
+infrastructure.
+AWS App Runner
+AWS Lambda
+Amazon Lightsail
+AWS Batch
+Tools and services with container support
+Use for supporting your container operations.
+Amazon ECR
+On-premises
+Use these services for flexibility in where you run your container-based
+applications.
+Amazon ECS Anywhere
+Amazon EKS Anywhere
+Amazon EKS Hybrid Nodes
+Use
+You should now have a clear understanding of each AWS container service (and the
+supporting AWS tools and services) and which one might be the best fit for your organization
+and use case.
+To explore how to use and learn more about each of the available AWS container services,

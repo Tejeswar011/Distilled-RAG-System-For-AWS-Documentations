@@ -1,0 +1,14 @@
+Kubernetes. It provides a highly available and secure Kubernetes control plane.
+Red Hat OpenShift Service on AWS (ROSA):
+ROSA is a fully managed
+service with which you can deploy and run Red Hat OpenShift clusters on AWS
+infrastructure. OpenShift is a popular enterprise-grade Kubernetes platform that extends
+the capabilities of Kubernetes with additional features and tools for building,
+deploying, and managing containerized applications.
+The
+Vertical solutions layer
+is a set of vertical
+integration services that provide higher-level and bundled services that simplify the
+process of deploying and managing applications. The AWS services in this layer are:
+AWS App Runner:
+AWS App Runner is a fully managed service

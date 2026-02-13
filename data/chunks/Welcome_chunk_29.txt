@@ -1,0 +1,23 @@
+,
+amzn-s3-demo-bucket
+is the name of the bucket
+and
+photos/puppy.jpg
+is the key.
+For more information about object keys, see
+Naming Amazon S3 objects
+.
+S3 Versioning
+You can use S3 Versioning to keep multiple variants of an object in the same
+bucket. With S3 Versioning, you can preserve, retrieve, and restore every version of
+every object stored in your buckets. You can easily recover from both unintended
+user actions and application failures.
+For more information, see
+Retaining multiple versions of objects with S3 Versioning
+.
+Version ID
+When you enable S3 Versioning in a bucket, Amazon S3 generates a unique version ID for
+each object added to the bucket. Objects that already existed in the bucket at the
+time that you enable versioning have a version ID of
+null
+. If you

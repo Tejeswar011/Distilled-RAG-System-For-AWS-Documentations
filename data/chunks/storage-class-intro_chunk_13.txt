@@ -1,0 +1,14 @@
+charges you for 128 KB. If you delete an object before the end of the 30-day minimum storage
+duration period, you are charged for 30 days.
+Objects that are deleted, overwritten, or transitioned to a different storage class before 30 days will incur the normal storage usage charge
+plus a pro-rated charge for the remainder of the 30-day minimum. For pricing information, see
+Amazon S3 pricing
+.
+These storage classes differ as follows:
+S3 Standard-IA
+(
+STANDARD_IA
+) â Amazon S3 stores the object data
+redundantly across multiple geographically separated Availability Zones (similar to the
+S3 Standard storage class). S3 Standard-IA objects are resilient to the loss of an
+Availability Zone. This storage class offers greater availability and resiliency than the

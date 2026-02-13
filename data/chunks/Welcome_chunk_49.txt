@@ -1,0 +1,16 @@
+browsers and toolkits work as expected. In some areas, we have added functionality
+to HTTP (for example, we added headers to support access control). In these cases,
+we have done our best to add the new functionality in a way that matches the style
+of standard HTTP usage.
+If you make direct REST API calls in your application, you must write the code to
+compute the signature and add it to the request. For more information about how to
+make requests to Amazon S3, see
+Making requests
+in the
+Amazon S3 API Reference
+.
+Note
+SOAP API support over HTTP is deprecated, but it is still available over
+HTTPS. Newer Amazon S3 features are not supported for SOAP. We recommend that you use
+either the REST API or the AWS SDKs.
+Paying for Amazon S3

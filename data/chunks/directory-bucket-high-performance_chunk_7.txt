@@ -1,0 +1,16 @@
+Overview
+Features of S3 Express One Zone
+Related services
+Next steps
+Overview
+To optimize performance and reduce latency, S3 Express One Zone introduces the following new
+concepts.
+Availability Zones
+The Amazon S3 Express One Zone storage class is designed for 99.95 percent availability within a single Availability Zone and is backed
+by the
+Amazon S3 Service Level Agreement
+. With
+S3 Express One Zone, your data is redundantly stored on multiple devices within a single
+Availability Zone. S3 Express One Zone is designed to handle concurrent device failures by quickly
+detecting and repairing any lost redundancy. If the existing device encounters a
+failure, S3 Express One Zone automatically shifts requests to new devices within an Availability Zone.

@@ -1,0 +1,13 @@
+Android, and so on). The AWS SDKs provide a convenient way to create programmatic
+access to S3 and AWS. Amazon S3 is a REST service. You can send requests to Amazon S3 using
+the AWS SDK libraries, which wrap the underlying Amazon S3 REST API and simplify your
+programming tasks. For example, the SDKs take care of tasks such as calculating
+signatures, cryptographically signing requests, managing errors, and retrying
+requests automatically. For information about the AWS SDKs, including how to
+download and install them, see
+Tools for
+AWS
+.
+Every interaction with Amazon S3 is either authenticated or anonymous. If you are using
+the AWS SDKs, the libraries compute the signature for authentication from the keys
+that you provide. For more information about how to make requests to Amazon S3, see

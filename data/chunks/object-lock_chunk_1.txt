@@ -1,0 +1,17 @@
+S3 Object Lock has been assessed by Cohasset Associates for use in
+environments that are subject to SEC 17a-4, CFTC, and FINRA regulations. For more
+information about how Object Lock relates to these regulations, see the
+Cohasset Associates Compliance Assessment
+.
+Object Lock provides two ways to manage object retention:
+retention periods
+and
+legal holds
+. An
+object version can have a retention period, a legal hold, or both.
+Retention period
+â A retention period
+specifies a fixed period of time during which an object version remains locked. You can set
+a unique retention period for individual objects. Additionally, you can set a
+default retention period on an S3 bucket. You may also restrict the minimum and
+maximum allowable retention periods with the

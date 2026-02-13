@@ -1,0 +1,35 @@
+99.999999999%
+99.9%
+>= 3
+90 days
+128 KB
+Per-GB retrieval fees apply.
+S3 Glacier Flexible Retrieval (
+GLACIER
+)
+Long-lived archive data accessed once a year with retrieval times of minutes to
+hours
+99.999999999%
+99.99% (after you restore objects)
+>= 3
+90 days
+NA*
+Per-GB retrieval fees apply. You must first restore archived objects before you
+can access them. For information, see
+Restoring an archived object
+.
+S3 Glacier Deep Archive (
+DEEP_ARCHIVE
+)
+Long-lived archive data accessed less than once a year with retrieval times of
+hours
+99.999999999%
+99.99% (after you restore objects)
+>= 3
+180 days
+NA**
+Per-GB retrieval fees apply. You must first restore archived objects before you
+can access them. For information, see
+Restoring an archived object
+.
+Reduced Redundancy Storage  (

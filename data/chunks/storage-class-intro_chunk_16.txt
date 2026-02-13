@@ -1,0 +1,21 @@
+S3 One Zone-IA
+(
+ONEZONE_IA
+) â Use if you can re-create the
+data if the Availability Zone fails, for object replicas when configuring S3
+Cross-Region Replication (CRR). Also, for data residency and isolation, you can create directory buckets in AWS Local Zones and use the S3 One Zone-IA storage class.
+Storage classes for rarely accessed objects
+The
+S3 Glacier Instant Retrieval
+(
+GLACIER_IR
+),
+S3 Glacier Flexible Retrieval
+(
+GLACIER
+),
+and
+S3 Glacier Deep Archive
+(
+DEEP_ARCHIVE
+) storage classes are designed for low-cost, long-term data storage and data archiving. These storage classes require minimum storage durations and retrieval fees making them most effective for rarely accessed data. For more information about S3 Glacier storage classes, see

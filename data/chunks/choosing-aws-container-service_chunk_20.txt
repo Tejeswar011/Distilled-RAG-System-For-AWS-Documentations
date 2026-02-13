@@ -1,0 +1,20 @@
+Get an introduction to this fully managed service that extends AWS
+infrastructure, services, APIs, and tools to customer premises.
+Explore the guide
+AWS Outposts servers pricing
+Get details on the pricing of AWS Outposts servers.
+Get details on
+pricing
+Orchestration
+Amazon ECS
+Getting started with Amazon ECS
+Get an introduction to the tools available to access Amazon ECS and introductory
+step-by-step procedures to run containers.
+Explore the guide
+Tutorials for Amazon ECS
+Learn how to perform common tasksâincluding the creation of clusters and
+VPCsâwhen using Amazon ECS.
+Get started with the tutorials
+Amazon ECS Immersion Day
+This workshop expands on your foundational understanding of containers and
+provides practical experience scaling, monitoring, and managing container workflows

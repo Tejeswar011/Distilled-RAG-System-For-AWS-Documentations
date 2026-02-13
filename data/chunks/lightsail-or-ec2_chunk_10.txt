@@ -1,0 +1,11 @@
+Flexible pay-per-use hourly, or commit-based pricing.
+Details on the differences
+Explore differences between Lightsail, AWS Elastic Beanstalk, and Amazon EC2 in six areas. These cover ease of use, compute and block storage, container deployments,
+load balancing, content delivery network, and managed database support.
+Ease of use
+Ease of use
+Lightsail offers a set of core services to deploy web servers and database backed
+applications, with support for load balancing, containers, content delivery network (CDN),
+DNS management, and domain registration. You can also choose from a set of application
+blueprints to deploy standard applications such as a WordPress site, or LAMP stack
+application. Lightsail is a good fit for organizations with simple website and

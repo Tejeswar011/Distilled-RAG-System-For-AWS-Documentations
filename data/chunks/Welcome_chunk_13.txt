@@ -1,0 +1,16 @@
+conducting security and access audits, learning about your customer base,
+and understanding your Amazon S3 bill.
+AWS Trusted
+Advisor
+â Evaluate your account by using AWS best
+practice checks to identify ways to optimize your AWS infrastructure,
+improve security and performance, reduce costs, and monitor service quotas.
+You can then follow the recommendations to optimize your services and
+resources.
+Analytics and insights
+Amazon S3 offers features to help you gain visibility into your storage usage, which
+empowers you to better understand, analyze, and optimize your storage at
+scale.
+Amazon S3 Storage Lens
+â Understand, analyze, and optimize your storage. S3 Storage Lens provides
+60+ usage and activity metrics and interactive dashboards to aggregate data

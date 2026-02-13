@@ -1,0 +1,14 @@
+objects.
+Consider using
+Compliance mode
+if you never want any user, including the root user in your
+AWS account, to be able to delete the objects during a pre-defined retention period. You can
+use this mode in case you have a requirement to store compliant data.
+You can use
+Legal Hold
+when you are not sure for how long you want your objects to stay
+immutable. This could be because you have an upcoming external audit of your data and want
+to keep objects immutable till the audit is complete. Alternately, you may have an ongoing
+project utilizing a dataset that you want to keep immutable until the project is complete.
+Required permissions
+Object Lock operations require specific permissions. Depending on the exact operation

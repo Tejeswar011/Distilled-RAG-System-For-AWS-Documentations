@@ -1,0 +1,11 @@
+unique activities that add value, instead of on undiï¬erentiated tasks.
+Workload characteristics
+Understanding your workload patterns can help you make architecture choices. Workload
+patterns can include web applications, API-based microservices, event-driven applications,
+streaming and messaging, data pipelines, IT automations, and more. Some workloads perform
+better or are more cost effective in one compute environment versus another type.
+Application portability
+Many customers want to ensure that their applications can run inâand be migrated or
+moved toâa different environment. It's important for them to be able to preserve choice,
+or run an application both on premises and in the cloud.
+We recommend building competency in software architectures and build packaging with

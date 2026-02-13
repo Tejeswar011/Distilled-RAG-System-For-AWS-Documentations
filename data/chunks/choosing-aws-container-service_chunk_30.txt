@@ -1,0 +1,33 @@
+in Amazon EKS clusters.
+Read the blog post
+Explore
+For your role
+Developers
+Solution Architects
+Professional development
+Startups
+Decision makers
+For an introduction
+Docker
+Kubernetes
+Breaking a monolith into microservices
+For a video
+Containers from the
+couch
+How to containerize
+anything!
+Building a container CI/CD
+pipeline
+Building a container app with
+AWS CDK
+Architecture diagrams
+Explore reference architecture diagrams for containers on AWS.
+Explore architecture diagrams
+Whitepapers
+Explore whitepapers to help you get started and learn best practices.
+Explore whitepapers
+AWS solutions
+Explore vetted solutions and architectural guidance for common use cases for
+containers.
+Explore solutions
+Javascript is disabled or is unavailable in your browser.

@@ -1,0 +1,10 @@
+S3 vector buckets organize data using vector indexes, which are resources within a bucket that store and organize vector data for efficient similarity search. Each vector index can be configured with specific dimensions, distance metrics (like cosine similarity), and metadata configurations to optimize for your specific use case. For more information, see
+Working with S3 Vectors and vector buckets
+.
+Additional information about all bucket types
+When you create a bucket, you enter a bucket name and choose the AWS Region
+where the bucket will reside. After you create a bucket, you cannot change the name
+of the bucket or its Region. Bucket names must follow the following bucket naming rules:
+General purpose bucket naming rules
+Directory bucket naming rules
+Table bucket naming rules

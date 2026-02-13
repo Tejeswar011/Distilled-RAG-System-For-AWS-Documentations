@@ -1,0 +1,10 @@
+HTTPS. Newer Amazon S3 features are not supported for SOAP. We recommend that you use
+either the REST API or the AWS SDKs.
+Paying for Amazon S3
+Pricing for Amazon S3 is designed so that you don't have to plan for the storage
+requirements of your application. Most storage providers require you to purchase a
+predetermined amount of storage and network transfer capacity. In this scenario, if you
+exceed that capacity, your service is shut off or you are charged high overage fees. If
+you do not exceed that capacity, you pay as though you used it all.
+Amazon S3 charges you only for what you actually use, with no hidden fees and no overage
+charges. This model gives you a variable-cost service that can grow with your business

@@ -1,0 +1,17 @@
+Replicate objects within 15 minutes
+â To
+replicate your data in the same AWS Region or across different Regions within a
+predictable time frame, you can use S3 Replication Time Control (S3 RTC). S3 RTC replicates 99.99 percent of new
+objects stored in Amazon S3 within 15 minutes (backed by a service-level agreement). For more
+information, see
+Meeting compliance requirements with
+S3 Replication Time Control
+.
+Note
+S3 RTC does not apply to Batch Replication. Batch Replication is an on-demand
+replication job, and can be tracked with S3 Batch Operations. For more information, see
+Tracking job status and completion reports
+.
+Sync buckets, replicate existing objects, and replicate
+previously failed or replicated objects
+â To sync buckets and

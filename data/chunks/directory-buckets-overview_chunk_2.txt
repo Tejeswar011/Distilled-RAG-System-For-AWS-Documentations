@@ -1,0 +1,17 @@
+an active state, typically within a few minutes. During this transition period, reads
+and writes return an HTTP
+503 (Service Unavailable)
+error code. This doesn't apply to buckets in Local Zones.
+There are several types of Amazon S3 buckets. Before creating a bucket, make sure that you choose the bucket type that best fits your application and performance requirements. For more information about the various bucket types and the appropriate use cases for each, see
+Buckets
+.
+The following topics provide information about directory buckets. For more information
+about general purpose buckets, see
+General purpose buckets overview
+.
+For more information about directory buckets, see the following topics.
+Directory bucket names
+Directories
+Key names
+Access management
+Directory bucket names

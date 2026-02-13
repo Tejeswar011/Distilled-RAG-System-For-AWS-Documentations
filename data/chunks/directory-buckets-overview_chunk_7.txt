@@ -1,0 +1,26 @@
+Managing access to shared datasets in directory buckets with access points
+.
+Directory buckets quotas
+Quotas, also referred to as limits, are the maximum number of service resources or
+operations for your AWS account. The following are the quotas for directory buckets.
+For more information on quotas in Amazon S3, see
+Amazon S3
+quotas
+.
+Name
+Default
+Adjustable
+Description
+Directory buckets
+Each Account: 100
+Yes
+The number of Amazon S3 directory buckets that you can create in an account.
+Read  TPS per directory bucket
+Each  directory bucket: up to 200,000 read TPS
+To request a quota increase, contact
+Support
+.
+The number of GET/HEAD requests per second per directory bucket.
+Write TPS per directory bucket
+Each  directory bucket: up to 100,000 write TPS
+To request a quota increase, contact

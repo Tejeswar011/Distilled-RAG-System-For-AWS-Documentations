@@ -1,0 +1,17 @@
+Regional endpoint and are referred to as Regional endpoint API operations. Examples
+of Regional endpoint API operations are
+CreateBucket
+and
+DeleteBucket
+. After you create a directory bucket, you can use
+Zonal endpoint API operations to upload and manage the objects in your directory
+bucket. Zonal endpoint API operations are available through a Zonal endpoint.
+Examples of Zonal endpoint API operations are
+PutObject
+and
+CopyObject
+.
+You can access S3 Express One Zone from your VPC by using gateway VPC endpoints. After you
+create a gateway endpoint, you can add it as a target in your route table for
+traffic destined from your VPC to S3 Express One Zone. As with Amazon S3, there is no additional
+charge for using gateway endpoints. For more information about how to configure

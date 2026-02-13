@@ -1,0 +1,19 @@
+metadata for objects archived to S3 Glacier Flexible Retrieval. For more information about
+storage classes, see
+Amazon S3 storage
+classes
+.
+** S3 Glacier Deep Archive requires 40 KB of additional metadata for each archived
+object. This includes 32 KB of metadata charged at the S3 Glacier Deep Archive rate
+(required to identify and retrieve your data), and an additional 8 KB data charged at the
+S3 Standard rate. The S3 Standard rate is required to maintain the user-defined name and
+metadata for objects archived to Amazon S3 Glacier Deep Archive. For more information about storage
+classes, see
+Amazon S3 storage
+classes
+.
+Be aware that all of the storage classes except for S3 One Zone-IA (
+ONEZONE_IA
+) and S3 Express One Zone (
+EXPRESS_ONEZONE
+) are designed to be

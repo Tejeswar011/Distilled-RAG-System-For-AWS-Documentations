@@ -1,0 +1,12 @@
+For a small monthly object monitoring and automation fee, S3 Intelligent-Tiering monitors
+access patterns and automatically moves objects that have not been accessed to lower-cost
+access tiers. S3 Intelligent-Tiering delivers automatic storage cost savings in three low-latency
+and high-throughput access tiers. For data that can be accessed asynchronously, you can choose
+to activate automatic archiving capabilities within the S3 Intelligent-Tiering storage class.
+S3 Intelligent-Tiering is designed for 99.9% availability and 99.999999999% durability.
+S3 Intelligent-Tiering automatically stores objects in three access tiers:
+Frequent Access
+â Objects that are uploaded or
+transitioned to S3 Intelligent-Tiering are automatically stored in the
+Frequent Access tier.
+Infrequent Access

@@ -1,0 +1,19 @@
+Memory optimized
+: R3 | R4
+Storage optimized
+: I2
+Accelerated computing
+: G3 | P3 | P3dn
+Instance performance
+Fixed performance instances
+Fixed performance instances provide fixed CPU resources. These instances can
+deliver and sustain full CPU performance at any time, and for as long as a workload
+needs it. If you need consistently high CPU performance for applications such as
+video encoding, high volume websites, or HPC applications, we recommend that you
+use fixed performance instances.
+Burstable performance instances
+Burstable performance (
+T
+) instances provide a baseline level of CPU
+performance with the ability to burst above the baseline. The baseline CPU is
+designed to meet the needs of the majority of general purpose workloads, such as

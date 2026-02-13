@@ -1,0 +1,23 @@
+Retain Until Date
+that is later than the one currently
+configured for the object version. Amazon S3 replaces the existing retention period with the
+new, longer period. Any user with permissions to place an object retention period can
+extend a retention period for an object version. To set a retention period, you must
+have the
+s3:PutObjectRetention
+permission.
+When you set a retention period on an object or S3 bucket, you must select one of two
+retention modes:
+compliance
+or
+governance
+.
+Retention modes
+S3 Object Lock provides two retention modes that apply different levels of
+protection to your objects:
+Compliance mode
+Governance mode
+In
+compliance
+mode, a protected object version can't be
+overwritten or deleted by any user, including the root user in your AWS account. When

@@ -1,0 +1,7 @@
+notifications, and stores a detailed completion report of all actions, providing a fully managed,
+auditable, and serverless experience. You can use S3 Batch Operations through the Amazon S3 console, AWS Command Line Interface
+(AWS CLI), AWS SDKs, or Amazon S3 REST API.
+Use S3 Batch Operations to copy objects, update server-side encryption of objects, and set object tags or
+access control lists (ACLs). You can also initiate object restores from S3 Glacier Flexible Retrieval or
+invoke an AWS Lambda function to perform custom actions using your objects. You can perform these
+operations on a custom list of objects, or you can use an Amazon S3 Inventory report to easily generate lists

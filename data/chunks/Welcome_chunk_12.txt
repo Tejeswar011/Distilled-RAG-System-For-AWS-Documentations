@@ -1,0 +1,23 @@
+how your Amazon S3 resources are being used. For more information, see
+Monitoring
+tools
+.
+Automated monitoring tools
+Amazon CloudWatch
+metrics for Amazon S3
+â Track the operational health of your
+S3 resources and configure billing alerts when estimated charges reach a
+user-defined threshold.
+AWS CloudTrail
+â Record actions taken by a user, a role, or an AWS service in
+Amazon S3. CloudTrail logs provide you with detailed API tracking for S3 bucket-level
+and object-level operations.
+Manual monitoring tools
+Server access
+logging
+â Get detailed records for the requests that are
+made to a bucket. You can use server access logs for many use cases, such as
+conducting security and access audits, learning about your customer base,
+and understanding your Amazon S3 bill.
+AWS Trusted
+Advisor

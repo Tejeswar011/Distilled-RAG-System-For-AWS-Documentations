@@ -1,0 +1,18 @@
+Working with directory buckets - Amazon Simple Storage Service
+Working with directory buckets - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+Directory bucket names
+Directories
+Key names
+Access management
+Directory buckets quotas
+Creating and using directory buckets
+Working with directory buckets
+Directory buckets organize data
+hierarchically into directories as opposed to the flat storage structure of
+general purpose buckets. There aren't prefix limits for directory buckets, and individual
+directories can scale horizontally.
+You can create up to 100 directory buckets in each of your AWS accounts, with no limit on
+the number of objects that you can store in a bucket. Your bucket quota is applied to each

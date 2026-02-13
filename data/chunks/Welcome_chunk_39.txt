@@ -1,0 +1,14 @@
+behavior:
+A process writes a new object to Amazon S3 and immediately lists keys within its
+bucket. The new object appears in the list.
+A process replaces an existing object and immediately tries to read it. Amazon S3
+returns the new data.
+A process deletes an existing object and immediately tries to read it. Amazon S3
+does not return any data because the object has been deleted.
+A process deletes an existing object and immediately lists keys within its
+bucket. The object does not appear in the listing.
+Note
+Amazon S3 does not support object locking for concurrent writers. If two PUT
+requests are simultaneously made to the same key, the request with the
+latest timestamp wins. If this is an issue, you must build an object-locking
+mechanism into your application.

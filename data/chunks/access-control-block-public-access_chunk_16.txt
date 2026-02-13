@@ -1,0 +1,17 @@
+it at the
+account
+level. A bucket policy
+can allow users to alter a bucket's block public access
+settings. Therefore, users who have permission to change a
+bucket policy could insert a policy that allows them to disable
+the block public access settings for the bucket. If this setting
+is enabled for the entire account, rather than for a specific
+bucket, Amazon S3 blocks public policies even if a user alters the
+bucket policy to disable this setting.
+RestrictPublicBuckets
+Setting this option to
+TRUE
+restricts access to an
+access point or bucket with a public policy to only AWS service principals
+and authorized users within the bucket owner's account and access point
+owner's account. This setting blocks all cross-account access to the

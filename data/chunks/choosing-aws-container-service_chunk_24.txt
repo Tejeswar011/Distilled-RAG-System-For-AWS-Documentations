@@ -1,0 +1,21 @@
+using AWS App Runner.
+Use the tutorial
+AWS Lambda
+What is AWS Lambda?
+Learn how to use Lambda to run your code on a high-availability compute
+infrastructure and perform all of the administration of the compute resources,
+including server and operating system maintenance, capacity provisioning and
+automatic scaling, and logging.
+Explore the
+guide
+AWS Lambda documentation
+Work with AWS Lambda documentation to understand how you can use this service to
+run code without provisioning or managing servers and only pay for the compute time
+that you consume.
+Explore the guides
+Working with Lambda container images
+locally
+Learn how you can use a deployment package to deploy your function code to
+Lambda. Lambda supports two types of deployment packages: container images and
+.zip
+file archives.

@@ -1,0 +1,164 @@
+Working with directory buckets - Amazon Simple Storage Service
+Working with directory buckets - Amazon Simple Storage Service
+Documentation
+Amazon Simple Storage Service (S3)
+User Guide
+Directory bucket names
+Directories
+Key names
+Access management
+Directory buckets quotas
+Creating and using directory buckets
+Working with directory buckets
+Directory buckets organize data
+hierarchically into directories as opposed to the flat storage structure of
+general purpose buckets. There aren't prefix limits for directory buckets, and individual
+directories can scale horizontally.
+You can create up to 100 directory buckets in each of your AWS accounts, with no limit on
+the number of objects that you can store in a bucket. Your bucket quota is applied to each
+Region in your AWS account. If your application requires increasing this limit, contact
+Support.
+Important
+Directory buckets in Availability Zones that have no request activity for a period of at least 90 days
+transition to an inactive state. While in an inactive state, a directory bucket is
+temporarily inaccessible for reads and writes. Inactive buckets retain all storage,
+object metadata, and bucket metadata. Existing storage charges apply to inactive
+buckets. If you make an access request to an inactive bucket, the bucket transitions to
+an active state, typically within a few minutes. During this transition period, reads
+and writes return an HTTP
+503 (Service Unavailable)
+error code. This doesn't apply to buckets in Local Zones.
+There are several types of Amazon S3 buckets. Before creating a bucket, make sure that you choose the bucket type that best fits your application and performance requirements. For more information about the various bucket types and the appropriate use cases for each, see
+Buckets
+.
+The following topics provide information about directory buckets. For more information
+about general purpose buckets, see
+General purpose buckets overview
+.
+For more information about directory buckets, see the following topics.
+Directory bucket names
+Directories
+Key names
+Access management
+Directory bucket names
+A directory bucket name consists of a base name that you provide and a suffix that
+contains the ID of the Zone (Availability Zone or Local Zone) that your bucket is located in. Directory
+bucket names must use the following format and follow the naming rules for directory
+buckets:
+bucket-base-name
+--
+zone-id
+--x-s3
+For example, the following directory bucket name contains the Availability Zone ID
+usw2-az1
+:
+bucket-base-name
+--usw2-az1--x-s3
+For more information, see
+Directory bucket naming rules
+.
+Directories
+Directory buckets organize data hierarchically into directories as opposed to the flat
+sorting structure of general purpose buckets.
+With a hierarchical namespace, the delimiter in the object key is important. The only
+supported delimiter is a forward slash (
+/
+). Directories are determined by
+delimiter boundaries. For example, the object key
+dir1/dir2/file1.txt
+results in the directories
+dir1
+/ and
+dir2/
+being automatically
+created, and the object
+file1.txt
+being added to the
+/dir2
+directory in the path
+dir1/dir2/file1.txt
+.
+The directory bucket indexing model returns unsorted results for the
+ListObjectsV2
+API operation. If you need to limit your results to a
+subsection of your bucket, you can specify a subdirectory path in the
+prefix
+parameter, for example,
+prefix=dir1/
+.
+Key names
+For directory buckets, subdirectories that are common to multiple object keys are
+created with the first object key. Additional object keys for the same subdirectory use
+the previously created subdirectory. This model gives you flexibility in choosing object
+keys that are best suited to the application, with equal support for sparse and dense
+directories.
+Access management
+Directory buckets have all S3 Block Public Access settings enabled by default at the
+bucket level. S3 Object Ownership is set to bucket owner enforced and access control
+lists (ACLs) are disabled. These settings can't be modified.
+By default, users don't have permissions for directory buckets. To grant access permissions for directory buckets, you can use IAM to create users, groups, or roles and attach permissions to those identities. For more information, see
+Authorizing Regional endpoint API operations with IAM
+.
+You can also control access to directory buckets through access points. Access points simplify managing data access at scale for shared datasets in Amazon S3. Access points are unique hostnames you create to enforce distinct permissions and network controls for all requests made through an access point. For more information, see
+Managing access to shared datasets in directory buckets with access points
+.
+Directory buckets quotas
+Quotas, also referred to as limits, are the maximum number of service resources or
+operations for your AWS account. The following are the quotas for directory buckets.
+For more information on quotas in Amazon S3, see
+Amazon S3
+quotas
+.
+Name
+Default
+Adjustable
+Description
+Directory buckets
+Each Account: 100
+Yes
+The number of Amazon S3 directory buckets that you can create in an account.
+Read  TPS per directory bucket
+Each  directory bucket: up to 200,000 read TPS
+To request a quota increase, contact
+Support
+.
+The number of GET/HEAD requests per second per directory bucket.
+Write TPS per directory bucket
+Each  directory bucket: up to 100,000 write TPS
+To request a quota increase, contact
+Support
+.
+The number of PUT/DELETE requests per second per directory bucket.
+Creating and using directory buckets
+For more information about working with directory buckets, see the following
+topics.
+Use cases for directory buckets
+Differences for directory buckets
+Networking for directory buckets
+Directory bucket naming rules
+Viewing directory bucket properties
+Managing directory bucket policies
+Emptying a directory bucket
+Deleting a directory bucket
+Listing directory buckets
+Determining whether you can access a directory bucket
+Working with objects in a directory
+bucket
+Security for directory buckets
+Managing access to shared datasets in directory buckets with access points
+Optimizing directory bucket
+performance
+Developing with directory buckets
+Using tags with S3 directory buckets
+Resilience testing in S3 Express One Zone
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions
+String functions
+Use cases for directory buckets
+Did this page help you? - Yes
+Thanks for letting us know we're doing a good job!
+If you've got a moment, please tell us what we did right so we can do more of it.
+Did this page help you? - No
+Thanks for letting us know this page needs work. We're sorry we let you down.
+If you've got a moment, please tell us how we can make the documentation better.

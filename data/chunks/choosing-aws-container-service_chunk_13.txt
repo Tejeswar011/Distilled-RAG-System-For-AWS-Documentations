@@ -1,0 +1,10 @@
+applications is common for most modern application development.
+Some choices elevate the amount of management you need to do. For example, some
+organizations have skills and resources to run and manage a Kubernetes implementation,
+because they invest in strong SRE teams to manage Kubernetes clusters and find value in
+the associated skill portability. These teams handle frequent cluster upgrades. For
+example, Kubernetes has three major releases a year, and deprecates old versions.
+Organization size is a key factor, as smaller organizations might have a more limited
+IT team made up of people fulfilling multiple roles, while larger enterprises can support
+hundreds of workloads in production at once.
+Ease of deployment

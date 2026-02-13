@@ -1,0 +1,12 @@
+AWS Regions.
+Keep data synchronized across Regions during failover
+â You can synchronize data in buckets between AWS Regions by configuring two-way
+replication rules with S3 Cross-Region Replication (CRR) directly from a Multi-Region Access Point. To make
+an informed decision on when to initiate failover, you can also enable S3 replication
+metrics so that you can monitor the replication in Amazon CloudWatch, in S3 Replication Time Control (S3 RTC), or from the
+Multi-Region Access Point.
+Make your application highly available
+â Even
+in the event of a Regional traffic disruption, you can use two-way replication rules to
+keep all metadata and objects in sync across buckets during data replication.
+When to use S3 Batch Replication

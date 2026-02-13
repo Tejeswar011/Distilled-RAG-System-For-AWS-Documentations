@@ -1,0 +1,14 @@
+the AWS SDKs when developing applications with Amazon S3. The AWS SDKs
+simplify your programming tasks by wrapping the underlying Amazon S3 REST API.
+For more information about using the AWS SDKs with S3 Express One Zone, see
+AWS SDKs
+.
+Encryption and data
+protection
+Objects in S3 Express One Zone are automatically encrypted by server-side encryption with Amazon S3
+managed keys (SSE-S3). S3 Express One Zone also supports server-side encryption with AWS Key Management Service
+(AWS KMS) keys (SSE-KMS). S3 Express One Zone doesn't support server-side encryption with
+customer-provided encryption keys (SSE-C), or dual-layer server-side encryption with
+AWS KMS keys (DSSE-KMS). For more information, see
+Data protection and encryption
+.

@@ -1,0 +1,13 @@
+and they provide the most cost-effective way to run a broad spectrum of general purpose
+applications. These instances provide reliable CPU resources to deliver a baseline CPU
+performance of 40 percent, which is designed to meet the compute requirements for a
+majority of general purpose workloads. When more performance is needed, these instances
+provide the ability to exceed the baseline CPU performance and deliver up to 100 percent
+CPU performance for 95 percent of the time over a 24-hour window.
+Flex instances running at a high CPU utilization that is consistently above the baseline
+for long periods of time might see a gradual reduction in the maximum burst CPU throughput.
+For more information, see the following:
+C7i-flex instances
+C8i-flex instances
+M7i-flex instances
+M8i-flex instances

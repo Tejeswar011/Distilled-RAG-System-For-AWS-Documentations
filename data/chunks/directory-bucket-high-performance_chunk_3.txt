@@ -1,0 +1,9 @@
+detecting and repairing any lost redundancy. If the existing device encounters a
+failure, S3 Express One Zone automatically shifts requests to new devices within an Availability Zone.
+This redundancy helps ensure uninterrupted access to your data within an Availability
+Zone.
+S3 Express One Zone is ideal for any application where it's important to minimize the latency
+required to access an object. Such applications can be human-interactive workflows, like
+video editing, where creative professionals need responsive access to content from their
+user interfaces. S3 Express One Zone also benefits analytics and machine learning workloads that
+have similar responsiveness requirements from their data, especially workloads with lots of

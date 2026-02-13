@@ -1,0 +1,22 @@
+RestrictPublicBuckets
+only
+applies to buckets that have public policies. However, if you add a public
+statement to the policy,
+RestrictPublicBuckets
+takes effect on the
+bucket. It allows only AWS service principals and authorized users of the
+bucket owner's account to access the bucket.
+As an example, suppose that a bucket owned by "Account-1" has a policy that
+contains the following:
+A statement that grants access to AWS CloudTrail (which is an AWS service
+principal)
+A statement that grants access to account "Account-2"
+A statement that grants access to the public, for example by
+specifying
+"Principal": "*"
+with no limiting
+Condition
+This policy qualifies as public because of the third statement. With this
+policy in place and
+RestrictPublicBuckets
+enabled, Amazon S3 allows

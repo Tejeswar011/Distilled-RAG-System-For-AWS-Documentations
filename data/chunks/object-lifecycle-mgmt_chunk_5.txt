@@ -1,0 +1,22 @@
+per-request ingestion charges when using
+PUT
+,
+COPY
+, or
+lifecycle rules to move data into any S3 storage class. Consider the ingestion or
+transition cost before moving objects into any storage class. For more information about
+cost considerations, see
+Amazon S3
+pricing
+.
+Monitoring the effect of lifecycle rules
+To monitor the effect of updates made by active lifecycle rules, see
+How do I monitor the actions taken by my
+lifecycle rules?
+.
+Managing the complete lifecycle of
+objects
+With S3 Lifecycle configuration rules you can tell Amazon S3 to transition objects to
+less-expensive storage classes, archive or delete them. For example:
+If you upload periodic logs to a bucket, your application might need them for
+a week or a month. After that, you might want to delete them.

@@ -1,0 +1,11 @@
+Instance performance
+Current generation instances
+For the best performance, we recommend that you use the following instance types
+when you launch new instances. For more information, see
+Amazon EC2 Instance Types
+.
+General purpose:
+M5 | M5a | M5ad | M5d | M5dn | M5n | M5zn | M6a | M6g | M6gd | M6i | M6id | M6idn | M6in | M7a | M7g | M7gd | M7i | M7i-flex | M8a | M8g | M8gb | M8gd | M8gn | M8i | M8id | M8i-flex | Mac1 | Mac2 | Mac2-m1ultra | Mac2-m2 | Mac2-m2pro | Mac-m4 | Mac-m4pro | T2 | T3 | T3a | T4g
+Compute optimized:
+C5 | C5a | C5ad | C5d | C5n | C6a | C6g | C6gd | C6gn | C6i | C6id | C6in | C7a | C7g | C7gd | C7gn | C7i | C7i-flex | C8a | C8g | C8gb | C8gd | C8gn | C8i | C8id | C8i-flex
+Memory optimized:

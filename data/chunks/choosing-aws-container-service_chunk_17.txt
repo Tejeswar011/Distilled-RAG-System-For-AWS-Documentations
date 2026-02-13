@@ -1,0 +1,16 @@
+and use case.
+To explore how to use and learn more about each of the available AWS container services,
+we have provided a pathway to explore how each of the services work. The following section
+provides links to in-depth documentation, hands-on tutorials, and resources to get you
+started.
+Capacity
+Amazon EC2
+What is Amazon EC2?
+Get an overview of Amazon EC2. This guide not only provides an introduction to the
+service, but also covers how to get started using it and then provides in-depth
+descriptions of key features and how to use them.
+Explore the
+guides
+Amazon EC2 instance types
+When you launch an EC2 instance, the instance type that you specify determines
+the hardware of the host computer used for your instance. Each instance type offers

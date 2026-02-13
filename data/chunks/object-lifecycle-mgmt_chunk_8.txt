@@ -1,0 +1,22 @@
+expiration action. As you move the objects from one storage class to another, you save
+on storage costs. For more information about cost considerations, see
+Amazon S3 pricing
+.
+Topics
+Transitioning objects
+using Amazon S3 Lifecycle
+Expiring objects
+Setting an S3 Lifecycle configuration on a
+bucket
+How S3 Lifecycle interacts with other
+bucket configurations
+Configuring S3 Lifecycle event
+notifications
+Lifecycle configuration elements
+How Amazon S3 handles conflicts in lifecycle configurations
+Examples of S3 Lifecycle
+configurations
+Troubleshooting Amazon S3 Lifecycle issues
+Javascript is disabled or is unavailable in your browser.
+To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.
+Document Conventions

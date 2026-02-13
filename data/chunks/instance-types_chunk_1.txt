@@ -1,0 +1,9 @@
+family based on these capabilities. Select an instance type based on the requirements of the
+application or software that you plan to run on your instance.
+Amazon EC2 dedicates some resources of the host computer, such as CPU, memory, and instance
+storage, to a particular instance. Amazon EC2 shares other resources of the host computer, such
+as the network and the disk subsystem, among instances. If each instance on a host computer
+tries to use as much of one of these shared resources as possible, each receives an equal
+share of that resource. However, when a resource is underused, an instance can consume a
+higher share of that resource while it's available.
+Each instance type provides higher or lower minimum performance from a shared resource.

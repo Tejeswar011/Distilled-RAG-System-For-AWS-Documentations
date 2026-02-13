@@ -1,0 +1,28 @@
+aws:SourceVpc
+to a fixed value, like the
+following.
+{
+"Principal": "*",
+"Resource": "*",
+"Action": "s3:PutObject",
+"Effect": "Allow",
+"Condition":
+{
+"StringEquals":
+{
+"aws:SourceVpc": "vpc-91237329"}}
+}
+How Amazon S3 evaluates a bucket
+policy that contains both public and non-public access grants
+This example shows how Amazon S3 evaluates a bucket policy that contains both
+public and non-public access grants.
+Suppose that a bucket has a policy that grants access to a set of fixed
+principals. Under the previously described rules, this policy isn't public.
+Thus, if you enable the
+RestrictPublicBuckets
+setting, the policy
+remains in effect as written, because
+RestrictPublicBuckets
+only
+applies to buckets that have public policies. However, if you add a public
+statement to the policy,

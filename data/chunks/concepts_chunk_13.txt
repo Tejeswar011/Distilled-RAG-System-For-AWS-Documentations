@@ -1,0 +1,26 @@
+Center
+.
+When calculating the cost of a provisioned
+environment, remember to include incidental costs such as snapshot storage for EBS
+volumes.
+You can optimize the cost, security, and performance of your AWS environment
+using
+AWS Trusted Advisor
+.
+You can use AWS Cost Explorer to analyze the cost and usage of your EC2 instances. You can view
+data up to the last 13 months, and forecast how much you are likely to spend for the next
+12 months. For more information, see
+Analyzing your costs and usage with
+AWS Cost Explorer
+in the
+AWS Cost Management User Guide
+.
+Resources
+Amazon EC2 features
+AWS re:Post
+AWS Skill Builder
+AWS Support
+Hands-on Tutorials
+Web Hosting
+Windows on AWS
+Javascript is disabled or is unavailable in your browser.

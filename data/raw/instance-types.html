@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Amazon EC2 instance types - Amazon EC2</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="instance-types" /><meta name="default_state" content="instance-types" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html" /><meta name="description" content="Instance types determine the specifications for an instance such as compute, memory, and storage." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon EC2" /><meta name="guide" content="Instance Types" /><meta name="abstract" content="When you launch an instance, the instance type that you specify determines the hardware of the host computer used for your instance. Each instance type offers different compute, memory, and storage capabilities." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/ec2/latest/instancetypes/instance-types.html" hreflang="id-id" /><link rel="alternative" href="https://docs.aws.amazon.com/id_id/ec2/latest/instancetypes/instance-types.html" hreflang="id" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/ec2/latest/instancetypes/instance-types.html" hreflang="de-de" /><link rel="alternative" href="https://docs.aws.amazon.com/de_de/ec2/latest/instancetypes/instance-types.html" hreflang="de" /><link rel="alternative" href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html" hreflang="en-us" /><link rel="alternative" href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html" hreflang="en" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/ec2/latest/instancetypes/instance-types.html" hreflang="es-es" /><link rel="alternative" href="https://docs.aws.amazon.com/es_es/ec2/latest/instancetypes/instance-types.html" hreflang="es" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/ec2/latest/instancetypes/instance-types.html" hreflang="fr-fr" /><link rel="alternative" href="https://docs.aws.amazon.com/fr_fr/ec2/latest/instancetypes/instance-types.html" hreflang="fr" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/ec2/latest/instancetypes/instance-types.html" hreflang="it-it" /><link rel="alternative" href="https://docs.aws.amazon.com/it_it/ec2/latest/instancetypes/instance-types.html" hreflang="it" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/ec2/latest/instancetypes/instance-types.html" hreflang="ja-jp" /><link rel="alternative" href="https://docs.aws.amazon.com/ja_jp/ec2/latest/instancetypes/instance-types.html" hreflang="ja" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/ec2/latest/instancetypes/instance-types.html" hreflang="ko-kr" /><link rel="alternative" href="https://docs.aws.amazon.com/ko_kr/ec2/latest/instancetypes/instance-types.html" hreflang="ko" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/ec2/latest/instancetypes/instance-types.html" hreflang="pt-br" /><link rel="alternative" href="https://docs.aws.amazon.com/pt_br/ec2/latest/instancetypes/instance-types.html" hreflang="pt" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_cn/ec2/latest/instancetypes/instance-types.html" hreflang="zh-cn" /><link rel="alternative" href="https://docs.aws.amazon.com/zh_tw/ec2/latest/instancetypes/instance-types.html" hreflang="zh-tw" /><link rel="alternative" href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html" hreflang="x-default" /><meta name="feedback-item" content="EC2" /><meta name="this_doc_product" content="Amazon EC2" /><meta name="this_doc_guide" content="Instance Types" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'ec2'}"></script><meta id="panorama-serviceSubSection" value="Instance Types" /><meta id="panorama-serviceConsolePage" value="Amazon EC2 instance types" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>Amazon EC2 instance types - Amazon EC2</title><meta name="pdf" content="/pdfs/ec2/latest/instancetypes/ec2-types.pdf#instance-types" /><meta name="rss" content="ec2-types.rss" /><meta name="forums" content="https://repost.aws/tags/TAO-wqN9fYRoyrpdULLa5y7g" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=EC2&amp;topic_url=https://docs.aws.amazon.com/en_us/ec2/latest/instancetypes/instance-types.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/ec2/latest/instancetypes/instance-types.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/ec2/latest/instancetypes/instance-types.html" /><meta name="keywords" content="Amazon EC2,ec2,EC2 instance types" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon EC2",
+        "item" : "https://docs.aws.amazon.com/ec2/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "Instance Types",
+        "item" : "https://docs.aws.amazon.com/ec2/latest/instancetypes"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "Amazon EC2 instance types",
+        "item" : "https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/ec2/latest/instancetypes/ec2-types.pdf#instance-types" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/ec2/index.html">Amazon EC2</a><a href="instance-types.html">Instance Types</a></div><div id="page-toc-src"><a href="#current-gen-instances">Current generation instances</a><a href="#previous-gen-instances">Previous generation instances</a><a href="#instance-performance">Instance performance</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="instance-types">Amazon EC2 instance types</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><div class="awsdocs-note awsdocs-important"><div class="awsdocs-note-title"><awsui-icon name="status-warning" variant="error"></awsui-icon><h6>End of sale notice</h6></div><div class="awsdocs-note-text"><p>The <b>U-9tb1</b>, <b>U-12tb1</b>, 
+        <b>U-18tb1</b>, and <b>U-24tb1</b> instance 
+        types are no longer available for new instance launches. If your workload requires a high-memory 
+        instance, we recommend that you use a U7i instance type instead.</p></div></div><p>When you launch an EC2 instance, the <em>instance type</em> that you specify
+        determines the hardware of the host computer used for your instance. Each instance type
+        offers different compute, memory, and storage capabilities, and is grouped in an instance
+        family based on these capabilities. Select an instance type based on the requirements of the
+        application or software that you plan to run on your instance.</p><p>Amazon EC2 dedicates some resources of the host computer, such as CPU, memory, and instance
+        storage, to a particular instance. Amazon EC2 shares other resources of the host computer, such
+        as the network and the disk subsystem, among instances. If each instance on a host computer
+        tries to use as much of one of these shared resources as possible, each receives an equal
+        share of that resource. However, when a resource is underused, an instance can consume a
+        higher share of that resource while it's available.</p><p>Each instance type provides higher or lower minimum performance from a shared resource.
+        For example, instance types with high I/O performance have a larger allocation of shared resources. 
+        Allocating a larger share of shared resources also reduces the variance of I/O performance. 
+        For most applications, moderate I/O performance is more than enough. However, for
+        applications that require greater or more consistent I/O performance, consider
+        an instance type with higher I/O performance.</p><p>For pricing information, see <a href="https://aws.amazon.com/ec2/pricing/" rel="noopener noreferrer" target="_blank"><span>Amazon EC2 Pricing</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p><div class="highlights" id="inline-topiclist"><h6>Topics</h6><ul><li><p><a href="#current-gen-instances">Current generation instances</a></p></li><li><p><a href="#previous-gen-instances">Previous generation instances</a></p></li><li><p><a href="#instance-performance">Instance performance</a></p></li></ul></div>
+        <h2 id="current-gen-instances">Current generation instances</h2>
+        
+        <p>For the best performance, we recommend that you use the following instance types
+            when you launch new instances. For more information, see <a href="https://aws.amazon.com/ec2/instance-types/" rel="noopener noreferrer" target="_blank"><span>Amazon EC2 Instance Types</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+        
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p><a href="./gp.html">General purpose: </a>M5 | M5a | M5ad | M5d | M5dn | M5n | M5zn | M6a | M6g | M6gd | M6i | M6id | M6idn | M6in | M7a | M7g | M7gd | M7i | M7i-flex | M8a | M8g | M8gb | M8gd | M8gn | M8i | M8id | M8i-flex | Mac1 | Mac2 | Mac2-m1ultra | Mac2-m2 | Mac2-m2pro | Mac-m4 | Mac-m4pro | T2 | T3 | T3a | T4g</p>
+            </li><li class="listitem">
+                <p><a href="./co.html">Compute optimized: </a>C5 | C5a | C5ad | C5d | C5n | C6a | C6g | C6gd | C6gn | C6i | C6id | C6in | C7a | C7g | C7gd | C7gn | C7i | C7i-flex | C8a | C8g | C8gb | C8gd | C8gn | C8i | C8id | C8i-flex</p>
+            </li><li class="listitem">
+                <p><a href="./mo.html">Memory optimized: </a>R5 | R5a | R5ad | R5b | R5d | R5dn | R5n | R6a | R6g | R6gd | R6i | R6id | R6idn | R6in | R7a | R7g | R7gd | R7i | R7iz | R8a | R8g | R8gb | R8gd | R8gn | R8i | R8id | R8i-flex | U-3tb1 | U-6tb1 | U-9tb1 | U-12tb1 | U-18tb1 | U-24tb1 | U7i-6tb | U7i-8tb | U7i-12tb | U7in-16tb | U7in-24tb | U7in-32tb | U7inh-32tb | X1 | X1e | X2gd | X2idn | X2iedn | X2iezn | X8g | X8aedz | X8i | z1d</p>
+            </li><li class="listitem">
+                <p><a href="./so.html">Storage optimized: </a>D2 | D3 | D3en | H1 | I3 | I3en | I4g | I4i | I7i | I7ie | I8g | I8ge | Im4gn | Is4gen</p>
+            </li><li class="listitem">
+                <p><a href="./ac.html">Accelerated computing: </a>DL1 | DL2q | F1 | F2 | G4ad | G4dn | G5 | G5g | G6 | G6e | G6f | Gr6 | Gr6f | G7e | Inf1 | Inf2 | P4d | P4de | P5 | P5e | P5en | P6-B200 | P6-B300 | P6e-GB200 | Trn1 | Trn1n | Trn2 | Trn2u | VT1</p>
+            </li><li class="listitem">
+                <p><a href="./hpc.html">High-performance computing: </a>Hpc6a | Hpc6id | Hpc7a | Hpc7g</p>
+            </li></ul></div>
+     
+        <h2 id="previous-gen-instances">Previous generation instances</h2>
+        
+        <p>Amazon Web Services offers previous generation instance types for users who have optimized their
+            applications around them and have yet to upgrade. We encourage you to use current generation 
+            instance types to get the best performance, but we continue to support the following previous 
+            generation instance types.<span> For more information about which current 
+                generation instance type would be a suitable upgrade, see <a href="https://aws.amazon.com/ec2/previous-generation/" rel="noopener noreferrer" target="_blank"><span>
+                    Previous Generation Instances</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</span></p>
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p><b>General purpose</b>: A1 | M1 | M2 | M3 | M4 | T1</p>
+            </li><li class="listitem">
+                <p><b>Compute optimized</b>: C1 | C3 | C4</p>
+            </li><li class="listitem">
+                <p><b>Memory optimized</b>: R3 | R4</p>
+            </li><li class="listitem">
+                <p><b>Storage optimized</b>: I2</p>
+            </li><li class="listitem">
+                <p><b>Accelerated computing</b>: G3 | P3 | P3dn</p>
+            </li></ul></div>
+     
+        <h2 id="instance-performance">Instance performance</h2>
+         
+            <h6>Fixed performance instances</h6>
+            <p>Fixed performance instances provide fixed CPU resources. These instances can
+                deliver and sustain full CPU performance at any time, and for as long as a workload
+                needs it. If you need consistently high CPU performance for applications such as
+                video encoding, high volume websites, or HPC applications, we recommend that you 
+                use fixed performance instances.</p>
+         
+         
+            <h6>Burstable performance instances</h6>
+            <p>Burstable performance (<code class="code">T</code>) instances provide a baseline level of CPU
+                performance with the ability to burst above the baseline. The baseline CPU is
+                designed to meet the needs of the majority of general purpose workloads, such as
+                large-scale micro-services, web servers, small and medium databases, data logging,
+                code repositories, virtual desktops, and development and test environments.</p>
+         
+        <p>The baseline utilization and ability to burst are governed by CPU credits. Each
+            burstable performance instance continuously earns credits when it stays below the CPU
+            baseline, and continuously spends credits when it bursts above the baseline. For more
+            information, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html">Burstable
+                performance instances</a> in the <em>Amazon EC2 User Guide</em>.</p>
+         
+            <h6>Flex instances</h6>
+            <p>C7i-flex, C8i-flex, M7i-flex, M8i-flex, R8i-flex instances offer a balance of compute, memory, and network resources, 
+                and they provide the most cost-effective way to run a broad spectrum of general purpose 
+                applications. These instances provide reliable CPU resources to deliver a baseline CPU 
+                performance of 40 percent, which is designed to meet the compute requirements for a 
+                majority of general purpose workloads. When more performance is needed, these instances 
+                provide the ability to exceed the baseline CPU performance and deliver up to 100 percent 
+                CPU performance for 95 percent of the time over a 24-hour window.</p>
+         
+        <p>Flex instances running at a high CPU utilization that is consistently above the baseline 
+            for long periods of time might see a gradual reduction in the maximum burst CPU throughput. 
+            <span>For more information, see the following:</span></p>
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p><a href="https://aws.amazon.com/ec2/instance-types/c7i/" rel="noopener noreferrer" target="_blank"><span>C7i-flex instances</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></p>
+            </li><li class="listitem">
+                <p><a href="https://aws.amazon.com/ec2/instance-types/c8i/" rel="noopener noreferrer" target="_blank"><span>C8i-flex instances</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></p>
+            </li><li class="listitem">
+                <p><a href="https://aws.amazon.com/ec2/instance-types/m7i/" rel="noopener noreferrer" target="_blank"><span>M7i-flex instances</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></p>
+            </li><li class="listitem">
+                <p><a href="https://aws.amazon.com/ec2/instance-types/m8i/" rel="noopener noreferrer" target="_blank"><span>M8i-flex instances</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></p>
+            </li><li class="listitem">
+                <p><a href="https://aws.amazon.com/ec2/instance-types/r8i/" rel="noopener noreferrer" target="_blank"><span>R8i-flex instances</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></p>
+            </li></ul></div>
+    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./instance-type-names.html">Naming conventions</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=EC2&amp;topic_url=https://docs.aws.amazon.com/en_us/ec2/latest/instancetypes/instance-types.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=EC2&amp;topic_url=https://docs.aws.amazon.com/en_us/ec2/latest/instancetypes/instance-types.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

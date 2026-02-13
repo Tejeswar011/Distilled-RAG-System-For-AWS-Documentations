@@ -1,0 +1,19 @@
+Umar Saeed, an AWS senior manager and solutions architect. He provides a quick
+overview of AWS container choices.
+Understand
+Containers offer a number of advantages for packaging, deploying, and running
+applications:
+Portability:
+Benefit from a consistent runtime
+environment that can run on any platform that supports the container runtime.
+Scalability:
+Scale applications up or down, based on
+demand, with lightweight and easily replicated containers.
+Consistency:
+Ensure that the application runs the same
+way in all environments with a consistent runtime environment.
+Efficiency:
+Use fewer resources than traditional
+virtual machines with lightweight containers.
+Isolation:
+Improve security and reliability with

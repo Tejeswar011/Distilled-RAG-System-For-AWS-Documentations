@@ -1,0 +1,14 @@
+Explore the guide
+Getting started with Elastic Beanstalk
+To help you understand how AWS Elastic Beanstalk works, this tutorial walks you through creating, exploring, updating, and deleting an Elastic Beanstalk application.
+It takes less than an hour to complete.
+Use the tutorial
+Set up the Elastic Beanstalk command line interface
+In this step-by-step tutorial, you will set up the Elastic Beanstalk Command Line Interface (EB CLI).
+Use the tutorial
+Amazon EC2
+What is Amazon EC2?
+Get an overview of Amazon EC2. This guide not only provides an introduction of the service, but also covers how to get started
+using it and then provides in-depth descriptions of key features and how to use them.
+Explore the guide
+Amazon EC2 instance types

@@ -1,0 +1,19 @@
+Choose
+Elastic Beanstalk
+if
+you need easy application deployment with some level of
+control and scalability.
+Choose
+EC2
+if you need full
+control over your infrastructure, high performance, or custom
+configurations.
+Use
+Now that youâve learned about what these services (and the supporting AWS tools and services) are optimized for,
+you can now dive deeper into how best to use them.
+Amazon Lightsail
+What is Amazon Lightsail?
+Get the full story on Amazon Lightsail, including what it does, and how you can benefit from it. This guide also includes
+step-by-step guidance to help you get started using Lightsail â and then configure it to meet your needs.
+Explore the guide
+Creating Lightsail container service images

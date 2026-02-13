@@ -1,0 +1,8 @@
+directory buckets. For more information, see
+Authenticating and authorizing requests
+.
+Table buckets
+â Recommended for storing tabular data, such as daily purchase transactions, streaming sensor data, or ad impressions. Tabular data represents data in columns and rows, like in a database table. Table buckets provide
+S3 storage that's optimized for analytics and machine learning workloads, with features designed to continuously improve query performance and reduce storage costs for tables. S3 Tables are purpose-built for
+storing tabular data in the Apache Iceberg format. You can query tabular data in S3 Tables with popular query engines, including
+Amazon Athena, Amazon Redshift, and Apache Spark. By default, you can create up to 10 table buckets per AWS account per AWS Region
