@@ -73,7 +73,7 @@ model_distillation/
 
 ### Step 1 — Clone Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Tejeswar011/Distilled-RAG-System-For-AWS-Documentations
 cd model_distillation
 ```
 ---
